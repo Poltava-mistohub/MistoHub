@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { fetchCompanies, fetchPeople } from '../../services/API';
 import { useLocation } from 'react-router-dom';
 import Modal from 'react-modal';
+
 import Header from '/src/components/Header/Header';
 import AboutProject from '../../components/About/AboutProject';
 import { AccumulatedMoney } from '../../components/AccumulatedMoney/AccumulatedMoney';
