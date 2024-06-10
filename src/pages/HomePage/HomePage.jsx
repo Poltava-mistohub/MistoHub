@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, lazy } from 'react';
 import { fetchCompanies, fetchPeople } from '../../services/API';
 import { useLocation } from 'react-router-dom';
 import Modal from 'react-modal';
@@ -8,13 +8,15 @@ import AboutProject from '../../components/About/AboutProject';
 import { AccumulatedMoney } from '../../components/AccumulatedMoney/AccumulatedMoney';
 
 import InvestorsBlock from '../../components/InvestorsCompanies/InvestorsBlock';
-import Visualization from '../../components/Visualization/Visualization';
+// import Visualization from '../../components/Visualization/Visualization';
 import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
 import Footer from '../../components/Footer/Footer';
 import HeroSection from '/src/components/HeroSection/HeroSection';
 import CoFounders from '../../components/CoFounders/CoFounders';
 import JoinUs from '../../components/JoinUs/JoinUs';
 import ModalsManager from '/src/shared/Modals/ModalsManager';
+
+const Visualization = lazy(()=> import('/src/components/Visualization/Visualization.jsx'))
 
 Modal.setAppElement('#root');
 

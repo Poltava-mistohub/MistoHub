@@ -39,7 +39,7 @@ const HeroSection = () => {
     <HeroSectionStyled>
       <HeroContainer>
         <Swiper ref={swiperRef} className="my-swiper" navigation={true}>
-          {heroData.map((item) => (
+          {heroData.map((item, idx) => (
             <SwiperSlide key={nanoid()}>
               <picture>
                 <source
@@ -50,7 +50,7 @@ const HeroSection = () => {
                   srcSet={`${item.imgPng1} 1x, ${item.imgPng2} 2x`}
                   type="image/png"
                 />
-                <img className="hero-img" src={item.imgPng1} alt={item.alt} />
+                <img fetchpriority={idx === 0 ? "high" : "low"} className="hero-img" src={item.imgPng1} alt={item.alt} />
               </picture>
             </SwiperSlide>
           ))}
