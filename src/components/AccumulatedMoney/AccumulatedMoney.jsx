@@ -9,7 +9,7 @@ import needToDoTasks from '../../constants/NeedToDoTasks.json';
 import madedTasks from '../../constants/MadedTasks.json';
 import { CardsList } from './AccumulatedMoney.styled';
 
-export const AccumulatedMoney = () => {
+const AccumulatedMoney = () => {
   const [goalData, setGoalData] = useState(null);
   const isDesktop = useMediaQuery({ minWidth: 1440 });
   const sectionRef = useRef(null);
@@ -113,3 +113,5 @@ export const AccumulatedMoney = () => {
     </ContainerWrapper>
   );
 };
+
+export default AccumulatedMoney;

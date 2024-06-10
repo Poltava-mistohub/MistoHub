@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 
 import Header from '/src/components/Header/Header';
 import AboutProject from '../../components/About/AboutProject';
-import { AccumulatedMoney } from '../../components/AccumulatedMoney/AccumulatedMoney';
+// import AccumulatedMoney from '../../components/AccumulatedMoney/AccumulatedMoney';
 
 import InvestorsBlock from '../../components/InvestorsCompanies/InvestorsBlock';
 // import Visualization from '../../components/Visualization/Visualization';
@@ -16,7 +16,10 @@ import CoFounders from '../../components/CoFounders/CoFounders';
 import JoinUs from '../../components/JoinUs/JoinUs';
 import ModalsManager from '/src/shared/Modals/ModalsManager';
 
-const Visualization = lazy(()=> import('/src/components/Visualization/Visualization.jsx'))
+const Visualization = lazy(
+  () => import('/src/components/Visualization/Visualization.jsx')
+);
+const AccumulatedMoney = lazy(()=>import('/src/components/AccumulatedMoney/AccumulatedMoney.jsx'))
 
 Modal.setAppElement('#root');
 
