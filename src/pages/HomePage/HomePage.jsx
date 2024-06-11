@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo, lazy } from 'react';
+import { useEffect, useState, useMemo, lazy, Suspense } from 'react';
 import { fetchCompanies, fetchPeople } from '../../services/API';
 import { useLocation } from 'react-router-dom';
 import Modal from 'react-modal';
@@ -102,7 +102,7 @@ const HomePage = () => {
     };
   }, []);
   return (
-    <>
+    <Suspense>
       <Header />
       <main>
         <HeroSection />
@@ -116,7 +116,7 @@ const HomePage = () => {
       </main>
       <Footer />
       <ModalsManager activeSection={activeSection} />
-    </>
+    </Suspense>
   );
 };
 
