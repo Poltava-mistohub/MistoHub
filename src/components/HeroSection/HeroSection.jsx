@@ -35,6 +35,7 @@ const HeroSection = () => {
     }
   };
 
+  console.log('heroData: ', heroData);
   return (
     <HeroSectionStyled>
       <HeroContainer>
@@ -43,14 +44,37 @@ const HeroSection = () => {
             <SwiperSlide key={nanoid()}>
               <picture>
                 <source
+                  srcSet={`${item.mobile.webp} 1x, ${item.mobile.webp_2x} 2x`}
+                  media="(max-width: 767px)"
+                  sizes='(max-width: 767px) 375px, 100%'
+                  type="image/webp"
+                  fetchpriority={idx === 0 ? "high" : "low"}
+                />
+                <source
+                  srcSet={`${item.tablet.webp} 1x, ${item.tablet.webp_2x} 2x`}
+                  media="(min-width: 768px) and (max-width: 1439px)"
+                  sizes='(min-width: 768px) and (max-width: 1439px) 768px, 100%'
+                  type="image/webp"
+                  fetchpriority={idx === 0 ? "high" : "low"}
+                />
+                <source
+                  srcSet={`${item.desktop.webp} 1x, ${item.desktop.webp_2x} 2x`}
+                  media="(min-width: 1440px) "
+                  sizes='(min-width: 1440px) 1440px, 100%'
+                  type="image/webp"
+                  fetchpriority={idx === 0 ? "high" : "low"}
+                />
+                {/* <source
                   srcSet={`${item.imgWebP1} 1x, ${item.imgWebP2} 2x`}
                   type="image/webp"
+                  fetchpriority={idx === 0 ? "high" : "low"}
                 />
                 <source
                   srcSet={`${item.imgPng1} 1x, ${item.imgPng2} 2x`}
                   type="image/png"
-                />
-                <img fetchpriority={idx === 0 ? "high" : "low"} className="hero-img" src={item.imgPng1} alt={item.alt} />
+                  fetchpriority={idx === 0 ? "high" : "low"}
+                /> */}
+                <img fetchpriority={idx === 0 ? "high" : "low"} className="hero-img" src={item.desktop.png} alt={item.alt} />
               </picture>
             </SwiperSlide>
           ))}

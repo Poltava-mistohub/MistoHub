@@ -2,6 +2,18 @@ import img1Png1 from '/src/assets/hero/hero1.png';
 import img1Png2 from '/src/assets/hero/hero1@2x.png';
 import img1WebP1 from '/src/assets/hero/hero1.webp';
 import img1WebP2 from '/src/assets/hero/hero1@2x.webp';
+import img1mob from '/src/assets/hero/mobile/hero1mob.png';
+import img1mobWebP from '/src/assets/hero/mobile/hero1mob.webp';
+import img1mob2x from '/src/assets/hero/mobile/hero1mob@2x.png';
+import img1mob2xWebP from '/src/assets/hero/mobile/hero1mob@2x.webp';
+import img1tablet from '/src/assets/hero/tablet/hero1tablet.png';
+import img1tabletWebP from '/src/assets/hero/tablet/hero1tablet.webp';
+import img1tablet2x from '/src/assets/hero/tablet/hero1tablet@2x.png';
+import img1tablet2xWebP from '/src/assets/hero/tablet/hero1tablet@2x.webp';
+import img1desktop from '/src/assets/hero/desktop/hero1desktop.png';
+import img1desktopWebP from '/src/assets/hero/desktop/hero1desktop.webp';
+import img1desktop2x from '/src/assets/hero/desktop/hero1desktop@2x.png';
+import img1desktop2xWebP from '/src/assets/hero/desktop/hero1desktop@2x.webp';
 
 import img2Png1 from '/src/assets/hero/hero2.png';
 import img2Png2 from '/src/assets/hero/hero2@2x.png';
@@ -25,38 +37,166 @@ import img5WebP2 from '/src/assets/hero/hero5@2x.webp';
 
 export const heroData = [
   {
-    imgPng1: img1Png1,
-    imgPng2: img1Png2,
-    imgWebP1: img1WebP1,
-    imgWebP2: img1WebP2,
+    mobile: {
+      png: img1mob,
+      png_2x: img1mob2x,
+      webp: img1mobWebP,
+      webp_2x: img1mob2xWebP,
+    },
+    tablet: {
+      png: img1tablet,
+      png_2x: img1tablet2x,
+      webp: img1tabletWebP,
+      webp_2x: img1tablet2xWebP,
+    },
+    desktop: {
+      png: img1desktop,
+      png_2x: img1desktop2x,
+      webp: img1desktopWebP,
+      webp_2x: img1desktop2xWebP,
+    },
     alt: 'Kitchen 1',
   },
   {
-    imgPng1: img2Png1,
-    imgPng2: img2Png2,
-    imgWebP1: img2WebP1,
-    imgWebP2: img2WebP2,
-    alt: 'Kitchen 2',
+    mobile: {
+      png: img2Png1,
+      png_2x: img2Png2,
+      webp: img2WebP1,
+      webp_2x: img2WebP2,
+    },
+    tablet: {
+      png: img2Png1,
+      png_2x: img2Png2,
+      webp: img2WebP1,
+      webp_2x: img2WebP2,
+    },
+    desktop: {
+      png: img2Png1,
+      png_2x: img2Png2,
+      webp: img2WebP1,
+      webp_2x: img2WebP2,
+    },
+    alt: 'Kitchen 1',
   },
   {
-    imgPng1: img3Png1,
-    imgPng2: img3Png2,
-    imgWebP1: img3WebP1,
-    imgWebP2: img3WebP2,
-    alt: 'Kitchen 3',
+    mobile: {
+      png: img3Png1,
+      png_2x: img3Png2,
+      webp: img3WebP1,
+      webp_2x: img3WebP2,
+    },
+    tablet: {
+      png: img3Png1,
+      png_2x: img3Png2,
+      webp: img3WebP1,
+      webp_2x: img3WebP2,
+    },
+    desktop: {
+      png: img3Png1,
+      png_2x: img3Png2,
+      webp: img3WebP1,
+      webp_2x: img3WebP2,
+    },
+    alt: 'Kitchen 1',
   },
   {
-    imgPng1: img4Png1,
-    imgPng2: img4Png2,
-    imgWebP1: img4WebP1,
-    imgWebP2: img4WebP2,
-    alt: 'Kitchen 4',
+    mobile: {
+      png: img4Png1,
+      png_2x: img4Png2,
+      webp: img4WebP1,
+      webp_2x: img4WebP2,
+    },
+    tablet: {
+      png: img4Png1,
+      png_2x: img4Png2,
+      webp: img4WebP1,
+      webp_2x: img4WebP2,
+    },
+    desktop: {
+      png: img4Png1,
+      png_2x: img4Png2,
+      webp: img4WebP1,
+      webp_2x: img4WebP2,
+    },
+    alt: 'Kitchen 1',
   },
   {
-    imgPng1: img5Png1,
-    imgPng2: img5Png2,
-    imgWebP1: img5WebP1,
-    imgWebP2: img5WebP2,
-    alt: 'Kitchen 5',
+    mobile: {
+      png: img5Png1,
+      png_2x: img5Png2,
+      webp: img5WebP1,
+      webp_2x: img5WebP2,
+    },
+    tablet: {
+      png: img5Png1,
+      png_2x: img5Png2,
+      webp: img5WebP1,
+      webp_2x: img5WebP2,
+    },
+    desktop: {
+      png: img5Png1,
+      png_2x: img5Png2,
+      webp: img5WebP1,
+      webp_2x: img5WebP2,
+    },
+    alt: 'Kitchen 1',
   },
 ];
+// export const heroData = [
+//   {
+//     imgPng1: img1Png1,
+//     imgPng2: img1Png2,
+//     imgWebP1: img1WebP1,
+//     imgWebP2: img1WebP2,
+//     alt: 'Kitchen 1',
+//   },
+//   {
+//     mobile: {
+//       png: img1mob,
+//       png_2x: img1mob2x,
+//       webp: img1mobWebP,
+//       webp_2x: img1mob2xWebP,
+//     },
+//     tablet: {
+//       png: img1tablet,
+//       png_2x: img1tablet2x,
+//       webp: img1tabletWebP,
+//       webp_2x: img1tablet2xWebP,
+//     },
+//     desktop: {
+//       png: img1desktop,
+//       png_2x: img1desktop2x,
+//       webp: img1desktopWebP,
+//       webp_2x: img1desktop2xWebP,
+//     },
+//     alt: 'Kitchen 1',
+//   },
+//   {
+//     imgPng1: img2Png1,
+//     imgPng2: img2Png2,
+//     imgWebP1: img2WebP1,
+//     imgWebP2: img2WebP2,
+//     alt: 'Kitchen 2',
+//   },
+//   {
+//     imgPng1: img3Png1,
+//     imgPng2: img3Png2,
+//     imgWebP1: img3WebP1,
+//     imgWebP2: img3WebP2,
+//     alt: 'Kitchen 3',
+//   },
+//   {
+//     imgPng1: img4Png1,
+//     imgPng2: img4Png2,
+//     imgWebP1: img4WebP1,
+//     imgWebP2: img4WebP2,
+//     alt: 'Kitchen 4',
+//   },
+//   {
+//     imgPng1: img5Png1,
+//     imgPng2: img5Png2,
+//     imgWebP1: img5WebP1,
+//     imgWebP2: img5WebP2,
+//     alt: 'Kitchen 5',
+//   },
+// ];
