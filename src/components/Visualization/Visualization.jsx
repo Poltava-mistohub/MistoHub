@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import TourModal from './TourModal';
+// import TourModal from './TourModal';
 import { images } from '../../constants/ImageImportsVisualization';
 import {
   VisualizationSection,
@@ -17,6 +17,10 @@ import {
 } from './Visualization.styled';
 import Iconsvg from '../Icon/Icon';
 import { nanoid } from 'nanoid';
+
+const TourModal = lazy(
+  () => import('/src/components/Visualization/TourModal.jsx')
+);
 
 const Visualization = () => {
   const isDesktop = useMediaQuery({ minWidth: 1440 });
@@ -106,11 +110,13 @@ const Visualization = () => {
                     </ButtonTour>
                   </div>
                 ) : (
-                  <TourModal
-                    ref={photoSphereRef}
-                    image={image.tourImage}
-                    onClose={() => toggleTour(index)}
-                  />
+                  <Suspense>
+                    <TourModal
+                      ref={photoSphereRef}
+                      image={image.tourImage}
+                      onClose={() => toggleTour(index)}
+                    />
+                  </Suspense>
                 )}
               </Card>
             ))}
