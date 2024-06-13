@@ -32,29 +32,29 @@ const CoFounder = ({
             srcSet={webpRetina}
             type="image/webp"
             media="(min-width: 768px) and  (min-resolution: 192dpi)"
-          />
+          loading='lazy'/>
           <source
             srcSet={jpgRetina}
             type="image/jpg"
             media="(min-width: 768px) and (min-resolution: 192dpi)"
-          />
-          <source srcSet={webp} type="image/webp" media="(min-width: 768px)" />
-          <source srcSet={jpg} type="image/jpg" media="(min-width: 768px)" />
+          loading='lazy'/>
+          <source srcSet={webp} type="image/webp" media="(min-width: 768px)" loading='lazy'/>
+          <source srcSet={jpg} type="image/jpg" media="(min-width: 768px)" loading='lazy'/>
 
           <source
             srcSet={webpMobileRetina}
             type="image/webp"
             media="(min-resolution: 192dpi)"
-          />
+          loading='lazy'/>
           <source
             srcSet={jpgMobileRetina}
             type="image/jpg"
             media="(min-resolution: 192dpi)"
-          />
-          <source srcSet={webpMobile} type="image/webp" />
-          <source srcSet={jpgMobile} type="image/jpg" />
+          loading='lazy'/>
+          <source srcSet={webpMobile} type="image/webp" loading='lazy'/>
+          <source srcSet={jpgMobile} type="image/jpg" loading='lazy'/>
 
-          <PersonImage src={jpgMobile} alt="Co-Founder avatar." />
+          <PersonImage src={jpgMobile} alt="Co-Founder avatar." loading='lazy' />
         </picture>
         {instagram !== null ? (
           <SocialNetworkLink href={instagram} target="blank">
