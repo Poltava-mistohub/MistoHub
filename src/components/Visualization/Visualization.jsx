@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef, lazy, Suspense } from 'react';
+
 import { useMediaQuery } from 'react-responsive';
-// import TourModal from './TourModal';
+import { nanoid } from 'nanoid';
+
 import { images } from '../../constants/ImageImportsVisualization';
 import {
   VisualizationSection,
@@ -16,7 +18,6 @@ import {
   RightArrow,
 } from './Visualization.styled';
 import Iconsvg from '../Icon/Icon';
-import { nanoid } from 'nanoid';
 
 const TourModal = lazy(
   () => import('/src/components/Visualization/TourModal.jsx')
