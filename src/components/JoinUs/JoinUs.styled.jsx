@@ -92,7 +92,7 @@ export const Title = styled.h2`
   font-size: 24px;
   line-height: 133%;
   color: #ffffff;
-    font-family: Oddval;
+  font-family: Oddval;
 
   @media screen and (min-width: 768px) {
     font-size: 45px;
@@ -204,9 +204,9 @@ export const JoinButton = styled.button`
 `;
 
 export const AlreadyJoined = styled.div`
-& p {
-  margin: 0;
-}
+  & p {
+    margin: 0;
+  }
 
   font-weight: 500;
   font-size: 12px;

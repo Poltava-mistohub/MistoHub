@@ -11,7 +11,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<HomePage />} />
       </Routes>
-      </ModalProvider>
+    </ModalProvider>
   );
 }
 export default App;

@@ -82,7 +82,6 @@ export const SocialNetworkLink = styled.a`
   }
 
   @media screen and (min-width: 768px) {
-
     .socialNetworkIcon {
       width: 16px;
       height: 16px;

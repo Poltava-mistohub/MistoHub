@@ -6,9 +6,9 @@ import { AboutSection } from './AboutProject.styled';
 const AboutProject = () => {
   return (
     <AboutSection id="about">
-        <About />
-        <HowItWork />
-        <Building />
+      <About />
+      <HowItWork />
+      <Building />
     </AboutSection>
   );
 };

@@ -12,14 +12,16 @@ const Background = () => {
             srcSet={image.webpRetina}
             type="image/webp"
             media="(min-resolution: 192dpi)"
-          loading='lazy'/>
-          <source srcSet={image.webp} type="image/webp" loading='lazy'/>
+            loading="lazy"
+          />
+          <source srcSet={image.webp} type="image/webp" loading="lazy" />
           <source
             srcSet={image.jpgRetina}
             type="image/jpg"
             media="(min-resolution: 192dpi)"
-          loading='lazy'/>
-          <source srcSet={image.jpg} type="image/jpg" loading='lazy'/>
+            loading="lazy"
+          />
+          <source srcSet={image.jpg} type="image/jpg" loading="lazy" />
           <image.className
             src={image.jpg}
             loading="lazy"

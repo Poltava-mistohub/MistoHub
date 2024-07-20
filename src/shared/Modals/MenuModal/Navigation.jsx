@@ -1,11 +1,9 @@
-
 import { Link } from 'react-router-dom';
 import Iconsvg from '../../../components/Icon/Icon';
 import { StyledNavList, StyledItem } from './Navigation.styled';
 import links from '../../../constants/links_menu.json';
 
 const Navigation = ({ activeSection, closeModal }) => {
-
   const scrollToSection = (sectionId) => {
     closeModal('menu_modal');
 
@@ -28,9 +26,7 @@ const Navigation = ({ activeSection, closeModal }) => {
       <nav>
         <StyledNavList>
           {links.map((link) => (
-            <StyledItem
-              key={link.id}
-            >
+            <StyledItem key={link.id}>
               <Link
                 onClick={() => scrollToSection(link.id)}
                 className={activeSection === link.id ? 'active' : 'link'}

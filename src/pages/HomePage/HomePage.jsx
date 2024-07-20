@@ -13,10 +13,16 @@ import JoinUs from '../../components/JoinUs/JoinUs';
 const Visualization = lazy(
   () => import('/src/components/Visualization/Visualization.jsx')
 );
-const AccumulatedMoney = lazy(()=>import('/src/components/AccumulatedMoney/AccumulatedMoney.jsx'))
-const InvestorsBlock = lazy(()=>import('/src/components/InvestorsCompanies/InvestorsBlock.jsx'))
-const Footer = lazy(()=>import('/src/components/Footer/Footer.jsx'))
-const ModalsManager = lazy(()=>import('/src/shared/Modals/ModalsManager.jsx'))
+const AccumulatedMoney = lazy(
+  () => import('/src/components/AccumulatedMoney/AccumulatedMoney.jsx')
+);
+const InvestorsBlock = lazy(
+  () => import('/src/components/InvestorsCompanies/InvestorsBlock.jsx')
+);
+const Footer = lazy(() => import('/src/components/Footer/Footer.jsx'));
+const ModalsManager = lazy(
+  () => import('/src/shared/Modals/ModalsManager.jsx')
+);
 
 Modal.setAppElement('#root');
 
