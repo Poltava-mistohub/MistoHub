@@ -68,6 +68,8 @@ const HomePage = () => {
   }, [location]);
 
   useEffect(() => {
+    const mainURL = new URL(import.meta.env.BASE_URL, window.location.origin);
+
     const handleScroll = () => {
       const sectionElements = document.querySelectorAll('section');
       sectionElements.forEach((section) => {
@@ -84,13 +86,20 @@ const HomePage = () => {
           window.scrollY < sectionTop + sectionHeight - 100
         ) {
           setActiveSection(sectionId);
-          const url = `/MistoHub/#${sectionId}`;
+
+          if (`#${sectionId}` === window.location.hash || (!sectionId && !window.location.hash)) {
+            return;
+          }
+
+          let targetURL = new URL(window.location.pathname, mainURL).toString();
 
           if (sectionId !== null) {
-            window.history.pushState(null, '', url);
-          } else {
-            window.history.pushState(null, '', window.location.pathname);
+            const url = new URL(`#${sectionId}`, mainURL);
+
+            targetURL = url.toString();
           }
+
+          window.history.pushState(null, '', targetURL);
         }
       });
     };
