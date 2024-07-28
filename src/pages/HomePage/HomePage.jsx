@@ -1,14 +1,14 @@
 import { useEffect, useState, useMemo, lazy, Suspense } from 'react';
 import { fetchCompanies, fetchPeople } from '../../services/API';
 import { useLocation } from 'react-router-dom';
-import Modal from 'react-modal';
 
 import Header from '/src/components/Header/Header';
-import AboutProject from '../../components/About/AboutProject';
 import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
 import HeroSection from '/src/components/HeroSection/HeroSection';
-import CoFounders from '../../components/CoFounders/CoFounders';
-import JoinUs from '../../components/JoinUs/JoinUs';
+
+const AboutProject = lazy(() => import('../../components/About/AboutProject'));
+const CoFounders = lazy(() => import('../../components/CoFounders/CoFounders'));
+const JoinUs = lazy(() => import('../../components/JoinUs/JoinUs'));
 
 const Visualization = lazy(
   () => import('/src/components/Visualization/Visualization.jsx')
@@ -23,8 +23,6 @@ const Footer = lazy(() => import('/src/components/Footer/Footer.jsx'));
 const ModalsManager = lazy(
   () => import('/src/shared/Modals/ModalsManager.jsx')
 );
-
-Modal.setAppElement('#root');
 
 const HomePage = () => {
   const [activeSection, setActiveSection] = useState('main');
@@ -87,7 +85,10 @@ const HomePage = () => {
         ) {
           setActiveSection(sectionId);
 
-          if (`#${sectionId}` === window.location.hash || (!sectionId && !window.location.hash)) {
+          if (
+            `#${sectionId}` === window.location.hash ||
+            (!sectionId && !window.location.hash)
+          ) {
             return;
           }
 
@@ -111,21 +112,23 @@ const HomePage = () => {
     };
   }, []);
   return (
-    <Suspense>
+    <>
       <Header />
       <main>
         <HeroSection />
-        <AboutProject />
-        <Visualization />
-        <AccumulatedMoney />
-        <InvestorsBlock people={people} companies={companies} />
-        <JoinUs people={people} companies={companies} />
-        <CoFounders />
-        <ScrollToTopButton />
+        <Suspense>
+          <AboutProject />
+          <Visualization />
+          <AccumulatedMoney />
+          <InvestorsBlock people={people} companies={companies} />
+          <JoinUs people={people} companies={companies} />
+          <CoFounders />
+          <ScrollToTopButton />
+        </Suspense>
       </main>
       <Footer />
       <ModalsManager activeSection={activeSection} />
-    </Suspense>
+    </>
   );
 };
 

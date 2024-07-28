@@ -22,7 +22,7 @@ jobs:
       - name: Install, build 🔧
         run: |
           npm install
-          npm run build -- --base=/MistoHub/
+          PUBLIC_PATH=MistoHub npm run build
           cp ./dist/index.html ./dist/404.html
 
       - name: Deploy 🚀

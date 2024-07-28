@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/$PUBLIC_PATH",
+    "postbuild": "node ./scripts/insert_preload.js && node ./scripts/insert_hero_image_preload.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
+    "preview": "vite preview --base=/$PUBLIC_PATH",
     "format": "prettier --write ./src"
   },
   "dependencies": {

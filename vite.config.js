@@ -16,4 +16,7 @@ export default defineConfig({
       shared: '/src/shared',
     },
   },
+  build: {
+    manifest: true,
+  }
 });
