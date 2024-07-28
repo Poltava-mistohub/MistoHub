@@ -13,11 +13,15 @@ function Header() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   useEffect(() => {
-    const footerEl = document.getElementById('footer');
+    let footerEl = document.getElementById('footer');
     const hiddenEl = document.querySelector('.hidden-wrap');
 
     const handleScroll = () => {
-      if (window.scrollY !== 0 && footerEl.offsetTop - 375 >= window.scrollY) {
+      if (!footerEl) {
+        footerEl = document.getElementById('footer');
+      }
+
+      if (window.scrollY !== 0 && footerEl?.offsetTop - 375 >= window.scrollY) {
         hiddenEl.classList.value.includes('hidden') &&
           hiddenEl.classList.remove('hidden');
         setDarkStyle('dark-header');
