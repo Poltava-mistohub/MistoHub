@@ -10,12 +10,20 @@ import { confirmTriggerZone } from '../../../helpers/confirmTriggerZone';
 import { makerGroupsToAnim } from '../../../helpers/makerGroupsToAnim';
 import defaultImage from 'src/assets/investors/noname.jpg';
 
+const getFullName = (investor) => {
+  return [
+    (investor.firstName || '').trim(),
+    (investor.secondName || '').trim()
+  ].join(' ');
+}
+
 const InvestorsPeople = ({ people }) => {
   const [peopleData, setPeopleData] = useState(null);
   const [selectedInvestor, setSelectedInvestor] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTablet = useMediaQuery({ maxWidth: 1440 });
+  const imgStyle = { background: `rgb(212,213,209) center / contain no-repeat url(${defaultImage})`};
 
   useEffect(() => {
     const fetchData = async () => {
@@ -112,8 +120,12 @@ const InvestorsPeople = ({ people }) => {
                     onClick={() => openModal(investor)}
                   >
                     <img
-                      src={investor.imageURL ? investor.imageURL : defaultImage}
-                      alt={`Investor ${investor.id}`}
+                      // empty alt to not have broken image icon,
+                      // and have a visual fallback in background
+                      alt=""
+                      title={getFullName(investor)}
+                      src={investor.imageURL ? investor.imageURL : null}
+                      style={imgStyle}
                       loading="lazy"
                     />
                   </button>

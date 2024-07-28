@@ -34,6 +34,7 @@ const InvestorsCompanies = ({ companies: companiesData }) => {
               <img
                 src={company.logoURL || defaultImage}
                 alt={`Company ${company.id}`}
+                title={company.name}
                 onClick={() => openModal(company)}
                 loading="lazy"
               />
