@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/$PUBLIC_PATH",
+    "build": "vite build --base=/$PUBLIC_PATH && node ./scripts/insert_preload.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
+    "preview": "vite preview --base=/$PUBLIC_PATH",
     "format": "prettier --write ./src"
   },
   "dependencies": {
