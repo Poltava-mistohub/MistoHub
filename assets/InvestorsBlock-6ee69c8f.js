@@ -1,4 +1,4 @@
-import{u as h,j as t,f as r,h as W,r as x}from"./index-f4468b84.js";import{M,I as j,u as y,C,g as k}from"./HomePage-e9a2e9e2.js";const I=h.div`
+import{u as h,j as t,e as r,h as W,r as x}from"./index-4df93286.js";import{M}from"./index-44315a77.js";import{I as j,f as y,C}from"./HomePage-9bbaa312.js";import{g as k}from"./semantic-fc1421d8.js";const I=h.div`
   .text {
     color: rgba(11, 11, 11, 0.5);
     font-size: 12px;
@@ -628,4 +628,4 @@ import{u as h,j as t,f as r,h as W,r as x}from"./index-f4468b84.js";import{M,I a
     line-height: 34px;
     letter-spacing: -0.56px;
   }
-`,ie=({people:e,companies:n})=>{const[i,a]=x.useState(null),s=()=>{a(null)};return t.jsxs("section",{id:"investors",children:[t.jsxs(z,{children:[t.jsx(_,{children:"Імпакт-інвестори МІСТОХАБ"}),t.jsx(V,{children:"З нами вже"}),(e==null?void 0:e.length)>0&&t.jsxs(A,{children:[e.length," ",k(e.length,"p")]})]}),t.jsxs(E,{children:[e&&t.jsx(Q,{people:e}),t.jsx(z,{children:(n==null?void 0:n.length)>0&&t.jsxs(A,{children:[n.length," ",k(n.length,"k")]})}),n&&t.jsx(J,{companies:n})]}),i&&t.jsx(L,{data:i,onClose:s})]})};export{ie as default};
+`,se=({people:e,companies:n})=>{const[i,a]=x.useState(null),s=()=>{a(null)};return t.jsxs("section",{id:"investors",children:[t.jsxs(z,{children:[t.jsx(_,{children:"Імпакт-інвестори МІСТОХАБ"}),t.jsx(V,{children:"З нами вже"}),(e==null?void 0:e.length)>0&&t.jsxs(A,{children:[e.length," ",k(e.length,"p")]})]}),t.jsxs(E,{children:[e&&t.jsx(Q,{people:e}),t.jsx(z,{children:(n==null?void 0:n.length)>0&&t.jsxs(A,{children:[n.length," ",k(n.length,"k")]})}),n&&t.jsx(J,{companies:n})]}),i&&t.jsx(L,{data:i,onClose:s})]})};export{se as default};
