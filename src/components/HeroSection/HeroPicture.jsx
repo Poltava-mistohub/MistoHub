@@ -20,7 +20,7 @@ export const HeroPicture = ({ item, priority, hidden }) => (
     />
     <img
       fetchpriority={priority ? 'high' : 'low'}
-      loading={priority === 0 ? 'eager' : 'lazy'}
+      loading={priority ? 'eager' : 'lazy'}
       className="hero-img"
       style={{ display: hidden ? 'none' : undefined }}
       src={item.desktop.png}
