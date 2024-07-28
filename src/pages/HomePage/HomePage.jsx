@@ -1,7 +1,6 @@
 import { useEffect, useState, useMemo, lazy, Suspense } from 'react';
 import { fetchCompanies, fetchPeople } from '../../services/API';
 import { useLocation } from 'react-router-dom';
-import Modal from 'react-modal';
 
 import Header from '/src/components/Header/Header';
 import AboutProject from '../../components/About/AboutProject';
@@ -23,8 +22,6 @@ const Footer = lazy(() => import('/src/components/Footer/Footer.jsx'));
 const ModalsManager = lazy(
   () => import('/src/shared/Modals/ModalsManager.jsx')
 );
-
-Modal.setAppElement('#root');
 
 const HomePage = () => {
   const [activeSection, setActiveSection] = useState('main');
