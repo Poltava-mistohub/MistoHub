@@ -1,4 +1,4 @@
-import{j as i,L as e,u as t}from"./index-849c559b.js";import{f as r,d as p,u as a,I as n,h as s}from"./HomePage-dcf5bae2.js";const d=()=>{const o=r({query:"(max-width: 768px)"});return i.jsx("address",{children:i.jsxs("ul",{children:[i.jsxs("li",{children:[i.jsx("span",{children:"Телефон: "}),i.jsx(e,{to:o?"tel:+380680745765":"https://t.me/MISTOHUB_admin",target:"blank",rel:"noopener noreferrer",children:"+38 (068) 074-57-65"})]}),i.jsxs("li",{children:[i.jsx("span",{children:"Email:"}),i.jsx(e,{to:"mailto:mistohub@gmail.com",target:"blank",rel:"noopener noreferrer",children:"mistohub@gmail.com"})]})]})})},x=d,l=t.footer`
+import{j as i,L as e,u as t}from"./index-ceaa3d0e.js";import{a as r,S as a,u as p,I as n,b as s}from"./HomePage-6a3a4bde.js";const d=()=>{const o=r({query:"(max-width: 768px)"});return i.jsx("address",{children:i.jsxs("ul",{children:[i.jsxs("li",{children:[i.jsx("span",{children:"Телефон: "}),i.jsx(e,{to:o?"tel:+380680745765":"https://t.me/MISTOHUB_admin",target:"blank",rel:"noopener noreferrer",children:"+38 (068) 074-57-65"})]}),i.jsxs("li",{children:[i.jsx("span",{children:"Email:"}),i.jsx(e,{to:"mailto:mistohub@gmail.com",target:"blank",rel:"noopener noreferrer",children:"mistohub@gmail.com"})]})]})})},x=d,l=t.footer`
   width: 100%;
   background-color: #0b0b0b;
   color: #ffffff;
@@ -8,7 +8,7 @@ import{j as i,L as e,u as t}from"./index-849c559b.js";import{f as r,d as p,u as 
   @media (min-width: 375px) {
     font-size: 16px;
   }
-`,m=t(p)`
+`,m=t(a)`
   min-width: 320px;
   max-width: 375px;
   padding: 32px 16px 20px;
@@ -244,4 +244,4 @@ import{j as i,L as e,u as t}from"./index-849c559b.js";import{f as r,d as p,u as 
       }
     }
   }
-`;function f(){const{openModal:o}=a();return i.jsx(l,{id:"footer",children:i.jsxs(m,{children:[i.jsxs("div",{className:"footer-up",children:[i.jsx("iframe",{className:"map-wrapper",src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.710898082731!2d34.5648984!3d49.5843421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825941b73909d%3A0xc6c99d30efb9fc4a!2z0JzQhtCh0KLQntCl0JDQkQ!5e0!3m2!1sru!2sua!4v1715196007146!5m2!1sua!2sua",loading:"lazy"}),i.jsxs("div",{children:[i.jsx(n,{width:"81",height:"27",iconName:"main-logo",styles:"icon-logo"}),i.jsx("p",{className:"address-mistohub",children:"м.Полтава, вул. Спаська, 10"}),i.jsx(x,{}),i.jsx("button",{className:"btn-supp",type:"button",onClick:()=>o("join_modal"),children:i.jsx("span",{children:"Підтримати проєкт"})})]})]}),i.jsxs(h,{children:[i.jsxs("div",{children:[i.jsx("p",{children:"© ГО «МІСТО ХАБ»"}),i.jsx("p",{children:"Всі права захищені"})]}),i.jsxs("button",{type:"button",className:"btn-goit",onClick:()=>o("team_modal"),children:["Розроблено студентами"," ",i.jsx(n,{width:"59",height:"18",iconName:"icon-goit-white",styles:"icon-goit-white"})]}),i.jsx(s,{sectionName:"footer"})]})]})})}export{f as default};
+`;function f(){const{openModal:o}=p();return i.jsx(l,{id:"footer",children:i.jsxs(m,{children:[i.jsxs("div",{className:"footer-up",children:[i.jsx("iframe",{className:"map-wrapper",src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.710898082731!2d34.5648984!3d49.5843421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825941b73909d%3A0xc6c99d30efb9fc4a!2z0JzQhtCh0KLQntCl0JDQkQ!5e0!3m2!1sru!2sua!4v1715196007146!5m2!1sua!2sua",loading:"lazy"}),i.jsxs("div",{children:[i.jsx(n,{width:"81",height:"27",iconName:"main-logo",styles:"icon-logo"}),i.jsx("p",{className:"address-mistohub",children:"м.Полтава, вул. Спаська, 10"}),i.jsx(x,{}),i.jsx("button",{className:"btn-supp",type:"button",onClick:()=>o("join_modal"),children:i.jsx("span",{children:"Підтримати проєкт"})})]})]}),i.jsxs(h,{children:[i.jsxs("div",{children:[i.jsx("p",{children:"© ГО «МІСТО ХАБ»"}),i.jsx("p",{children:"Всі права захищені"})]}),i.jsxs("button",{type:"button",className:"btn-goit",onClick:()=>o("team_modal"),children:["Розроблено студентами"," ",i.jsx(n,{width:"59",height:"18",iconName:"icon-goit-white",styles:"icon-goit-white"})]}),i.jsx(s,{sectionName:"footer"})]})]})})}export{f as default};
