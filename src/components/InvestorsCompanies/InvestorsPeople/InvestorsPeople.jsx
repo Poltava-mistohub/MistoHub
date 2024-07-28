@@ -69,10 +69,10 @@ const InvestorsPeople = ({ people }) => {
     if (!peopleData) return;
 
     const intervalId = setInterval(() => {
-      peopleData.forEach((_, index) => {
-        checkPosition(index);
-      });
-    }, 10);
+      for (let i = 0; i < peopleData.length; i++) {
+        checkPosition(i);
+      }
+    }, 50);
 
     return () => clearInterval(intervalId);
   }, [peopleData, checkPosition]);
