@@ -13,9 +13,9 @@ import defaultImage from 'src/assets/investors/noname.jpg';
 const getFullName = (investor) => {
   return [
     (investor.firstName || '').trim(),
-    (investor.secondName || '').trim()
+    (investor.secondName || '').trim(),
   ].join(' ');
-}
+};
 
 const InvestorsPeople = ({ people }) => {
   const [peopleData, setPeopleData] = useState(null);
@@ -23,7 +23,9 @@ const InvestorsPeople = ({ people }) => {
   const [isOpen, setIsOpen] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTablet = useMediaQuery({ maxWidth: 1440 });
-  const imgStyle = { background: `rgb(212,213,209) center / contain no-repeat url(${defaultImage})`};
+  const imgStyle = {
+    background: `rgb(212,213,209) center / contain no-repeat url(${defaultImage})`,
+  };
 
   useEffect(() => {
     const fetchData = async () => {

@@ -26,20 +26,22 @@ const InvestorsCompanies = ({ companies: companiesData }) => {
         <CompaniesList
           $anim={makerAnimParams(companiesData.length, isDesktop, isTablet)}
         >
-          {Array.from([...companiesData, ...companiesData]).map((company, index) => (
-            <li
-              // Since companies are repeated, we need to have unique yet stable key
-              key={index}
-            >
-              <img
-                src={company.logoURL || defaultImage}
-                alt={`Company ${company.id}`}
-                title={company.name}
-                onClick={() => openModal(company)}
-                loading="lazy"
-              />
-            </li>
-          ))}
+          {Array.from([...companiesData, ...companiesData]).map(
+            (company, index) => (
+              <li
+                // Since companies are repeated, we need to have unique yet stable key
+                key={index}
+              >
+                <img
+                  src={company.logoURL || defaultImage}
+                  alt={`Company ${company.id}`}
+                  title={company.name}
+                  onClick={() => openModal(company)}
+                  loading="lazy"
+                />
+              </li>
+            )
+          )}
           {selectedCompanies && (
             <ModalCompanies
               isOpen={selectedCompanies !== null}

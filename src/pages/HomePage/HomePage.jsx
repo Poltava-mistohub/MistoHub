@@ -85,7 +85,10 @@ const HomePage = () => {
         ) {
           setActiveSection(sectionId);
 
-          if (`#${sectionId}` === window.location.hash || (!sectionId && !window.location.hash)) {
+          if (
+            `#${sectionId}` === window.location.hash ||
+            (!sectionId && !window.location.hash)
+          ) {
             return;
           }
 
