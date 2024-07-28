@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import ModalCompanies from '../ModalCompanies/ModalCompanies';
 import { CompaniesList, CompanyWrapper } from './InvestorsCompanies.styled';
-import { nanoid } from 'nanoid';
 import defaultImage from 'src/assets/investors/default-img.png';
 import { makerAnimParams } from '../../../helpers/makerAnimParams';
 import { useMediaQuery } from 'react-responsive';
@@ -27,11 +26,15 @@ const InvestorsCompanies = ({ companies: companiesData }) => {
         <CompaniesList
           $anim={makerAnimParams(companiesData.length, isDesktop, isTablet)}
         >
-          {Array.from([...companiesData, ...companiesData]).map((company) => (
-            <li key={nanoid()}>
+          {Array.from([...companiesData, ...companiesData]).map((company, index) => (
+            <li
+              // Since companies are repeated, we need to have unique yet stable key
+              key={index}
+            >
               <img
                 src={company.logoURL || defaultImage}
                 alt={`Company ${company.id}`}
+                title={company.name}
                 onClick={() => openModal(company)}
                 loading="lazy"
               />
