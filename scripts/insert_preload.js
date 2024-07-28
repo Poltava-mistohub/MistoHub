@@ -64,6 +64,6 @@ try {
 
   console.log('Preload tags inserted successfully');
 } catch (err) {
-  console.error('Error:', err);
+  console.error('Error inserting preload tags:', err);
   process.exit(1);
 }
