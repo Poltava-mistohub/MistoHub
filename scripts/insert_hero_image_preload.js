@@ -32,8 +32,8 @@ async function main() {
   const pictureHtml = render();
 
   indexHtml = indexHtml.replace(
-    '</body>',
-    `${pictureHtml}</body>`,
+    '</head>',
+    `${pictureHtml}</head>`,
   );
 
   fs.writeFileSync('dist/index.html', indexHtml);
