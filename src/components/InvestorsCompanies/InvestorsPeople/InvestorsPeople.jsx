@@ -5,7 +5,6 @@ import {
   GroupContainer,
   Container,
 } from './InvestorsPeople.styled';
-import { nanoid } from 'nanoid';
 import { useMediaQuery } from 'react-responsive';
 import { confirmTriggerZone } from '../../../helpers/confirmTriggerZone';
 import { makerGroupsToAnim } from '../../../helpers/makerGroupsToAnim';
@@ -94,13 +93,18 @@ const InvestorsPeople = ({ people }) => {
         {peopleData?.map((group, index) => (
           <GroupContainer
             id={`container-${index}`}
-            key={nanoid()}
+            // key should be static per group, so usage index is fine
+            key={`group-${index}`}
             $length={group.length}
             className={`group-${index} ${index % 2 === 0 ? 'odd-group' : 'even-group'}`}
           >
             <ul>
-              {group.map((investor) => (
-                <li key={nanoid()}>
+              {group.map((investor, investorIndex) => (
+                <li
+                  // key should be static per unique item,
+                  // but since duplicates in data occurring, index is used
+                  key={investorIndex}
+                >
                   <button
                     data-group_id={index}
                     className="item-list"
