@@ -37,7 +37,7 @@ export async function fetchGoal() {
     const {
       data: { result },
     } = await axios.get(
-      `https://${import.meta.env.VITE_ADMIN_PROJECT_ID}.api.sanity.io/${
+      `https://${import.meta.env.VITE_ADMIN_PROJECT_ID}.apicdn.sanity.io/${
         import.meta.env.VITE_ADMIN_API_VERSION
       }/data/query/${
         import.meta.env.VITE_ADMIN_DATASET
@@ -53,7 +53,7 @@ export async function fetchCompanies() {
     const {
       data: { result },
     } = await axios.get(
-      `https://${import.meta.env.VITE_ADMIN_PROJECT_ID}.api.sanity.io/${
+      `https://${import.meta.env.VITE_ADMIN_PROJECT_ID}.apicdn.sanity.io/${
         import.meta.env.VITE_ADMIN_API_VERSION
       }/data/query/${
         import.meta.env.VITE_ADMIN_DATASET
@@ -77,7 +77,7 @@ export async function fetchPeople() {
     const {
       data: { result },
     } = await axios.get(
-      `https://${import.meta.env.VITE_ADMIN_PROJECT_ID}.api.sanity.io/${
+      `https://${import.meta.env.VITE_ADMIN_PROJECT_ID}.apicdn.sanity.io/${
         import.meta.env.VITE_ADMIN_API_VERSION
       }/data/query/${
         import.meta.env.VITE_ADMIN_DATASET
