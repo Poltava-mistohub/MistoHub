@@ -1,16 +1,35 @@
 import axios from 'axios';
 
 function formImgURL(img) {
-  if (img?.asset?._ref) {
-    const imgData = img.asset._ref.split('-');
-    return `https://cdn.sanity.io/images/${
-      import.meta.env.VITE_ADMIN_PROJECT_ID
-    }/${import.meta.env.VITE_ADMIN_DATASET}/${imgData[1]}-${imgData[2]}.${
-      imgData[3]
-    }`;
-  } else {
-    return null;
+  if (!img?.asset?._ref) {
+    return null
   }
+
+  const imgData = img.asset._ref.split('-');
+
+  return `https://cdn.sanity.io/images/${
+    import.meta.env.VITE_ADMIN_PROJECT_ID
+  }/${import.meta.env.VITE_ADMIN_DATASET}/${imgData[1]}-${imgData[2]}.${
+    imgData[3]
+  }`;
+}
+
+function formImgFocalPoint(img) {
+  if (img?.hotspot) {
+    return {
+      x: img.hotspot.x,
+      y: img.hotspot.y,
+    }
+  }
+
+  if (img?.crop) {
+    return {
+      x: img.crop.left + (1 - img.crop.right) / 2,
+      y: img.crop.top + (1 - img.crop.bottom) / 2,
+    }
+  }
+
+  return null;
 }
 
 export async function fetchGoal() {
@@ -67,6 +86,7 @@ export async function fetchPeople() {
 
     const people = result.map((res) => {
       if (res.imageURL) {
+        res.imageFocalPoint = formImgFocalPoint(res.imageURL);
         res.imageURL = formImgURL(res.imageURL);
       }
       return res;

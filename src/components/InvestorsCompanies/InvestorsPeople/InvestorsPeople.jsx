@@ -17,6 +17,31 @@ const getFullName = (investor) => {
   ].join(' ');
 };
 
+const getURL = (url, focalPoint) => {
+  const searchParams = new URLSearchParams();
+
+  // Specify the image dimensions and cropping mode
+  // We want processed the image to consume less bandwidth & CPU/GPU of device
+  // Check out the documentation for more information: https://www.sanity.io/docs/image-urls
+  // Set render size x2 to cover both retina and non-retina displays
+  searchParams.set('w', '360');
+  searchParams.set('h', '280');
+  searchParams.set('fit', 'crop'); // crop the image to fit the dimensions exactly
+  searchParams.set('auto', 'format'); // auto-select the best image format (webp, jpg, png)
+
+  // If focal point is configured, crop based on it as a center magnification point,
+  // so head is not cut off for example
+  if (focalPoint) {
+    searchParams.set('crop', 'focalpoint');
+    searchParams.set('fp-x', String(focalPoint.x));
+    searchParams.set('fp-y', String(focalPoint.y));
+  } else {
+    searchParams.set('crop', 'center');
+  }
+
+  return `${url}?${searchParams.toString()}`;
+};
+
 const InvestorsPeople = ({ people }) => {
   const [peopleData, setPeopleData] = useState(null);
   const [selectedInvestor, setSelectedInvestor] = useState(null);
@@ -125,10 +150,11 @@ const InvestorsPeople = ({ people }) => {
                       // empty alt to not have broken image icon,
                       // and have a visual fallback in background
                       alt=""
-                      title={getFullName(investor)}
-                      src={investor.imageURL ? investor.imageURL : null}
-                      style={imgStyle}
                       loading="lazy"
+                      fetchpriority="low"
+                      title={getFullName(investor)}
+                      src={investor.imageURL ? getURL(investor.imageURL, investor.imageFocalPoint) : null}
+                      style={imgStyle}
                     />
                   </button>
                 </li>
