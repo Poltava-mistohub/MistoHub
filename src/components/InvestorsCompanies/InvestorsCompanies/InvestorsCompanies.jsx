@@ -33,11 +33,12 @@ const InvestorsCompanies = ({ companies: companiesData }) => {
                 key={index}
               >
                 <img
+                  loading="lazy"
+                  fetchpriority='low'
                   src={company.logoURL || defaultImage}
                   alt={`Company ${company.id}`}
                   title={company.name}
                   onClick={() => openModal(company)}
-                  loading="lazy"
                 />
               </li>
             )
