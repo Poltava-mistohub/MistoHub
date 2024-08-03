@@ -61,7 +61,15 @@ export async function fetchCompanies() {
     );
 
     const companies = result.map((res) => {
+      // preserve info from logo asset to be used in render calculation
       if (res.logoURL) {
+        if (res.logoURL.crop) {
+          res.logoCrop = res.logoURL.crop;
+        }
+        if (res.logoURL.hotspot) {
+          res.logoFocalScope = res.logoURL.hotspot;
+        }
+        res.logoOriginal = res.logoURL;
         res.logoURL = formImgURL(res.logoURL);
       }
       return res;

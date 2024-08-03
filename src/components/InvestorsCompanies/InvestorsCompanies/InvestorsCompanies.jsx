@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import ModalCompanies from '../ModalCompanies/ModalCompanies';
 import { CompaniesList, CompanyWrapper } from './InvestorsCompanies.styled';
 import defaultImage from 'src/assets/investors/default-img.png';
 import { makerAnimParams } from '../../../helpers/makerAnimParams';
-import { useMediaQuery } from 'react-responsive';
+import { getCompanyLogoURL } from './getInvestorLogo';
 
 const InvestorsCompanies = ({ companies: companiesData }) => {
   const [selectedCompanies, setSelectedCompanies] = useState(null);
@@ -35,7 +36,15 @@ const InvestorsCompanies = ({ companies: companiesData }) => {
                 <img
                   loading="lazy"
                   fetchpriority='low'
-                  src={company.logoURL || defaultImage}
+                  src={company.logoURL ? 
+                    getCompanyLogoURL(
+                      company.logoURL,
+                      { width: 360, height: 280 },
+                      company.logoCrop,
+                      company.logoFocalScope,
+                    ) :
+                    defaultImage
+                  }
                   alt={`Company ${company.id}`}
                   title={company.name}
                   onClick={() => openModal(company)}
