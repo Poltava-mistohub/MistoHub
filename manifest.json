@@ -3,7 +3,7 @@
     "file": "assets/HomePage-0ded8c46.css",
     "src": "HomePage.css"
   },
-  "_HomePage-8486b6a9.js": {
+  "_HomePage-00e349b8.js": {
     "assets": [
       "assets/icons-395c4493.svg",
       "assets/hero1mob-385cb7f2.png",
@@ -60,19 +60,19 @@
     "dynamicImports": [
       "src/components/CoFounders/CoFounders.jsx",
       "src/components/JoinUs/JoinUs.jsx",
-      "_Visualization-901fbd1b.js",
+      "_Visualization-0cbcc448.js",
       "src/components/AccumulatedMoney/AccumulatedMoney.jsx",
       "src/components/InvestorsCompanies/InvestorsBlock.jsx",
       "src/components/Footer/Footer.jsx",
       "src/shared/Modals/ModalsManager.jsx"
     ],
-    "file": "assets/HomePage-8486b6a9.js",
+    "file": "assets/HomePage-00e349b8.js",
     "imports": [
       "index.html"
     ],
     "isDynamicEntry": true
   },
-  "_Visualization-901fbd1b.js": {
+  "_Visualization-0cbcc448.js": {
     "assets": [
       "assets/event-space-mob-41a55e64.jpg",
       "assets/cafe-mobile-b6cdf133.jpg",
@@ -99,10 +99,10 @@
     "dynamicImports": [
       "src/components/Visualization/TourModal.jsx"
     ],
-    "file": "assets/Visualization-901fbd1b.js",
+    "file": "assets/Visualization-0cbcc448.js",
     "imports": [
       "index.html",
-      "_HomePage-8486b6a9.js",
+      "_HomePage-00e349b8.js",
       "_index.browser-342e672c.js"
     ],
     "isDynamicEntry": true
@@ -110,11 +110,11 @@
   "_hoist-non-react-statics.cjs-3f8ebaa8.js": {
     "file": "assets/hoist-non-react-statics.cjs-3f8ebaa8.js"
   },
-  "_index-9ed437aa.js": {
-    "file": "assets/index-9ed437aa.js",
+  "_index-446a26ce.js": {
+    "file": "assets/index-446a26ce.js",
     "imports": [
       "index.html",
-      "_HomePage-8486b6a9.js"
+      "_HomePage-00e349b8.js"
     ]
   },
   "_index.browser-342e672c.js": {
@@ -139,9 +139,9 @@
       "assets/index-a6b3472e.css"
     ],
     "dynamicImports": [
-      "_HomePage-8486b6a9.js"
+      "_HomePage-00e349b8.js"
     ],
-    "file": "assets/index-216383a5.js",
+    "file": "assets/index-245d9207.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -1115,10 +1115,10 @@
       "assets/back-for-tablet-d2d31660.png",
       "assets/back-for-desktop-d36331b9.png"
     ],
-    "file": "assets/AccumulatedMoney-0055683c.js",
+    "file": "assets/AccumulatedMoney-5c860b4b.js",
     "imports": [
       "index.html",
-      "_HomePage-8486b6a9.js",
+      "_HomePage-00e349b8.js",
       "_hoist-non-react-statics.cjs-3f8ebaa8.js",
       "_index.browser-342e672c.js"
     ],
@@ -1167,19 +1167,19 @@
       "assets/vitaliyvolodchenko@2x-206d1729.webp",
       "assets/vitaliyvolodchenko-550e7fbc.jpg"
     ],
-    "file": "assets/CoFounders-d8508e06.js",
+    "file": "assets/CoFounders-3101873f.js",
     "imports": [
       "index.html",
-      "_HomePage-8486b6a9.js"
+      "_HomePage-00e349b8.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/CoFounders/CoFounders.jsx"
   },
   "src/components/Footer/Footer.jsx": {
-    "file": "assets/Footer-a9343d54.js",
+    "file": "assets/Footer-588b096f.js",
     "imports": [
       "index.html",
-      "_HomePage-8486b6a9.js"
+      "_HomePage-00e349b8.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Footer/Footer.jsx"
@@ -1188,11 +1188,11 @@
     "assets": [
       "assets/noname-a8edc818.jpg"
     ],
-    "file": "assets/InvestorsBlock-6add3b11.js",
+    "file": "assets/InvestorsBlock-3f41cab7.js",
     "imports": [
       "index.html",
-      "_index-9ed437aa.js",
-      "_HomePage-8486b6a9.js",
+      "_index-446a26ce.js",
+      "_HomePage-00e349b8.js",
       "_semantic-fc1421d8.js"
     ],
     "isDynamicEntry": true,
@@ -1231,10 +1231,10 @@
       "assets/blob-image-dekstop@2x-9856da11.jpg",
       "assets/blob-image-dekstop@2x-7190f328.webp"
     ],
-    "file": "assets/JoinUs-6441ef7c.js",
+    "file": "assets/JoinUs-32e42493.js",
     "imports": [
       "index.html",
-      "_HomePage-8486b6a9.js",
+      "_HomePage-00e349b8.js",
       "_semantic-fc1421d8.js",
       "_index.browser-342e672c.js"
     ],
@@ -1249,11 +1249,11 @@
     "css": [
       "assets/TourModal-68f18769.css"
     ],
-    "file": "assets/TourModal-cc8f1b2c.js",
+    "file": "assets/TourModal-3c2872a8.js",
     "imports": [
       "index.html",
-      "_HomePage-8486b6a9.js",
-      "_Visualization-901fbd1b.js",
+      "_HomePage-00e349b8.js",
+      "_Visualization-0cbcc448.js",
       "_index.browser-342e672c.js"
     ],
     "isDynamicEntry": true,
@@ -1350,11 +1350,11 @@
       "assets/bg-modal-tabl-35cc034e.png",
       "assets/bg-modal-desk-02f0110a.png"
     ],
-    "file": "assets/ModalsManager-5d3576a7.js",
+    "file": "assets/ModalsManager-bd03c7aa.js",
     "imports": [
       "index.html",
-      "_index-9ed437aa.js",
-      "_HomePage-8486b6a9.js",
+      "_index-446a26ce.js",
+      "_HomePage-00e349b8.js",
       "_hoist-non-react-statics.cjs-3f8ebaa8.js"
     ],
     "isDynamicEntry": true,

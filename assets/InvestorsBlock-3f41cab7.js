@@ -1,4 +1,4 @@
-import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}from"./index-9ed437aa.js";import{I as y,a as j,C}from"./HomePage-8486b6a9.js";import{g as k}from"./semantic-fc1421d8.js";const I=h.div`
+import{u as g,j as n,e as c,h as W,r as b}from"./index-245d9207.js";import{M}from"./index-446a26ce.js";import{I as j,a as y,C as I}from"./HomePage-00e349b8.js";import{g as k}from"./semantic-fc1421d8.js";const L=g.div`
   .text {
     color: rgba(11, 11, 11, 0.5);
     font-size: 12px;
@@ -248,7 +248,7 @@ import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}fro
       height: 100px;
     }
   }
-`,L=h(M)`
+`,R=g(M)`
   &.ReactModal__Content {
     width: 100%;
     height: fit-content;
@@ -274,14 +274,14 @@ import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}fro
       width: 576px;
     }
   }
-`,T="/MistoHub/assets/noname-a8edc818.jpg",G=({data:e,onClose:n,isOpen:i})=>{const{firstName:a,secondName:s,type:l,imageURL:d,facebook:o,instagram:p,question:b,answer:m}=e;return t.jsx(L,{onRequestClose:n,isOpen:i,style:{overlay:{zIndex:"2"}},onClose:n,shouldCloseOnOverlayClick:!0,contentLabel:"Image Modal",children:t.jsx(I,{children:t.jsxs("div",{className:"contentWrapper",children:[t.jsxs("div",{className:"top-wrapper",children:[t.jsxs("div",{className:"title-wrapper",children:[t.jsx("img",{className:"main-image",src:d||T,alt:`${a} ${s}`,loading:"lazy"}),t.jsx("div",{className:"svgWrapper",children:t.jsx("a",{href:o||p,target:"_blank",rel:"noopener noreferrer",children:o?t.jsx(y,{width:"28",height:"28",iconName:"icon-faceb",styles:"instaIcon"}):t.jsx(y,{width:"28",height:"28",iconName:"icon-instagram",styles:"instaIcon"})})})]}),t.jsxs("div",{className:"main-heading-wrapper",children:[t.jsx("h2",{className:"companyName",children:`${a} ${s}`}),t.jsx("p",{className:"text",children:l})]}),t.jsxs("div",{className:"closeWrapper",children:[t.jsx("button",{className:"closeWord",onClick:n,children:"Закрити"}),t.jsx("button",{className:"closeButton",onClick:n,children:t.jsx(y,{width:"12",height:"12",iconName:"close",styles:"close-icon"})})]})]}),t.jsx("p",{className:"textQuestion",children:b}),t.jsx("p",{className:"textAnswer",children:m})]})})})},u=({startTranslate:e,endTranslate:n})=>W`
+`,T="/MistoHub/assets/noname-a8edc818.jpg",G=({data:e,onClose:t,isOpen:i})=>{const{firstName:a,secondName:s,type:d,imageURL:o,facebook:r,instagram:l,question:u,answer:x}=e;return n.jsx(R,{onRequestClose:t,isOpen:i,style:{overlay:{zIndex:"2"}},onClose:t,shouldCloseOnOverlayClick:!0,contentLabel:"Image Modal",children:n.jsx(L,{children:n.jsxs("div",{className:"contentWrapper",children:[n.jsxs("div",{className:"top-wrapper",children:[n.jsxs("div",{className:"title-wrapper",children:[n.jsx("img",{className:"main-image",src:o||T,alt:`${a} ${s}`,loading:"lazy"}),n.jsx("div",{className:"svgWrapper",children:n.jsx("a",{href:r||l,target:"_blank",rel:"noopener noreferrer",children:r?n.jsx(j,{width:"28",height:"28",iconName:"icon-faceb",styles:"instaIcon"}):n.jsx(j,{width:"28",height:"28",iconName:"icon-instagram",styles:"instaIcon"})})})]}),n.jsxs("div",{className:"main-heading-wrapper",children:[n.jsx("h2",{className:"companyName",children:`${a} ${s}`}),n.jsx("p",{className:"text",children:d})]}),n.jsxs("div",{className:"closeWrapper",children:[n.jsx("button",{className:"closeWord",onClick:t,children:"Закрити"}),n.jsx("button",{className:"closeButton",onClick:t,children:n.jsx(j,{width:"12",height:"12",iconName:"close",styles:"close-icon"})})]})]}),n.jsx("p",{className:"textQuestion",children:u}),n.jsx("p",{className:"textAnswer",children:x})]})})})},v=({startTranslate:e,endTranslate:t})=>W`
   0% {
     transform: translateX(${e}%);
   }
   100% {
-    transform: translateX(${n}%);
+    transform: translateX(${t}%);
   }
-`,Y=h.div`
+`,Y=g.div`
   display: flex;
   flex-direction: column;
   row-gap: 16px;
@@ -297,7 +297,7 @@ import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}fro
     flex-wrap: nowrap;
     column-gap: 13px;
   }
-`,B=h.div`
+`,B=g.div`
   max-width: 375px;
   overflow: hidden;
   @media screen and (min-width: 768px) {
@@ -306,41 +306,41 @@ import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}fro
   @media screen and (min-width: 1440px) {
     max-width: 1440px;
   }
-`,D=h.div`
-  ${e=>{const n={startTranslate:0,endTranslate:e.$length===20?-(e.$length*e.$length-.3*e.$length):-(e.$length*e.$length+.3*e.$length)},i={startTranslate:e.$length===20?-(e.$length*e.$length-.3*e.$length):-(e.$length*e.$length+.3*e.$length),endTranslate:0},a=u(n),s=u(i),l={startTranslate:0,endTranslate:e.$length===20?-(e.$length*e.$length+2.2*e.$length):-(e.$length*e.$length+.2*e.$length)},d={startTranslate:e.$length===20?-(e.$length*e.$length+2.2*e.$length):-(e.$length*e.$length+.2*e.$length),endTranslate:0},o=u(l),p=u(d),b={startTranslate:0,endTranslate:e.$length===20?-(e.$length*e.$length-10.5*e.$length):-(e.$length*e.$length+1.2*e.$length)},m={startTranslate:e.$length===20?-(e.$length*e.$length-10.5*e.$length):-(e.$length*e.$length-8*e.$length),endTranslate:0},w=u(b),v=u(m);return r`
+`,D=g.div`
+  ${e=>{const t={startTranslate:0,endTranslate:e.$length===20?-(e.$length*e.$length-.3*e.$length):-(e.$length*e.$length+.3*e.$length)},i={startTranslate:e.$length===20?-(e.$length*e.$length-.3*e.$length):-(e.$length*e.$length+.3*e.$length),endTranslate:0},a=v(t),s=v(i),d={startTranslate:0,endTranslate:e.$length===20?-(e.$length*e.$length+2.2*e.$length):-(e.$length*e.$length+.2*e.$length)},o={startTranslate:e.$length===20?-(e.$length*e.$length+2.2*e.$length):-(e.$length*e.$length+.2*e.$length),endTranslate:0},r=v(d),l=v(o),u={startTranslate:0,endTranslate:e.$length===20?-(e.$length*e.$length-10.5*e.$length):-(e.$length*e.$length+1.2*e.$length)},x={startTranslate:e.$length===20?-(e.$length*e.$length-10.5*e.$length):-(e.$length*e.$length-8*e.$length),endTranslate:0},m=v(u),f=v(x);return c`
       &.group-0 {
         overflow: visible;
-        animation: ${r`
+        animation: ${c`
           ${a} 50s linear infinite
         `};
       }
       &.group-1 {
         overflow: visible;
-        animation: ${r`
+        animation: ${c`
           ${s} 50s linear infinite
         `};
       }
       &.group-2 {
         overflow: visible;
-        animation: ${r`
+        animation: ${c`
           ${a} 50s linear infinite
         `};
       }
       &.group-3 {
         overflow: visible;
-        animation: ${r`
+        animation: ${c`
           ${s} 50s linear infinite
         `};
       }
       &.group-4 {
         overflow: visible;
-        animation: ${r`
+        animation: ${c`
           ${a} 50s linear infinite
         `};
       }
       &.group-5 {
         overflow: visible;
-        animation: ${r`
+        animation: ${c`
           ${s} 50s linear infinite
         `};
       }
@@ -355,76 +355,76 @@ import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}fro
       @media screen and (min-width: 768px) {
         &.group-0 {
           overflow: visible;
-          animation: ${r`
-            ${o} 50s linear infinite
+          animation: ${c`
+            ${r} 50s linear infinite
           `};
         }
         &.group-1 {
           overflow: visible;
-          animation: ${r`
-            ${p} 50s linear infinite
+          animation: ${c`
+            ${l} 50s linear infinite
           `};
         }
         &.group-2 {
           overflow: visible;
-          animation: ${r`
-            ${o} 50s linear infinite
+          animation: ${c`
+            ${r} 50s linear infinite
           `};
         }
         &.group-3 {
           overflow: visible;
-          animation: ${r`
-            ${p} 50s linear infinite
+          animation: ${c`
+            ${l} 50s linear infinite
           `};
         }
         &.group-4 {
           overflow: visible;
-          animation: ${r`
-            ${o} 50s linear infinite
+          animation: ${c`
+            ${r} 50s linear infinite
           `};
         }
         &.group-5 {
           overflow: visible;
-          animation: ${r`
-            ${p} 50s linear infinite
+          animation: ${c`
+            ${l} 50s linear infinite
           `};
         }
       }
       @media screen and (min-width: 1440px) {
         &.group-0 {
           overflow: visible;
-          animation: ${r`
-            ${w} 80s linear infinite
+          animation: ${c`
+            ${m} 80s linear infinite
           `};
         }
         &.group-1 {
           overflow: visible;
-          animation: ${r`
-            ${v} 80s linear infinite
+          animation: ${c`
+            ${f} 80s linear infinite
           `};
         }
         &.group-2 {
           overflow: visible;
-          animation: ${r`
-            ${w} 80s linear infinite
+          animation: ${c`
+            ${m} 80s linear infinite
           `};
         }
         &.group-3 {
           overflow: visible;
-          animation: ${r`
-            ${v} 80s linear infinite
+          animation: ${c`
+            ${f} 80s linear infinite
           `};
         }
         &.group-4 {
           overflow: visible;
-          animation: ${r`
-            ${w} 80s linear infinite
+          animation: ${c`
+            ${m} 80s linear infinite
           `};
         }
         &.group-5 {
           overflow: visible;
-          animation: ${r`
-            ${v} 80s linear infinite
+          animation: ${c`
+            ${f} 80s linear infinite
           `};
         }
       }
@@ -503,14 +503,14 @@ import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}fro
       cursor: pointer;
     }
   }
-`,X=(e,n,i,a,s,l)=>{const d=e%2===0,o=e===(l==null?void 0:l.length)-1;let p=!1;return d?p=e===0||o?n.left<=i.left+(a?40:s?80:200)||n.left>=i.right-(a?80:s?180:400):n.left<=i.left+(a?-30:s?-40:10)||n.left>=i.right-(a?50:s?90:170):p=o?n.right<=i.left+(a?80:s?180:400)||n.right>=i.right-(a?40:s?80:200):n.right<=i.left+(a?50:s?90:170)||n.right>=i.right-(a?-30:s?-40:10),p},U=e=>{const n=[];for(let i=0;i<e.length;i+=20){let a=e.slice(i,i+20);if(a.length<20&&i+20>=e.length){const s=20-a.length;a=[...a,...Array.from({length:s},(l,d)=>a[d%a.length])]}n.push(a)}return n},q=e=>[(e.firstName||"").trim(),(e.secondName||"").trim()].join(" "),F=(e,n)=>{const i=new URLSearchParams;return i.set("w","360"),i.set("h","280"),i.set("fit","crop"),i.set("auto","format"),n?(i.set("crop","focalpoint"),i.set("fp-x",String(n.x)),i.set("fp-y",String(n.y))):i.set("crop","center"),`${e}?${i.toString()}`},Q=({people:e})=>{const[n,i]=x.useState(null),[a,s]=x.useState(null),[l,d]=x.useState(!1),o=j({maxWidth:767}),p=j({maxWidth:1440}),b={background:`rgb(212,213,209) center / contain no-repeat url(${T})`};x.useEffect(()=>{(async()=>{try{const c=U(e);i(c)}catch(c){console.error("Error fetching people data:",c)}})()},[e]);const m=x.useMemo(()=>g=>{const c=document.getElementById("investors-anim"),N=document.getElementById(`container-${g}`).getElementsByClassName("item-list");for(const $ of N){const R=$.getBoundingClientRect(),O=c.getBoundingClientRect();X(g,R,O,o,p,n)?($.classList.add("on-blur"),$.disabled=!0):($.classList.remove("on-blur"),$.disabled=!1)}},[o,p,n]);x.useEffect(()=>{if(!n)return;const g=setInterval(()=>{for(let c=0;c<n.length;c++)m(c)},50);return()=>clearInterval(g)},[n,m]);const w=g=>{s(g),d(!0)},v=()=>{s(null),d(!1)};return t.jsxs(Y,{children:[t.jsx(B,{id:"investors-anim",children:n==null?void 0:n.map((g,c)=>t.jsx(D,{id:`container-${c}`,$length:g.length,className:`group-${c} ${c%2===0?"odd-group":"even-group"}`,children:t.jsx("ul",{children:g.map((f,N)=>t.jsx("li",{children:t.jsx("button",{"data-group_id":c,className:"item-list",type:"button",onClick:()=>w(f),children:t.jsx("img",{alt:"",loading:"lazy",fetchpriority:"low",title:q(f),src:f.imageURL?F(f.imageURL,f.imageFocalPoint):null,style:b})})},N))})},`group-${c}`))}),a&&t.jsx(G,{data:a,onClose:v,isOpen:l})]})},S="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANsAAACkCAAAAAA7nASIAAACrklEQVR42u3cu26kMBSA4bz/S6GVCwoKiikopnBB4YLCBQWFC5axxzeGTBJlR3sY/acJHIHCp+O7onys7xsf2LBhw4YNGzZs2LBhw4YNGzZs2LBhw4YNGzZsb2378yRe/nm/+t3YsGETZ5M1AGLDhg0bNmzYsGHDhg0bNmzYsGF7ke28gQ0bNmzYsGHDhg2bYJsdtR7n47R9SM9Ga22dLJttttD7rNOq8dHqw7TSFcO0Id0Mi3jbfCfcosufO7dFOpfU9TmtJuG2krZ9rnuedl2ZbibRNucN7Wjt1V/193So2qDNtS3Sq6+aulo7+rRaJNsunlDUxPhr7cW+Kbohp41voaGIPn0RbLNlUWYPStVUsZd1CdGWtfKVm+XahqrXXOLdWD043e5S2YY0YFZ38my+PuvD1/pulUf+Xhub7Gm+c6nMIm1z2STXdfHdabuIP3ehYgFzW20WqTazSzTh4+dPhokduS6jNJveJbrQFo/XL/XAE98ez2LrQyWK53QM+4lNn9eWliD6LWzuRzaxbXJ6Mpb0D7ZzjSW7OcCVc0CYuewt4mu7OaAXPQfs5u4pzt31zOXia7tCNdXLwtdcw/GaK82C51pz2bIL5bXyUm7awn5Hp4XJUqYFr5VDnxmK7ajJFQybGXdJY0kYGe/pbjdqSrDl6BNo25tOQ1N87OLTajDmqvI4ee+It71pSEvbm9a20GvyyYgrO1N6sI22+qjhH0wAL7WtRh3QKlznxtSUyyMiNa/Cbesy3O9bUx0SxROtq7vNAvqLoz2pZ6/Oboth81CFZdrSk/vukaxM2/8NbNiwYcOGDRs2bNhea+PvzLFhw4YNGzZs2LBhw4YNGzZs2LBhO4GN/xuKDRu2X9rOG9iwYcOGDRs2bNiwYcOGDRs2bNiwYcOGDRu2EH8B4ajrnFKix8YAAAAASUVORK5CYII=",Z=({isOpen:e,data:n,onClose:i})=>{const{name:a,logoURL:s,link:l,question:d,answer:o}=n;return e?t.jsx(L,{onRequestClose:i,isOpen:e,style:{overlay:{zIndex:"2"}},onClose:i,shouldCloseOnOverlayClick:!0,contentLabel:"Image Modal",children:t.jsx(I,{children:t.jsxs("div",{className:"contentWrapper",children:[t.jsxs("div",{className:"top-wrapper",children:[t.jsxs("div",{className:"title-wrapper",children:[t.jsx("img",{className:"main-image",src:s||S,alt:a,loading:"lazy"}),l&&t.jsx("div",{className:"svgWrapper",children:t.jsx("a",{href:l,target:"_blank",rel:"noopener noreferrer",children:t.jsx(y,{iconName:"icon-instagram",styles:"instaIcon"})})})]}),t.jsxs("div",{className:"main-heading-wrapper",children:[t.jsx("h2",{className:"companyName",children:a}),t.jsx("p",{className:"text",children:"компанія"})]}),t.jsxs("div",{className:"closeWrapper",children:[t.jsx("button",{className:"closeWord",onClick:i,children:"Закрити"}),t.jsx("button",{className:"closeButton",onClick:i,children:t.jsx(y,{iconName:"close",styles:"close-icon",width:12,height:12})})]})]}),t.jsx("p",{className:"textQuestion",children:d}),t.jsx("p",{className:"textAnswer",children:o})]})})}):null},P=({start:e,end:n})=>W`
+`,U=(e,t,i,a,s,d)=>{const o=e%2===0,r=e===(d==null?void 0:d.length)-1;let l=!1;return o?l=e===0||r?t.left<=i.left+(a?40:s?80:200)||t.left>=i.right-(a?80:s?180:400):t.left<=i.left+(a?-30:s?-40:10)||t.left>=i.right-(a?50:s?90:170):l=r?t.right<=i.left+(a?80:s?180:400)||t.right>=i.right-(a?40:s?80:200):t.right<=i.left+(a?50:s?90:170)||t.right>=i.right-(a?-30:s?-40:10),l},X=e=>{const t=[];for(let i=0;i<e.length;i+=20){let a=e.slice(i,i+20);if(a.length<20&&i+20>=e.length){const s=20-a.length;a=[...a,...Array.from({length:s},(d,o)=>a[o%a.length])]}t.push(a)}return t},q=e=>[(e.firstName||"").trim(),(e.secondName||"").trim()].join(" "),P=(e,t)=>{const i=new URLSearchParams;return i.set("w","360"),i.set("h","280"),i.set("fit","crop"),i.set("auto","format"),t?(i.set("crop","focalpoint"),i.set("fp-x",String(t.x)),i.set("fp-y",String(t.y))):i.set("crop","center"),`${e}?${i.toString()}`},Q=({people:e})=>{const[t,i]=b.useState(null),[a,s]=b.useState(null),[d,o]=b.useState(!1),r=y({maxWidth:767}),l=y({maxWidth:1440}),u={background:`rgb(212,213,209) center / contain no-repeat url(${T})`};b.useEffect(()=>{(async()=>{try{const h=X(e);i(h)}catch(h){console.error("Error fetching people data:",h)}})()},[e]);const x=b.useMemo(()=>p=>{const h=document.getElementById("investors-anim"),N=document.getElementById(`container-${p}`).getElementsByClassName("item-list");for(const $ of N){const O=$.getBoundingClientRect(),C=h.getBoundingClientRect();U(p,O,C,r,l,t)?($.classList.add("on-blur"),$.disabled=!0):($.classList.remove("on-blur"),$.disabled=!1)}},[r,l,t]);b.useEffect(()=>{if(!t)return;const p=setInterval(()=>{for(let h=0;h<t.length;h++)x(h)},50);return()=>clearInterval(p)},[t,x]);const m=p=>{s(p),o(!0)},f=()=>{s(null),o(!1)};return n.jsxs(Y,{children:[n.jsx(B,{id:"investors-anim",children:t==null?void 0:t.map((p,h)=>n.jsx(D,{id:`container-${h}`,$length:p.length,className:`group-${h} ${h%2===0?"odd-group":"even-group"}`,children:n.jsx("ul",{children:p.map((w,N)=>n.jsx("li",{children:n.jsx("button",{"data-group_id":h,className:"item-list",type:"button",onClick:()=>m(w),children:n.jsx("img",{alt:"",loading:"lazy",fetchpriority:"low",title:q(w),src:w.imageURL?P(w.imageURL,w.imageFocalPoint):null,style:u})})},N))})},`group-${h}`))}),a&&n.jsx(G,{data:a,onClose:f,isOpen:d})]})},S="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANsAAACkCAAAAAA7nASIAAACrklEQVR42u3cu26kMBSA4bz/S6GVCwoKiikopnBB4YLCBQWFC5axxzeGTBJlR3sY/acJHIHCp+O7onys7xsf2LBhw4YNGzZs2LBhw4YNGzZs2LBhw4YNGzZsb2378yRe/nm/+t3YsGETZ5M1AGLDhg0bNmzYsGHDhg0bNmzYsGF7ke28gQ0bNmzYsGHDhg2bYJsdtR7n47R9SM9Ga22dLJttttD7rNOq8dHqw7TSFcO0Id0Mi3jbfCfcosufO7dFOpfU9TmtJuG2krZ9rnuedl2ZbibRNucN7Wjt1V/193So2qDNtS3Sq6+aulo7+rRaJNsunlDUxPhr7cW+Kbohp41voaGIPn0RbLNlUWYPStVUsZd1CdGWtfKVm+XahqrXXOLdWD043e5S2YY0YFZ38my+PuvD1/pulUf+Xhub7Gm+c6nMIm1z2STXdfHdabuIP3ehYgFzW20WqTazSzTh4+dPhokduS6jNJveJbrQFo/XL/XAE98ez2LrQyWK53QM+4lNn9eWliD6LWzuRzaxbXJ6Mpb0D7ZzjSW7OcCVc0CYuewt4mu7OaAXPQfs5u4pzt31zOXia7tCNdXLwtdcw/GaK82C51pz2bIL5bXyUm7awn5Hp4XJUqYFr5VDnxmK7ajJFQybGXdJY0kYGe/pbjdqSrDl6BNo25tOQ1N87OLTajDmqvI4ee+It71pSEvbm9a20GvyyYgrO1N6sI22+qjhH0wAL7WtRh3QKlznxtSUyyMiNa/Cbesy3O9bUx0SxROtq7vNAvqLoz2pZ6/Oboth81CFZdrSk/vukaxM2/8NbNiwYcOGDRs2bNhea+PvzLFhw4YNGzZs2LBhw4YNGzZs2LBhO4GN/xuKDRu2X9rOG9iwYcOGDRs2bNiwYcOGDRs2bNiwYcOGDRu2EH8B4ajrnFKix8YAAAAASUVORK5CYII=",Z=({isOpen:e,data:t,onClose:i})=>{const{name:a,logoURL:s,link:d,question:o,answer:r}=t;return e?n.jsx(R,{onRequestClose:i,isOpen:e,style:{overlay:{zIndex:"2"}},onClose:i,shouldCloseOnOverlayClick:!0,contentLabel:"Image Modal",children:n.jsx(L,{children:n.jsxs("div",{className:"contentWrapper",children:[n.jsxs("div",{className:"top-wrapper",children:[n.jsxs("div",{className:"title-wrapper",children:[n.jsx("img",{className:"main-image",src:s||S,alt:a,loading:"lazy"}),d&&n.jsx("div",{className:"svgWrapper",children:n.jsx("a",{href:d,target:"_blank",rel:"noopener noreferrer",children:n.jsx(j,{iconName:"icon-instagram",styles:"instaIcon"})})})]}),n.jsxs("div",{className:"main-heading-wrapper",children:[n.jsx("h2",{className:"companyName",children:a}),n.jsx("p",{className:"text",children:"компанія"})]}),n.jsxs("div",{className:"closeWrapper",children:[n.jsx("button",{className:"closeWord",onClick:i,children:"Закрити"}),n.jsx("button",{className:"closeButton",onClick:i,children:n.jsx(j,{iconName:"close",styles:"close-icon",width:12,height:12})})]})]}),n.jsx("p",{className:"textQuestion",children:o}),n.jsx("p",{className:"textAnswer",children:r})]})})}):null},H=({start:e,end:t})=>W`
   0% {
     transform: translateX(${e});
   }
   100% {
-    transform: translateX(${n}px);
+    transform: translateX(${t}px);
   }
-`,K=h.div`
+`,K=g.div`
   margin-bottom: 60px;
   overflow: hidden;
 
@@ -521,9 +521,9 @@ import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}fro
   @media screen and (min-width: 1440px) {
     margin-bottom: 150px;
   }
-`,H=h.ul`
-  ${e=>{if(!e.$anim)return;const n=P(e.$anim);return r`
-      animation: ${n} ${e.$anim.time}s linear infinite;
+`,J=g.ul`
+  ${e=>{if(!e.$anim)return;const t=H(e.$anim);return c`
+      animation: ${t} ${e.$anim.time}s linear infinite;
     `}}
 
   display: flex;
@@ -559,7 +559,7 @@ import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}fro
       animation-play-state: paused;
     }
   }
-`,J=(e,n,i)=>{if(!e)return;const a=e*(n||i?212:92),s=n?1440:i?768:375,l=a*2-s,d=n?34.2:i?68.2:29.6;return{start:0,end:-l,time:l/d}},E=({companies:e})=>{const[n,i]=x.useState(null),a=j({minWidth:1440}),s=j({minWidth:768}),l=o=>{i(o)},d=()=>{i(null)};if(e)return t.jsx(K,{children:Array.isArray(e)&&t.jsxs(H,{$anim:J(e.length,a,s),children:[Array.from([...e,...e]).map((o,p)=>t.jsx("li",{children:t.jsx("img",{loading:"lazy",fetchpriority:"low",src:o.logoURL||S,alt:`Company ${o.id}`,title:o.name,onClick:()=>l(o)})},p)),n&&t.jsx(Z,{isOpen:n!==null,data:n,onClose:d})]})})},z=h(C)`
+`,_=(e,t,i)=>{if(!e)return;const a=e*(t||i?212:92),s=t?1440:i?768:375,d=a*2-s,o=t?34.2:i?68.2:29.6;return{start:0,end:-d,time:d/o}};function E(e,t,i){const a=t/e;return a<=i?{width:t,height:a}:{width:e*i,height:i}}function F(e,t,i,a){const s=new URLSearchParams;s.set("w",String(t.width)),s.set("h",String(t.height)),s.set("auto","format");const d=t.width/t.height,o=e.match(/-(\d+)x(\d+)\./);if(!o)return e;const r=parseInt(o[1],10),l=parseInt(o[2],10);let u=r,x=l;if(i&&(s.set("rect",[~~(i.left*r),~~(i.top*l),~~((1-i.right-i.left)*r),~~((1-i.bottom-i.top)*l)].join(",")),u=~~((1-i.right-i.left)*r),x=~~((1-i.bottom-i.top)*l)),a){const m=~~(a.width*r),f=~~(a.height*l),p=E(d,u,x);p.width<m||p.height<f?(s.set("fit","fill"),s.set("bg","00ffffff"),s.set("rect",[~~(a.x*r-m/2),~~(a.y*l-f/2),m,f].join(","))):(s.set("fit","crop"),s.set("crop","focalpoint"),s.set("fp-x",String(a.x)),s.set("fp-y",String(a.y)))}return`${e}?${s.toString()}`}const V=({companies:e})=>{const[t,i]=b.useState(null),a=y({minWidth:1440}),s=y({minWidth:768}),d=r=>{i(r)},o=()=>{i(null)};if(e)return n.jsx(K,{children:Array.isArray(e)&&n.jsxs(J,{$anim:_(e.length,a,s),children:[Array.from([...e,...e]).map((r,l)=>n.jsx("li",{children:n.jsx("img",{loading:"lazy",fetchpriority:"low",src:r.logoURL?F(r.logoURL,{width:360,height:280},r.logoCrop,r.logoFocalScope):S,alt:`Company ${r.id}`,title:r.name,onClick:()=>d(r)})},l)),t&&n.jsx(Z,{isOpen:t!==null,data:t,onClose:o})]})})},z=g(I)`
   padding-top: 60px;
   margin-bottom: 32px;
 
@@ -572,9 +572,9 @@ import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}fro
     padding-top: 150px;
     margin-bottom: 80px;
   }
-`,_=h(C)`
+`,ee=g(I)`
   padding: 0;
-`,V=h.p`
+`,te=g.p`
   color: rgba(11, 11, 11, 0.5);
   font-size: 14px;
   line-height: 18px;
@@ -591,7 +591,7 @@ import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}fro
     line-height: 24px;
     letter-spacing: -0.32px;
   }
-`,ee=h.h2`
+`,ie=g.h2`
   color: #0b0b0b;
   font-family: Oddval;
   font-size: 24px;
@@ -611,7 +611,7 @@ import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}fro
     line-height: 68px;
     letter-spacing: -1.2px;
   }
-`,A=h.p`
+`,A=g.p`
   color: rgba(11, 11, 11, 0.8);
   font-size: 16px;
   line-height: 20px;
@@ -628,4 +628,4 @@ import{u as h,j as t,e as r,h as W,r as x}from"./index-216383a5.js";import{M}fro
     line-height: 34px;
     letter-spacing: -0.56px;
   }
-`,oe=({people:e,companies:n})=>{const[i,a]=x.useState(null),s=()=>{a(null)};return t.jsxs("section",{id:"investors",children:[t.jsxs(z,{children:[t.jsx(V,{children:"Імпакт-інвестори МІСТОХАБ"}),t.jsx(ee,{children:"З нами вже"}),(e==null?void 0:e.length)>0&&t.jsxs(A,{children:[e.length," ",k(e.length,"p")]})]}),t.jsxs(_,{children:[e&&t.jsx(Q,{people:e}),t.jsx(z,{children:(n==null?void 0:n.length)>0&&t.jsxs(A,{children:[n.length," ",k(n.length,"k")]})}),n&&t.jsx(E,{companies:n})]}),i&&t.jsx(G,{data:i,onClose:s})]})};export{oe as default};
+`,le=({people:e,companies:t})=>{const[i,a]=b.useState(null),s=()=>{a(null)};return n.jsxs("section",{id:"investors",children:[n.jsxs(z,{children:[n.jsx(te,{children:"Імпакт-інвестори МІСТОХАБ"}),n.jsx(ie,{children:"З нами вже"}),(e==null?void 0:e.length)>0&&n.jsxs(A,{children:[e.length," ",k(e.length,"p")]})]}),n.jsxs(ee,{children:[e&&n.jsx(Q,{people:e}),n.jsx(z,{children:(t==null?void 0:t.length)>0&&n.jsxs(A,{children:[t.length," ",k(t.length,"k")]})}),t&&n.jsx(V,{companies:t})]}),i&&n.jsx(G,{data:i,onClose:s})]})};export{le as default};
