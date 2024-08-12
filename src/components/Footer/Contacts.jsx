@@ -9,11 +9,11 @@ const Contacts = () => {
         <li>
           <span>Телефон: </span>
           <Link
-            to={isMobile ? `tel:+380680745765` : `https://t.me/MISTOHUB_admin`}
+            to={isMobile ? `tel:+380981340622` : `https://t.me/MISTOHUB_admin`}
             target="blank"
             rel="noopener noreferrer"
           >
-            +38 (068) 074-57-65
+            +38 (098) 134-06-22
           </Link>
         </li>
         <li>

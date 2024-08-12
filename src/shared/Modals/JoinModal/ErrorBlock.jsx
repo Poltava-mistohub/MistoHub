@@ -31,8 +31,8 @@ const ErrorBlock = ({ handleCloseModal }) => {
         <ul className="joinContacts">
           <li>
             <p>Телефон:</p>
-            <a className="joinItemContact" href="tel:+380680745765">
-              +38 (068) 074-57-65
+            <a className="joinItemContact" href="tel:+380981340622">
+              +38 (098) 134-06-22
             </a>
           </li>
           <li>
