@@ -34,6 +34,9 @@ const AccumulatedMoney = realLazy(
 const InvestorsBlock = realLazy(
   () => import('/src/components/InvestorsCompanies/InvestorsBlock.jsx')
 );
+const PartnersBlock = realLazy(
+  () => import('/src/components/InvestorsCompanies/PartnersBlock.jsx')
+);
 const Footer = realLazy(
   () => import('/src/components/Footer/Footer.jsx')
 );
@@ -72,6 +75,7 @@ const HomePage = () => {
           <Visualization />
           <AccumulatedMoney />
           <InvestorsBlock people={people} companies={companies} />
+          <PartnersBlock companies={companies} />
           <JoinUs people={people} companies={companies} />
           <CoFounders />
           <ScrollToTopButton />
