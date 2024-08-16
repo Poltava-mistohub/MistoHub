@@ -1,5 +1,4 @@
 import { useModal } from '../../contexts/ModalHook';
-import { getWordForCount } from '../../helpers/semantic';
 
 import Background from './Background/Background';
 import {
@@ -15,7 +14,7 @@ import {
   AlreadyJoined,
 } from './JoinUs.styled';
 
-const JoinUs = ({ people = [], companies = [] }) => {
+const JoinUs = ({ people = [], companies = [], goalData = null }) => {
   const { openModal } = useModal();
 
   return (
@@ -29,13 +28,13 @@ const JoinUs = ({ people = [], companies = [] }) => {
         <StatsContainer>
           <StatsTitle>До відкриття МІСТОХАБ залишилось:</StatsTitle>
           <StatsList>
-            <StatsListItem>
-              {116 - people.length} {getWordForCount(116 - people.length, 'i')}
-            </StatsListItem>
-            <StatsListItem>
-              {17 - companies.length}{' '}
-              {getWordForCount(17 - companies.length, 'k')}
-            </StatsListItem>
+            {
+              goalData ? (
+                <StatsListItem>
+                  $ {goalData.goal - goalData.raised}
+                </StatsListItem>
+              ) : null
+            }
           </StatsList>
         </StatsContainer>
         <JoinButton type="button" onClick={() => openModal('join_modal')}>

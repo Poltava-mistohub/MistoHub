@@ -2,15 +2,13 @@ import { useState, useEffect, useRef } from 'react';
 import { Cards } from './Cards';
 import FundraisingProgressBar from './FundraisingProgressBar';
 import { ContainerWrapper, TitleContainer } from './AccumulatedMoney.styled';
-import { fetchGoal } from '../../services/API';
 import { useMediaQuery } from 'react-responsive';
 import { useModal } from '../../contexts/ModalHook';
 import needToDoTasks from '../../constants/NeedToDoTasks.json';
 import madedTasks from '../../constants/MadedTasks.json';
 import { CardsList } from './AccumulatedMoney.styled';
 
-const AccumulatedMoney = () => {
-  const [goalData, setGoalData] = useState(null);
+const AccumulatedMoney = ({ goalData }) => {
   const isDesktop = useMediaQuery({ minWidth: 1440 });
   const sectionRef = useRef(null);
   const { openModal } = useModal();
@@ -27,27 +25,17 @@ const AccumulatedMoney = () => {
       });
     });
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
-  }, []);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const goalResponse = await fetchGoal();
-        setGoalData(goalResponse);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-    fetchData();
   }, []);
 
   return (

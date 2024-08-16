@@ -1,5 +1,5 @@
 import { useEffect, useState, lazy, Suspense } from 'react';
-import { fetchCompanies, fetchPeople } from '../../services/API';
+import { fetchCompanies, fetchPeople, fetchGoal } from '../../services/API';
 
 import Header from '/src/components/Header/Header';
 import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
@@ -42,6 +42,7 @@ const ModalsManager = realLazy(
 );
 
 const HomePage = () => {
+  const [goalData, setGoalData] = useState(null);
   const [activeSection, setActiveSection] = useState('main');
   const [companies, setCompanies] = useState([]);
   const [people, setPeople] = useState([]);
@@ -62,6 +63,18 @@ const HomePage = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const goalResponse = await fetchGoal();
+        setGoalData(goalResponse);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <>
       <Header />
@@ -70,9 +83,9 @@ const HomePage = () => {
         <AboutProject />
         <Suspense fallback={null}>
           <Visualization />
-          <AccumulatedMoney />
+          <AccumulatedMoney goalData={goalData} />
           <InvestorsBlock people={people} companies={companies} />
-          <JoinUs people={people} companies={companies} />
+          <JoinUs people={people} companies={companies} goalData={goalData} />
           <CoFounders />
           <ScrollToTopButton />
           <ScrollOnLocationHash />
