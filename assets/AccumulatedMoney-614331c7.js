@@ -1,11 +1,11 @@
-import{j as e,r as l}from"./index-412694d2.js";import{s as D,n as d,a as k,I as g,u as $,f as F}from"./HomePage-ab33723d.js";import"./hoist-non-react-statics.cjs-3f8ebaa8.js";import{n as c}from"./index.browser-342e672c.js";function v(){for(var i=arguments.length,r=new Array(i),t=0;t<i;t++)r[t]=arguments[t];return D(r)}var z=function(){var r=v.apply(void 0,arguments),t="animation-"+r.name;return{name:t,styles:"@keyframes "+t+"{"+r.styles+"}",anim:1,toString:function(){return"_EMO_"+this.name+"_"+this.styles+"_EMO_"}}};const I="/MistoHub/assets/back-for-mobile-f7a3ca0e.png",M="/MistoHub/assets/back-for-tablet-d2d31660.png",A="/MistoHub/assets/back-for-desktop-d36331b9.png",E=i=>z`
+import{j as e,r as x}from"./index-de60f7ac.js";import{s as $,n as a,a as k,I as m,u as F}from"./HomePage-74b55661.js";import"./hoist-non-react-statics.cjs-3f8ebaa8.js";import{n as l}from"./index.browser-342e672c.js";function y(){for(var i=arguments.length,r=new Array(i),n=0;n<i;n++)r[n]=arguments[n];return $(r)}var v=function(){var r=y.apply(void 0,arguments),n="animation-"+r.name;return{name:n,styles:"@keyframes "+n+"{"+r.styles+"}",anim:1,toString:function(){return"_EMO_"+this.name+"_"+this.styles+"_EMO_"}}};const I="/MistoHub/assets/back-for-mobile-f7a3ca0e.png",M="/MistoHub/assets/back-for-tablet-d2d31660.png",A="/MistoHub/assets/back-for-desktop-d36331b9.png",D=i=>v`
   from {
     width: 0;
   }
   to {
     width: ${i.progress}%;
   }
-`,S=z`
+`,_=v`
   from {
     transform: translateY(100%);
     opacity: 0;
@@ -14,7 +14,7 @@ import{j as e,r as l}from"./index-412694d2.js";import{s as D,n as d,a as k,I as 
     transform: translateY(0%);
     opacity: 1;
   }
-`,_=d.section`
+`,C=a.section`
   ${i=>i.isDesktop&&"display:flex"};
   background-image: url('${I}');
   background-size: cover;
@@ -42,8 +42,8 @@ import{j as e,r as l}from"./index-412694d2.js";import{s as D,n as d,a as k,I as 
       display: flex;
       flex-direction: column;
       gap: 24px;
-      animation: ${({goAnimation:i})=>i?v`
-              ${S} 3s ease-in-out
+      animation: ${({goAnimation:i})=>i?y`
+              ${_} 3s ease-in-out
             `:"none"};
 
       backdrop-filter: blur(5px);
@@ -107,7 +107,7 @@ import{j as e,r as l}from"./index-412694d2.js";import{s as D,n as d,a as k,I as 
     background-color: #e3e3e3;
     color: #898b90;
   }
-`,u=d.div`
+`,g=a.div`
   padding: 0 65px;
   margin-bottom: 103px;
   display: flex;
@@ -160,7 +160,7 @@ import{j as e,r as l}from"./index-412694d2.js";import{s as D,n as d,a as k,I as 
       line-height: 1;
     }
   }
-`,C=d.div`
+`,S=a.div`
   display: flex;
   margin: 0 auto 55px;
   padding: 0 30px;
@@ -185,14 +185,14 @@ import{j as e,r as l}from"./index-412694d2.js";import{s as D,n as d,a as k,I as 
       height: 20px;
     }
   }
-`,B=d.div`
+`,E=a.div`
   position: relative;
   width: ${i=>i.progress}%;
   height: 10px;
   background-color: #ffffff;
   z-index: 15;
   border-radius: 100px;
-  animation: ${i=>E(i)} 3s ease-in-out forwards;
+  animation: ${i=>D(i)} 3s ease-in-out forwards;
 
   @media screen and (min-width: 768px) {
     height: 20px;
@@ -217,7 +217,7 @@ import{j as e,r as l}from"./index-412694d2.js";import{s as D,n as d,a as k,I as 
       box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
     }
   }
-`,V=d.div`
+`,B=a.div`
   font-family: 'FixelDisplay', sans-serif;
   position: absolute;
   display: flex;
@@ -276,7 +276,7 @@ import{j as e,r as l}from"./index-412694d2.js";import{s as D,n as d,a as k,I as 
       bottom: -112px;
     }
   }
-`,G=d.ul`
+`,V=a.ul`
   display: flex;
   color: #fff;
   gap: 8px;
@@ -308,7 +308,7 @@ import{j as e,r as l}from"./index-412694d2.js";import{s as D,n as d,a as k,I as 
   &::-webkit-scrollbar-thumb:hover {
     background-color: #555;
   }
-`,b=d.li`
+`,u=a.li`
   ${i=>i.isDesktop&&"display: flex;"};
   position: relative;
   background: #ffffff1a;
@@ -348,7 +348,7 @@ import{j as e,r as l}from"./index-412694d2.js";import{s as D,n as d,a as k,I as 
       }
     }
   }
-`,O=d.li`
+`,O=a.li`
   background: #ffffff1a;
   border-radius: 10px;
   border: 1px solid #ffffff14;
@@ -380,7 +380,7 @@ import{j as e,r as l}from"./index-412694d2.js";import{s as D,n as d,a as k,I as 
       font-size: 10px;
     }
   }
-`,f=d.div`
+`,h=a.div`
   ${i=>!i.isDesktop&&"position: absolute; left: 50%; top: -14px; margin-right: 5px;"};
 
   width: 100%;
@@ -413,11 +413,11 @@ import{j as e,r as l}from"./index-412694d2.js";import{s as D,n as d,a as k,I as 
     width: 10px;
     height: 10px;
   }
-`,T=d(f)`
+`,T=a(h)`
   background-color: #f77d07;
   padding-top: 3px;
 
   @media screen and (min-width: 1440px) {
     padding-top: 2px;
   }
-`,h=({needToDoTasks:i,madedTasks:r})=>{const t=k({minWidth:1440}),a=o=>{if(o)return o.reduce((s,n)=>n.is_done?t?[n,...s]:[...s,n]:t?[...s,n]:[n,...s],[])};return e.jsxs(e.Fragment,{children:[i&&a(i).map(({tasks:o,title:s,is_done:n})=>n?e.jsxs(b,{isDesktop:t,children:[e.jsx(f,{isDesktop:t,children:e.jsx(g,{width:"12px",height:"12px",iconName:"icon-Vector-1"})}),e.jsxs("div",{children:[e.jsx("h4",{children:s}),e.jsx("ul",{children:o.map(p=>e.jsx("li",{children:p},c()))})]})]},c()):e.jsxs(O,{children:[e.jsx(T,{isDesktop:t,children:"$"}),e.jsxs("div",{children:[e.jsx("h4",{children:s}),e.jsx("p",{children:o})]})]},c())),r&&r.map(({title:o,listTasks:s})=>e.jsxs(b,{isDesktop:t,children:[e.jsx(f,{isDesktop:t,children:e.jsx(g,{width:"12px",height:"12px",iconName:"icon-Vector-1"})}),e.jsxs("div",{children:[e.jsx("h4",{children:o}),e.jsx("ul",{children:s.map(n=>e.jsx("li",{children:n},c()))})]})]},c()))]})},N=({totalAmount:i})=>{const[r,t]=l.useState(0);return l.useEffect(()=>{const s=i/100;let n=0;const p=setInterval(()=>{n+=s,n>=i&&(n=i,clearInterval(p)),t(n)},30);return()=>clearInterval(p)},[i]),e.jsxs(V,{progress:r,children:["$",r.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g," ")]})},w=({totalAmount:i,targetAmount:r,goAnimation:t})=>{const a=Math.min(i/r*100,100);return e.jsx(C,{children:e.jsx("div",{children:e.jsx(B,{progress:t?a:0,children:e.jsx(N,{totalAmount:t?i:0})})})})},j=[{title:"Залишилось зробити",tasks:"Закупівля й встановлення меблів, обладнання для кухні та сантехніки для вбиралень",is_done:!1},{title:"Залишилось зробити",tasks:"Встановлення системи кондиціонування",is_done:!1},{title:"Ганок",tasks:["Реконструйований та готовий до встановлення пандусу"],is_done:!0},{title:"Залишилось зробити",tasks:"Завершення ґанку, встановлення пандусу та накриття",is_done:!1},{title:"Залишилось зробити",tasks:"Система відеонагляду",is_done:!1}],y=[{title:"Кафе",listTasks:["Фіналізовані стіни та підлога","Прокладена система вентиляції та мережі під освітлення","Встановлені каркаси під натяжну стелю","Збережена оригінальна мозаїчна плитка","Встановлені двері до вбиралень та івент-простору","Освітлення простору","Натяжна стеля"]},{title:"Івент-простір",listTasks:["Фіналізовані стіни та підлога","Зроблено посилення перекриття","Прокладені мережі під освітлення ","Встановлені каркаси під натяжну стелю","Готова система опалення","Освітлення простору","Натяжна стеля"]},{title:"Кухня",listTasks:["Фіналізовані стіни, стеля та підлога","Повна система вентиляції","Холодне та гаряче водопостачання ","Збільшена потужність електропостачання для всього приміщення"]}],H=()=>{const[i,r]=l.useState(null),t=k({minWidth:1440}),a=l.useRef(null),{openModal:o}=$(),[s,n]=l.useState(!1);return l.useEffect(()=>{const p=new IntersectionObserver(x=>{x.forEach(m=>{m.isIntersecting&&(n(!0),p.unobserve(m.target))})});return a.current&&p.observe(a.current),()=>{a.current&&p.unobserve(a.current)}},[]),l.useEffect(()=>{(async()=>{try{const x=await F();r(x)}catch(x){console.error("Error fetching data:",x)}})()},[]),e.jsx(_,{ref:a,isDesktop:t,goAnimation:s,id:"funds",children:i&&e.jsx(e.Fragment,{children:t?e.jsxs(e.Fragment,{children:[e.jsx("ul",{children:e.jsx(h,{madedTasks:y})}),e.jsxs("div",{children:[e.jsxs(u,{children:[e.jsx("h2",{children:"До відкриття залишилось "}),e.jsx("p",{children:`$ ${i.goal-i.raised}`.replace(/\B(?=(\d{3})+(?!\d))/g," ")})]}),e.jsx(w,{goAnimation:s,totalAmount:i.raised,targetAmount:i.goal}),e.jsx("button",{onClick:()=>o("join_modal"),type:"button",children:"Підтримати проєкт"})]}),e.jsx("ul",{children:e.jsx(h,{needToDoTasks:j})})]}):e.jsxs(e.Fragment,{children:[e.jsxs(u,{children:[e.jsx("h2",{children:"До відкриття залишилось "}),e.jsx("p",{children:`$ ${i.goal-i.raised}`})]}),e.jsx(w,{goAnimation:s,totalAmount:i.raised,targetAmount:i.goal}),e.jsxs(G,{children:[e.jsx(h,{needToDoTasks:j}),e.jsx(h,{madedTasks:y})]}),e.jsx("button",{onClick:()=>o("join_modal"),type:"button",children:"Підтримати проєкт"})]})})})};export{H as default};
+`,c=({needToDoTasks:i,madedTasks:r})=>{const n=k({minWidth:1440}),p=o=>{if(o)return o.reduce((s,t)=>t.is_done?n?[t,...s]:[...s,t]:n?[...s,t]:[t,...s],[])};return e.jsxs(e.Fragment,{children:[i&&p(i).map(({tasks:o,title:s,is_done:t})=>t?e.jsxs(u,{isDesktop:n,children:[e.jsx(h,{isDesktop:n,children:e.jsx(m,{width:"12px",height:"12px",iconName:"icon-Vector-1"})}),e.jsxs("div",{children:[e.jsx("h4",{children:s}),e.jsx("ul",{children:o.map(d=>e.jsx("li",{children:d},l()))})]})]},l()):e.jsxs(O,{children:[e.jsx(T,{isDesktop:n,children:"$"}),e.jsxs("div",{children:[e.jsx("h4",{children:s}),e.jsx("p",{children:o})]})]},l())),r&&r.map(({title:o,listTasks:s})=>e.jsxs(u,{isDesktop:n,children:[e.jsx(h,{isDesktop:n,children:e.jsx(m,{width:"12px",height:"12px",iconName:"icon-Vector-1"})}),e.jsxs("div",{children:[e.jsx("h4",{children:o}),e.jsx("ul",{children:s.map(t=>e.jsx("li",{children:t},l()))})]})]},l()))]})},N=({totalAmount:i})=>{const[r,n]=x.useState(0);return x.useEffect(()=>{const s=i/100;let t=0;const d=setInterval(()=>{t+=s,t>=i&&(t=i,clearInterval(d)),n(t)},30);return()=>clearInterval(d)},[i]),e.jsxs(B,{progress:r,children:["$",r.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g," ")]})},b=({totalAmount:i,targetAmount:r,goAnimation:n})=>{const p=Math.min(i/r*100,100);return e.jsx(S,{children:e.jsx("div",{children:e.jsx(E,{progress:n?p:0,children:e.jsx(N,{totalAmount:n?i:0})})})})},w=[{title:"Залишилось зробити",tasks:"Закупівля й встановлення меблів, обладнання для кухні та сантехніки для вбиралень",is_done:!1},{title:"Залишилось зробити",tasks:"Встановлення системи кондиціонування",is_done:!1},{title:"Ганок",tasks:["Реконструйований та готовий до встановлення пандусу"],is_done:!0},{title:"Залишилось зробити",tasks:"Завершення ґанку, встановлення пандусу та накриття",is_done:!1},{title:"Залишилось зробити",tasks:"Система відеонагляду",is_done:!1}],j=[{title:"Кафе",listTasks:["Фіналізовані стіни та підлога","Прокладена система вентиляції та мережі під освітлення","Встановлені каркаси під натяжну стелю","Збережена оригінальна мозаїчна плитка","Встановлені двері до вбиралень та івент-простору","Освітлення простору","Натяжна стеля"]},{title:"Івент-простір",listTasks:["Фіналізовані стіни та підлога","Зроблено посилення перекриття","Прокладені мережі під освітлення ","Встановлені каркаси під натяжну стелю","Готова система опалення","Освітлення простору","Натяжна стеля"]},{title:"Кухня",listTasks:["Фіналізовані стіни, стеля та підлога","Повна система вентиляції","Холодне та гаряче водопостачання ","Збільшена потужність електропостачання для всього приміщення"]}],G=({goalData:i})=>{const r=k({minWidth:1440}),n=x.useRef(null),{openModal:p}=F(),[o,s]=x.useState(!1);return x.useEffect(()=>{const t=new IntersectionObserver(z=>{z.forEach(f=>{f.isIntersecting&&(s(!0),t.unobserve(f.target))})}),d=n.current;return d&&t.observe(d),()=>{d&&t.unobserve(d)}},[]),e.jsx(C,{ref:n,isDesktop:r,goAnimation:o,id:"funds",children:i&&e.jsx(e.Fragment,{children:r?e.jsxs(e.Fragment,{children:[e.jsx("ul",{children:e.jsx(c,{madedTasks:j})}),e.jsxs("div",{children:[e.jsxs(g,{children:[e.jsx("h2",{children:"До відкриття залишилось "}),e.jsx("p",{children:`$ ${i.goal-i.raised}`.replace(/\B(?=(\d{3})+(?!\d))/g," ")})]}),e.jsx(b,{goAnimation:o,totalAmount:i.raised,targetAmount:i.goal}),e.jsx("button",{onClick:()=>p("join_modal"),type:"button",children:"Підтримати проєкт"})]}),e.jsx("ul",{children:e.jsx(c,{needToDoTasks:w})})]}):e.jsxs(e.Fragment,{children:[e.jsxs(g,{children:[e.jsx("h2",{children:"До відкриття залишилось "}),e.jsx("p",{children:`$ ${i.goal-i.raised}`})]}),e.jsx(b,{goAnimation:o,totalAmount:i.raised,targetAmount:i.goal}),e.jsxs(V,{children:[e.jsx(c,{needToDoTasks:w}),e.jsx(c,{madedTasks:j})]}),e.jsx("button",{onClick:()=>p("join_modal"),type:"button",children:"Підтримати проєкт"})]})})})};export{G as default};
