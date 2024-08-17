@@ -65,3 +65,43 @@ export const CompaniesList = styled.ul`
     }
   }
 `;
+
+export const PartnersList = styled.ul`
+  ${(props) => {
+    if (!props.$anim) return;
+    const animate = generateKeyframes(props.$anim);
+    return css`
+      animation: ${animate} ${props.$anim.time}s linear infinite;
+    `;
+  }}
+
+  display: flex;
+  column-gap: 12px;
+
+  &:active {
+    animation-play-state: paused;
+  }
+
+  img {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 140px;
+    height: 70px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    column-gap: 32px;
+
+    img {
+      width: 290px;
+      height: 145px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+`;
