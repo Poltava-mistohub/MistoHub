@@ -2,19 +2,22 @@ import {
   MainHeading,
   PeopleContainer,
   SecondHeading,
-  TextWrapper,
+  PartnersTextWrapper,
+  PartnersIllustration,
 } from './InvestorsBlock.styled';
 import PartnerCompanies from './InvestorsCompanies/PartnerCompanies';
+import IllustrationSrc from '../../assets/investors/partners_illustration.svg';
 
 const PartnersBlock = ({ companies }) => {
   return (
     <section id="partners">
-      <TextWrapper>
+      <PartnersTextWrapper>
+        <PartnersIllustration src={IllustrationSrc} />
         <MainHeading>Партнери </MainHeading>
         <SecondHeading>
           які підтримали МІСТОХАБ 
         </SecondHeading>
-      </TextWrapper>
+      </PartnersTextWrapper>
       <PeopleContainer>
         {companies && <PartnerCompanies companies={companies} />}
       </PeopleContainer>
