@@ -82,16 +82,11 @@ export const PartnersList = styled.ul`
     animation-play-state: paused;
   }
 
-  li {
+  img {
     border: 1px solid black;
     border-radius: 10px;
-  }
-
-  img {
     width: 140px;
     height: 70px;
-    border-radius: 10px;
-    object-fit: cover;
   }
 
   @media screen and (min-width: 768px) {

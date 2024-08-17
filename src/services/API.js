@@ -105,6 +105,39 @@ export async function fetchPeople() {
   }
 }
 
+export async function fetchPartners() {
+  try {
+    const {
+      data: { result },
+    } = await axios.get(
+      `https://${import.meta.env.VITE_ADMIN_PROJECT_ID}.apicdn.sanity.io/${
+        import.meta.env.VITE_ADMIN_API_VERSION
+      }/data/query/${
+        import.meta.env.VITE_ADMIN_DATASET
+      }?query=*[_type=="partners"]{ _id, id, name, logoURL, link  } | order(id asc)`
+    );
+
+    const partners = result.map((res) => {
+      // preserve info from logo asset to be used in render calculation
+      if (res.logoURL) {
+        if (res.logoURL.crop) {
+          res.logoCrop = res.logoURL.crop;
+        }
+        if (res.logoURL.hotspot) {
+          res.logoFocalScope = res.logoURL.hotspot;
+        }
+        res.logoOriginal = res.logoURL;
+        res.logoURL = formImgURL(res.logoURL);
+      }
+      return res;
+    });
+
+    return partners;
+  } catch (error) {
+    return;
+  }
+}
+
 export async function postData(userData) {
   const { data } = await axios.post(
     `https://api.telegram.org/bot${import.meta.env.VITE_TELEGRAM_TOKEN}/sendMessage`,

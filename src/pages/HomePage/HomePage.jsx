@@ -1,5 +1,5 @@
 import { useEffect, useState, lazy, Suspense } from 'react';
-import { fetchCompanies, fetchPeople, fetchGoal } from '../../services/API';
+import { fetchCompanies, fetchPeople, fetchGoal, fetchPartners } from '../../services/API';
 
 import Header from '/src/components/Header/Header';
 import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
@@ -49,16 +49,19 @@ const HomePage = () => {
   const [activeSection, setActiveSection] = useState('main');
   const [companies, setCompanies] = useState([]);
   const [people, setPeople] = useState([]);
+  const [partners, setPartners] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const [companiesData, peopleData] = await Promise.all([
+        const [companiesData, peopleData, partnersData] = await Promise.all([
           fetchCompanies(),
           fetchPeople(),
+          fetchPartners(),
         ]);
         setCompanies(companiesData);
         setPeople(peopleData);
+        setPartners(partnersData);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -88,7 +91,7 @@ const HomePage = () => {
           <Visualization />
           <AccumulatedMoney goalData={goalData} />
           <InvestorsBlock people={people} companies={companies} />
-          <PartnersBlock companies={companies} />
+          <PartnersBlock companies={partners} />
           <JoinUs people={people} companies={companies} goalData={goalData} />
           <CoFounders />
           <ScrollToTopButton />

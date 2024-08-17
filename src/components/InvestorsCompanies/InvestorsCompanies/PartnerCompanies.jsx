@@ -23,21 +23,28 @@ const PartnerCompanies = ({ companies: companiesData }) => {
                 // Since companies are repeated, we need to have unique yet stable key
                 key={index}
               >
-                <img
-                  loading="lazy"
-                  fetchpriority='low'
-                  src={company.logoURL ? 
-                    getCompanyLogoURL(
-                      company.logoURL,
-                      { width: 580, height: 290 },
-                      company.logoCrop,
-                      company.logoFocalScope,
-                    ) :
-                    defaultImage
-                  }
-                  alt={`Company ${company.id}`}
+                <a
+                  href={company.link}
+                  target='_blank'
+                  rel="noreferrer"
                   title={company.name}
-                />
+                >
+                  <img
+                    loading="lazy"
+                    fetchpriority='low'
+                    src={company.logoURL ? 
+                      getCompanyLogoURL(
+                        company.logoURL,
+                        { width: 580, height: 290 },
+                        company.logoCrop,
+                        company.logoFocalScope,
+                      ) :
+                      defaultImage
+                    }
+                    alt={`Company ${company.id}`}
+                    title={company.name}
+                  />
+                </a>
               </li>
             )
           )}
