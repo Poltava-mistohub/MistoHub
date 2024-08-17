@@ -3,7 +3,7 @@
     "file": "assets/HomePage-0ded8c46.css",
     "src": "HomePage.css"
   },
-  "_HomePage-74b55661.js": {
+  "_HomePage-ac5aa16a.js": {
     "assets": [
       "assets/icons-395c4493.svg",
       "assets/hero1mob-385cb7f2.png",
@@ -60,19 +60,27 @@
     "dynamicImports": [
       "src/components/CoFounders/CoFounders.jsx",
       "src/components/JoinUs/JoinUs.jsx",
-      "_Visualization-dc6ba892.js",
+      "_Visualization-bc93d16d.js",
       "src/components/AccumulatedMoney/AccumulatedMoney.jsx",
       "src/components/InvestorsCompanies/InvestorsBlock.jsx",
+      "src/components/InvestorsCompanies/PartnersBlock.jsx",
       "src/components/Footer/Footer.jsx",
       "src/shared/Modals/ModalsManager.jsx"
     ],
-    "file": "assets/HomePage-74b55661.js",
+    "file": "assets/HomePage-ac5aa16a.js",
     "imports": [
       "index.html"
     ],
     "isDynamicEntry": true
   },
-  "_Visualization-dc6ba892.js": {
+  "_InvestorsBlock.styled-ecf5027a.js": {
+    "file": "assets/InvestorsBlock.styled-ecf5027a.js",
+    "imports": [
+      "index.html",
+      "_HomePage-ac5aa16a.js"
+    ]
+  },
+  "_Visualization-bc93d16d.js": {
     "assets": [
       "assets/event-space-mob-41a55e64.jpg",
       "assets/cafe-mobile-b6cdf133.jpg",
@@ -99,10 +107,10 @@
     "dynamicImports": [
       "src/components/Visualization/TourModal.jsx"
     ],
-    "file": "assets/Visualization-dc6ba892.js",
+    "file": "assets/Visualization-bc93d16d.js",
     "imports": [
       "index.html",
-      "_HomePage-74b55661.js",
+      "_HomePage-ac5aa16a.js",
       "_index.browser-342e672c.js"
     ],
     "isDynamicEntry": true
@@ -110,11 +118,11 @@
   "_hoist-non-react-statics.cjs-3f8ebaa8.js": {
     "file": "assets/hoist-non-react-statics.cjs-3f8ebaa8.js"
   },
-  "_index-ba9a0573.js": {
-    "file": "assets/index-ba9a0573.js",
+  "_index-bf4645ca.js": {
+    "file": "assets/index-bf4645ca.js",
     "imports": [
       "index.html",
-      "_HomePage-74b55661.js"
+      "_HomePage-ac5aa16a.js"
     ]
   },
   "_index.browser-342e672c.js": {
@@ -136,9 +144,9 @@
       "assets/index-a6b3472e.css"
     ],
     "dynamicImports": [
-      "_HomePage-74b55661.js"
+      "_HomePage-ac5aa16a.js"
     ],
-    "file": "assets/index-de60f7ac.js",
+    "file": "assets/index-66592a1d.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -1070,6 +1078,10 @@
     "file": "assets/noname-a8edc818.jpg",
     "src": "src/assets/investors/noname.jpg"
   },
+  "src/assets/investors/partners_illustration.svg": {
+    "file": "assets/partners_illustration-6168f924.svg",
+    "src": "src/assets/investors/partners_illustration.svg"
+  },
   "src/assets/join/maska.png": {
     "file": "assets/maska-4bddf763.png",
     "src": "src/assets/join/maska.png"
@@ -1112,10 +1124,10 @@
       "assets/back-for-tablet-d2d31660.png",
       "assets/back-for-desktop-d36331b9.png"
     ],
-    "file": "assets/AccumulatedMoney-614331c7.js",
+    "file": "assets/AccumulatedMoney-7d87698e.js",
     "imports": [
       "index.html",
-      "_HomePage-74b55661.js",
+      "_HomePage-ac5aa16a.js",
       "_hoist-non-react-statics.cjs-3f8ebaa8.js",
       "_index.browser-342e672c.js"
     ],
@@ -1164,19 +1176,19 @@
       "assets/vitaliyvolodchenko@2x-206d1729.webp",
       "assets/vitaliyvolodchenko-550e7fbc.jpg"
     ],
-    "file": "assets/CoFounders-ea08880e.js",
+    "file": "assets/CoFounders-30cace76.js",
     "imports": [
       "index.html",
-      "_HomePage-74b55661.js"
+      "_HomePage-ac5aa16a.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/CoFounders/CoFounders.jsx"
   },
   "src/components/Footer/Footer.jsx": {
-    "file": "assets/Footer-a2abd451.js",
+    "file": "assets/Footer-0baeb5ea.js",
     "imports": [
       "index.html",
-      "_HomePage-74b55661.js"
+      "_HomePage-ac5aa16a.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Footer/Footer.jsx"
@@ -1185,14 +1197,28 @@
     "assets": [
       "assets/noname-a8edc818.jpg"
     ],
-    "file": "assets/InvestorsBlock-c8865c8c.js",
+    "file": "assets/InvestorsBlock-a3eea0b3.js",
     "imports": [
       "index.html",
-      "_index-ba9a0573.js",
-      "_HomePage-74b55661.js"
+      "_index-bf4645ca.js",
+      "_HomePage-ac5aa16a.js",
+      "_InvestorsBlock.styled-ecf5027a.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/InvestorsBlock.jsx"
+  },
+  "src/components/InvestorsCompanies/PartnersBlock.jsx": {
+    "assets": [
+      "assets/partners_illustration-6168f924.svg"
+    ],
+    "file": "assets/PartnersBlock-f73c88a6.js",
+    "imports": [
+      "index.html",
+      "_InvestorsBlock.styled-ecf5027a.js",
+      "_HomePage-ac5aa16a.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/components/InvestorsCompanies/PartnersBlock.jsx"
   },
   "src/components/JoinUs/JoinUs.jsx": {
     "assets": [
@@ -1227,10 +1253,10 @@
       "assets/blob-image-dekstop@2x-9856da11.jpg",
       "assets/blob-image-dekstop@2x-7190f328.webp"
     ],
-    "file": "assets/JoinUs-db07fd28.js",
+    "file": "assets/JoinUs-489aaff0.js",
     "imports": [
       "index.html",
-      "_HomePage-74b55661.js",
+      "_HomePage-ac5aa16a.js",
       "_index.browser-342e672c.js"
     ],
     "isDynamicEntry": true,
@@ -1244,11 +1270,11 @@
     "css": [
       "assets/TourModal-68f18769.css"
     ],
-    "file": "assets/TourModal-a1a1fe4c.js",
+    "file": "assets/TourModal-1f88e5c7.js",
     "imports": [
       "index.html",
-      "_HomePage-74b55661.js",
-      "_Visualization-dc6ba892.js",
+      "_HomePage-ac5aa16a.js",
+      "_Visualization-bc93d16d.js",
       "_index.browser-342e672c.js"
     ],
     "isDynamicEntry": true,
@@ -1345,11 +1371,11 @@
       "assets/bg-modal-tabl-35cc034e.png",
       "assets/bg-modal-desk-02f0110a.png"
     ],
-    "file": "assets/ModalsManager-876dbf60.js",
+    "file": "assets/ModalsManager-9dccb8a2.js",
     "imports": [
       "index.html",
-      "_index-ba9a0573.js",
-      "_HomePage-74b55661.js",
+      "_index-bf4645ca.js",
+      "_HomePage-ac5aa16a.js",
       "_hoist-non-react-statics.cjs-3f8ebaa8.js"
     ],
     "isDynamicEntry": true,
