@@ -26,9 +26,10 @@ const Navigation = ({ activeSection, closeModal }) => {
       <nav>
         <StyledNavList>
           {links.map((link) => (
-            <StyledItem key={link.id}>
+            <StyledItem key={link.id || link.url}>
               <Link
-                onClick={() => scrollToSection(link.id)}
+                onClick={link.id ? () => scrollToSection(link.id) : undefined}
+                to={link.url ? link.url : undefined}
                 className={activeSection === link.id ? 'active' : 'link'}
               >
                 {link.value} <Iconsvg iconName="hoverarrow" />
