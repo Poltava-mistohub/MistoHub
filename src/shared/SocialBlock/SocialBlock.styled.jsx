@@ -84,3 +84,16 @@ export const SocialWrapper = styled.div`
     }
   }
 `;
+
+export const Separator = styled.div`
+  width: 1px;
+  height: 25px;
+  background-color: ${({ $sections }) => ($sections.menu ? '#f77d07' : '#fff')};
+  opacity: 0.4;
+  align-self: center;
+  transition: background 0.25s ease-in-out;
+
+  &.dark-header {
+    background: #0b0b0b;
+  }
+`;

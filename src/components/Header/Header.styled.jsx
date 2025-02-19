@@ -85,13 +85,12 @@ export const HeaderContainer = styled(Container)`
   }
 
   .menu-wrapper {
-    width: 100%;
-    max-width: 376px;
     height: 85px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 25px;
   }
 
   button {
