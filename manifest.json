@@ -3,9 +3,9 @@
     "file": "assets/HomePage-0ded8c46.css",
     "src": "HomePage.css"
   },
-  "_HomePage-ac5aa16a.js": {
+  "_HomePage-d4d663b9.js": {
     "assets": [
-      "assets/icons-395c4493.svg",
+      "assets/icons-44799614.svg",
       "assets/hero1mob-385cb7f2.png",
       "assets/hero1mob-b7993bab.webp",
       "assets/hero1mob@2x-ebe366bd.png",
@@ -60,27 +60,27 @@
     "dynamicImports": [
       "src/components/CoFounders/CoFounders.jsx",
       "src/components/JoinUs/JoinUs.jsx",
-      "_Visualization-bc93d16d.js",
+      "_Visualization-2317b0ac.js",
       "src/components/AccumulatedMoney/AccumulatedMoney.jsx",
       "src/components/InvestorsCompanies/InvestorsBlock.jsx",
       "src/components/InvestorsCompanies/PartnersBlock.jsx",
       "src/components/Footer/Footer.jsx",
       "src/shared/Modals/ModalsManager.jsx"
     ],
-    "file": "assets/HomePage-ac5aa16a.js",
+    "file": "assets/HomePage-d4d663b9.js",
     "imports": [
       "index.html"
     ],
     "isDynamicEntry": true
   },
-  "_InvestorsBlock.styled-ecf5027a.js": {
-    "file": "assets/InvestorsBlock.styled-ecf5027a.js",
+  "_InvestorsBlock.styled-a0f612ea.js": {
+    "file": "assets/InvestorsBlock.styled-a0f612ea.js",
     "imports": [
       "index.html",
-      "_HomePage-ac5aa16a.js"
+      "_HomePage-d4d663b9.js"
     ]
   },
-  "_Visualization-bc93d16d.js": {
+  "_Visualization-2317b0ac.js": {
     "assets": [
       "assets/event-space-mob-41a55e64.jpg",
       "assets/cafe-mobile-b6cdf133.jpg",
@@ -107,10 +107,10 @@
     "dynamicImports": [
       "src/components/Visualization/TourModal.jsx"
     ],
-    "file": "assets/Visualization-bc93d16d.js",
+    "file": "assets/Visualization-2317b0ac.js",
     "imports": [
       "index.html",
-      "_HomePage-ac5aa16a.js",
+      "_HomePage-d4d663b9.js",
       "_index.browser-342e672c.js"
     ],
     "isDynamicEntry": true
@@ -118,11 +118,11 @@
   "_hoist-non-react-statics.cjs-3f8ebaa8.js": {
     "file": "assets/hoist-non-react-statics.cjs-3f8ebaa8.js"
   },
-  "_index-bf4645ca.js": {
-    "file": "assets/index-bf4645ca.js",
+  "_index-1801455b.js": {
+    "file": "assets/index-1801455b.js",
     "imports": [
       "index.html",
-      "_HomePage-ac5aa16a.js"
+      "_HomePage-d4d663b9.js"
     ]
   },
   "_index.browser-342e672c.js": {
@@ -144,9 +144,9 @@
       "assets/index-a6b3472e.css"
     ],
     "dynamicImports": [
-      "_HomePage-ac5aa16a.js"
+      "_HomePage-d4d663b9.js"
     ],
-    "file": "assets/index-66592a1d.js",
+    "file": "assets/index-7698ae50.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -671,7 +671,7 @@
     "src": "src/assets/hero/tablet/hero1tablet@2x.webp"
   },
   "src/assets/icons.svg": {
-    "file": "assets/icons-395c4493.svg",
+    "file": "assets/icons-44799614.svg",
     "src": "src/assets/icons.svg"
   },
   "src/assets/images/visualization/cafe-Viz.webp": {
@@ -1124,10 +1124,10 @@
       "assets/back-for-tablet-d2d31660.png",
       "assets/back-for-desktop-d36331b9.png"
     ],
-    "file": "assets/AccumulatedMoney-7d87698e.js",
+    "file": "assets/AccumulatedMoney-7d30109b.js",
     "imports": [
       "index.html",
-      "_HomePage-ac5aa16a.js",
+      "_HomePage-d4d663b9.js",
       "_hoist-non-react-statics.cjs-3f8ebaa8.js",
       "_index.browser-342e672c.js"
     ],
@@ -1176,19 +1176,19 @@
       "assets/vitaliyvolodchenko@2x-206d1729.webp",
       "assets/vitaliyvolodchenko-550e7fbc.jpg"
     ],
-    "file": "assets/CoFounders-30cace76.js",
+    "file": "assets/CoFounders-1ef99040.js",
     "imports": [
       "index.html",
-      "_HomePage-ac5aa16a.js"
+      "_HomePage-d4d663b9.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/CoFounders/CoFounders.jsx"
   },
   "src/components/Footer/Footer.jsx": {
-    "file": "assets/Footer-0baeb5ea.js",
+    "file": "assets/Footer-a70a7732.js",
     "imports": [
       "index.html",
-      "_HomePage-ac5aa16a.js"
+      "_HomePage-d4d663b9.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Footer/Footer.jsx"
@@ -1197,12 +1197,12 @@
     "assets": [
       "assets/noname-a8edc818.jpg"
     ],
-    "file": "assets/InvestorsBlock-a3eea0b3.js",
+    "file": "assets/InvestorsBlock-98108674.js",
     "imports": [
       "index.html",
-      "_index-bf4645ca.js",
-      "_HomePage-ac5aa16a.js",
-      "_InvestorsBlock.styled-ecf5027a.js"
+      "_index-1801455b.js",
+      "_HomePage-d4d663b9.js",
+      "_InvestorsBlock.styled-a0f612ea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/InvestorsBlock.jsx"
@@ -1211,11 +1211,11 @@
     "assets": [
       "assets/partners_illustration-6168f924.svg"
     ],
-    "file": "assets/PartnersBlock-f73c88a6.js",
+    "file": "assets/PartnersBlock-69c04868.js",
     "imports": [
       "index.html",
-      "_InvestorsBlock.styled-ecf5027a.js",
-      "_HomePage-ac5aa16a.js"
+      "_InvestorsBlock.styled-a0f612ea.js",
+      "_HomePage-d4d663b9.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/PartnersBlock.jsx"
@@ -1253,10 +1253,10 @@
       "assets/blob-image-dekstop@2x-9856da11.jpg",
       "assets/blob-image-dekstop@2x-7190f328.webp"
     ],
-    "file": "assets/JoinUs-489aaff0.js",
+    "file": "assets/JoinUs-58614936.js",
     "imports": [
       "index.html",
-      "_HomePage-ac5aa16a.js",
+      "_HomePage-d4d663b9.js",
       "_index.browser-342e672c.js"
     ],
     "isDynamicEntry": true,
@@ -1270,11 +1270,11 @@
     "css": [
       "assets/TourModal-68f18769.css"
     ],
-    "file": "assets/TourModal-1f88e5c7.js",
+    "file": "assets/TourModal-d655b7ee.js",
     "imports": [
       "index.html",
-      "_HomePage-ac5aa16a.js",
-      "_Visualization-bc93d16d.js",
+      "_HomePage-d4d663b9.js",
+      "_Visualization-2317b0ac.js",
       "_index.browser-342e672c.js"
     ],
     "isDynamicEntry": true,
@@ -1371,11 +1371,11 @@
       "assets/bg-modal-tabl-35cc034e.png",
       "assets/bg-modal-desk-02f0110a.png"
     ],
-    "file": "assets/ModalsManager-9dccb8a2.js",
+    "file": "assets/ModalsManager-b6434aae.js",
     "imports": [
       "index.html",
-      "_index-bf4645ca.js",
-      "_HomePage-ac5aa16a.js",
+      "_index-1801455b.js",
+      "_HomePage-d4d663b9.js",
       "_hoist-non-react-statics.cjs-3f8ebaa8.js"
     ],
     "isDynamicEntry": true,

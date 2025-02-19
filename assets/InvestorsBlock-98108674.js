@@ -1,4 +1,4 @@
-import{u as j,j as t,e as r,h as A,r as p}from"./index-66592a1d.js";import{M as B}from"./index-bf4645ca.js";import{I as w,a as y}from"./HomePage-ac5aa16a.js";import{d as W,C as _,a as O,m as U,g as G,T as N,I as P,M as D,S as T,P as Q}from"./InvestorsBlock.styled-ecf5027a.js";const C=j.div`
+import{u as j,j as t,e as r,h as A,r as p}from"./index-7698ae50.js";import{M as B}from"./index-1801455b.js";import{I as w,a as y}from"./HomePage-d4d663b9.js";import{d as W,C as _,a as O,m as U,g as G,T as N,I as P,M as D,S as T,P as Q}from"./InvestorsBlock.styled-a0f612ea.js";const C=j.div`
   .text {
     color: rgba(11, 11, 11, 0.5);
     font-size: 12px;
