@@ -60,8 +60,8 @@ const EventBookingPage = () => {
             styles="icon_circle"
           />
           <ContentBlockStyled className="section_content">
-            <div className="space_block">
-              <H2Styled>
+            <div className="content_block">
+              <H2Styled className="title_2">
                 Простір:
               </H2Styled>
               <ul className="unordered_list" data-list-variant="hyphen">
@@ -80,14 +80,14 @@ const EventBookingPage = () => {
               </ul>
             </div>
 
-            <div className="schedule_block">
-              <H2Styled className="title_3">
+            <div className="content_block">
+              <H2Styled>
                 Графік: 09:00–21:00
               </H2Styled>
             </div>
 
-            <div className="price_block">
-              <H2Styled className="title_3">
+            <div className="content_block">
+              <H2Styled className="title_2">
                 <Icon
                   width="89"
                   height="45"
@@ -111,8 +111,8 @@ const EventBookingPage = () => {
               </ul>
             </div>
 
-            <div className="booking_info_block">
-              <H2Styled className="title_3">
+            <div className="content_block">
+              <H2Styled className="title_2">
                 Як забронювати?
               </H2Styled>
               <ul className="unordered_list" data-list-variant="checkmark">
@@ -125,8 +125,8 @@ const EventBookingPage = () => {
               </ul>
             </div>
 
-            <div className="space_usage_block">
-              <H2Styled className="title_3">
+            <div className="content_block">
+              <H2Styled className="title_2">
                 Головне про використання простору
               </H2Styled>
               <ul className="unordered_list" data-list-variant="space-usage">
