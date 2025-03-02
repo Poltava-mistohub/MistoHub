@@ -9,8 +9,7 @@ function App() {
   return (
     <ModalProvider>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/event_booking" element={<EventBookingPage />} />
+        <Route path="/" element={<EventBookingPage />} />
         <Route path="*" element={<HomePage />} />
       </Routes>
     </ModalProvider>
