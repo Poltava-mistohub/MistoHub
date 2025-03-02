@@ -2,16 +2,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+
+import { H2Styled } from '../../shared/Text/H2.styled';
+
 import { AboutContainer } from './About.styled';
+
 
 export const About = () => {
   return (
     <AboutContainer>
       <p className="about-project">Про проєкт</p>
 
-      <h2 className="about-title">
+      <H2Styled className="about-title">
         <span className="accent">МІСТОХАБ</span> це
-      </h2>
+      </H2Styled>
 
       <Swiper
         wrapperTag="ul"

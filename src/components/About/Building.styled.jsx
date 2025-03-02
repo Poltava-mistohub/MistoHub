@@ -3,9 +3,9 @@ import buildingOne from '../../assets/about/building1.svg';
 import buildingTwo from '../../assets/about/building2.svg';
 import buildingThree from '../../assets/about/building3.svg';
 import buildingFour from '../../assets/about/building4.svg';
-import { AboutProjectContainer } from './AboutProject.styled';
+import { ContentBlockStyled } from '../../shared/ContentBlock/ContentBlock.styled';
 
-export const BuildingContainer = styled(AboutProjectContainer)`
+export const BuildingContainer = styled(ContentBlockStyled)`
   margin-bottom: 60px;
   padding-bottom: 21px;
   width: 100%;
