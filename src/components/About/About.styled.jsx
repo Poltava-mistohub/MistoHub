@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { AboutProjectContainer } from './AboutProject.styled';
+import { ContentBlockStyled } from '../../shared/ContentBlock/ContentBlock.styled';
 
-export const AboutContainer = styled(AboutProjectContainer)`
+export const AboutContainer = styled(ContentBlockStyled)`
   margin-bottom: 60px;
 
   .about-project {
@@ -15,12 +15,6 @@ export const AboutContainer = styled(AboutProjectContainer)`
   }
 
   .about-title {
-    font-family: 'Oddval';
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.33;
-    letter-spacing: -0.02em;
-    color: #0b0b0b;
     margin-bottom: 32px;
   }
 
@@ -111,8 +105,6 @@ export const AboutContainer = styled(AboutProjectContainer)`
     }
 
     .about-title {
-      font-size: 45px;
-      line-height: 1.11;
       margin-bottom: 60px;
     }
 
@@ -178,8 +170,6 @@ export const AboutContainer = styled(AboutProjectContainer)`
     margin-bottom: 150px;
 
     .about-title {
-      font-size: 60px;
-      line-height: 1.13;
       margin-bottom: 80px;
     }
 
