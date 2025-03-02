@@ -46,7 +46,7 @@ const EventBookingPage = () => {
             imgClassName="hero_img"
           />
           <H1Styled className="title">
-            Забронюй свій івент у МІСТОХАБ
+            Забронюй свій івент у МІСТОХАБ=)
           </H1Styled>
         </SpaceHeroContainer>
       </SpaceHeroBlock>
