@@ -64,7 +64,7 @@ const EventBookingPage = () => {
               <H2Styled className="title_2">
                 Простір:
               </H2Styled>
-              <ul className="unordered_list" data-list-variant="hyphen">
+              <ul className="unordered_list" data-list-image="hyphen">
                 <li>
                   інклюзивний простір доступний для кожного
                 </li>
@@ -98,7 +98,7 @@ const EventBookingPage = () => {
                   Вартість:
                 </span>
               </H2Styled>
-              <ul className="unordered_list" data-list-variant="disc">
+              <ul className="unordered_list" data-list-image="disc">
                 <li>
                   1500 грн/год – половина зали (до 42 місць)
                 </li>
@@ -115,11 +115,11 @@ const EventBookingPage = () => {
               <H2Styled className="title_2">
                 Як забронювати?
               </H2Styled>
-              <ul className="unordered_list" data-list-variant="checkmark">
-                <li>
+              <ul className="unordered_list custom_list_markers">
+                <li className="list_item_checkmark">
                   Оплата – 100% передплата на рахунок ГО "МІСТО ХАБ"
                 </li>
-                <li>
+                <li className="list_item_checkmark">
                   Якщо плани зміняться – можемо перенести дату за погодженням з адміністратором
                 </li>
               </ul>
@@ -129,20 +129,20 @@ const EventBookingPage = () => {
               <H2Styled className="title_2">
                 Головне про використання простору
               </H2Styled>
-              <ul className="unordered_list" data-list-variant="space-usage">
-                <li>
+              <ul className="unordered_list custom_list_markers">
+                <li className="list_item_sparcle">
                   Дбайте про порядок і майно – це спільний простір.
                 </li>
-                <li>
+                <li className="list_item_tear">
                   Використовуйте залу в межах заброньованого часу.
                 </li>
-                <li>
+                <li className="list_item_redDot">
                   Замовляти свою їжу на подію не можливо!
                 </li>
-                <li>
+                <li className="list_item_prohibited">
                   Червоні лінії: без російськомовних матеріалів, політичного піару чи маніпуляцій.
                 </li>
-                <li>
+                <li className="list_item_exclamation">
                   Якщо є пошкодження майна – організатор відшкодовує ремонт або заміну.
                 </li>
               </ul>

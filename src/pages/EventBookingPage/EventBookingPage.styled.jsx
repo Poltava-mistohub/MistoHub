@@ -87,58 +87,54 @@ export const SpaceDetailsBlock = styled.section`
     color: #0b0b0b;
   }
 
-  .unordered_list[data-list-variant="hyphen"] {
+  .unordered_list[data-list-image="hyphen"] {
     list-style-type: "- ";
   }
 
-  .unordered_list[data-list-variant="disc"] {
+  .unordered_list[data-list-image="disc"] {
     list-style-type: "• ";
   }
 
-  .unordered_list[data-list-variant="checkmark"] li::before {
-    width: 30px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 8px;
-    content: url(${checkmarkIcon});
-  }
-
-  .unordered_list[data-list-variant="space-usage"] li {
+  .custom_list_markers li {
     vertical-align: baseline;
   }
 
-  .unordered_list[data-list-variant="space-usage"] li::before {
-    // width: 30px;
-    // height: 30px;
-    margin-right: 8px;
+  .custom_list_markers li::before {
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
     display: inline-block;
     vertical-align: sub;
   }
 
-  .unordered_list[data-list-variant="space-usage"] li:nth-child(1)::before {
+  .list_item_checkmark::before {
+    content: url(${checkmarkIcon});
+  }
+
+  .list_item_sparcle::before {
     content: url(${sparcleIcon});
   }
 
-  .unordered_list[data-list-variant="space-usage"] li:nth-child(2)::before {
+  .list_item_tear::before {
     content: url(${tearIcon});
   }
 
-  .unordered_list[data-list-variant="space-usage"] li:nth-child(3)::before {
+  .list_item_redDot::before {
     content: url(${redDotIcon});
   }
 
-  .unordered_list[data-list-variant="space-usage"] li:nth-child(4)::before {
+  .list_item_prohibited::before {
     content: url(${prohibitedIcon});
   }
 
-  .unordered_list[data-list-variant="space-usage"] li:nth-child(5)::before {
+  .list_item_exclamation::before {
     content: "‼️";
-    vertical-align: baseline;
+    vertical-align: baseline !important;
     text-align: center;
   }
 
   .content_block {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 
   .icon_price {
@@ -228,6 +224,16 @@ export const SpaceDetailsBlock = styled.section`
       align-items: center;
       line-height: 1.5;
     }
+
+    .custom_list_markers li::before {
+      height: 25px;
+      width: 25px;
+      margin-right: 8px;
+    }
+
+    .content_block {
+      margin-bottom: 100px;
+    }
   }
 
   @media (min-width: 1440px) {
@@ -254,6 +260,11 @@ export const SpaceDetailsBlock = styled.section`
       height: 70px;
       padding: 23px 46px;
       font-size: 18px;
+    }
+
+    .custom_list_markers li::before {
+      height: 30px;
+      width: 30px;
     }
   }
 `;
