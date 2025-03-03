@@ -168,21 +168,6 @@ export const SpaceDetailsBlock = styled.section`
     transition: all 0.25s ease-in-out;
     text-align: center;
     min-width: 170px;
-
-    @media screen and (min-width: 768px) {
-      height: 64px;
-      padding: 20px 40px;
-      text-align: center;
-      font-size: 16px;
-      align-items: center;
-      line-height: 1.5;
-    }
-
-    @media screen and (min-width: 1440px) {
-      height: 70px;
-      padding: 23px 46px;
-      font-size: 18px;
-    }
   }
 
   .book_event_button:hover {
@@ -197,19 +182,19 @@ export const SpaceDetailsBlock = styled.section`
   .icon_octagon {
     position: absolute;
     bottom: -65px;
-    left: -139px;
-    width: 281px;
-    height: 281px;
+    left: -90px;
+    width: 181px;
+    height: 181px;
     transform: rotate(39deg);
     z-index: -1;
   }
 
   .icon_circle {
     position: absolute;
-    top: 70px;
-    right: -175px;
-    width: 414px;
-    height: 414px;
+    top: 40px;
+    right: -105px;
+    width: 214px;
+    height: 214px;
     z-index: -1;
   }
 
@@ -219,8 +204,29 @@ export const SpaceDetailsBlock = styled.section`
       line-height: 1.33;
     }
 
+    .icon_octagon {
+      width: 241px;
+      height: 241px;
+    }
+
+    .icon_circle {
+      top: 70px;
+      right: -145px;
+      width: 314px;
+      height: 314px;
+    }
+
     .title_2 {
       margin-bottom: 30px;
+    }
+
+    .book_event_button {
+      height: 64px;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 16px;
+      align-items: center;
+      line-height: 1.5;
     }
   }
 
@@ -231,13 +237,23 @@ export const SpaceDetailsBlock = styled.section`
     }
 
     .icon_octagon {
+      width: 281px;
+      height: 281px;
       left: 50%;
       transform: translateX(calc(-50% - 720px)) rotate(39deg);
     }
 
     .icon_circle {
+      width: 414px;
+      height: 414px;
       left: 50%;
       transform: translateX(calc(-50% + 760px));
+    }
+
+    .book_event_button {
+      height: 70px;
+      padding: 23px 46px;
+      font-size: 18px;
     }
   }
 `;
