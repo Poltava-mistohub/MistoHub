@@ -1,34 +1,62 @@
 [
   {
     "value": "Головна",
-    "id": "main"
+    "id": "main",
+    "to": {
+      "pathname": "/",
+      "hash": ""
+    }
   },
   {
     "value": "Меню",
-    "url": "https://expz.menu/09ec2271-fec7-432a-8e9a-7fcb24247c3f"
+    "to": "https://expz.menu/09ec2271-fec7-432a-8e9a-7fcb24247c3f"
   },
   {
     "value": "Про проєкт",
-    "id": "about"
+    "id": "about",
+    "to": {
+      "pathname": "/",
+      "hash": "about"
+    }
   },
   {
     "value": "Дизайн-проєкт",
-    "id": "design"
+    "id": "design",
+    "to": {
+      "pathname": "/",
+      "hash": "design"
+    }
   },
   {
     "value": "Зібрані кошти",
-    "id": "funds"
+    "id": "funds",
+    "to": {
+      "pathname": "/",
+      "hash": "funds"
+    }
   },
   {
     "value": "Інвестори",
-    "id": "investors"
+    "id": "investors",
+    "to": {
+      "pathname": "/",
+      "hash": "investors"
+    }
   },
   {
     "value": "Як інвестувати",
-    "id": "how"
+    "id": "how",
+    "to": {
+      "pathname": "/",
+      "hash": "how"
+    }
   },
   {
     "value": "Співзасновники",
-    "id": "founders"
+    "id": "founders",
+    "to": {
+      "pathname": "/",
+      "hash": "founders"
+    }
   }
 ]
