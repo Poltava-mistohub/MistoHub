@@ -42,7 +42,7 @@ function main() {
     indexHtml = indexHtml.replace('</head>', `${preload}\n</head>`);
 
     // add preload tags for the css of the dynamic import
-    if (thisEntry.css && typeof thisEntry.css === 'object') {
+    if (Array.isArray(thisEntry.css)) {
       for (const css of thisEntry.css) {
         const preload = `<link rel="stylesheet" href="${publicPath}${css}">`;
         indexHtml = indexHtml.replace('</head>', `${preload}\n</head>`);

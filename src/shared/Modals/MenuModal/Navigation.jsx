@@ -1,15 +1,10 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Iconsvg from '../../../components/Icon/Icon';
-import { StyledNavList, StyledItem } from './Navigation.styled';
+import { StyledNavList } from './Navigation.styled';
 import links from '../../../constants/links_menu.json';
 
 const Navigation = ({ activeSection, closeModal }) => {
-  const location = useLocation();
-  const onNavigationClick = (link, isAnchorLink, isActiveLink) => {
-    // if (!isAnchorLink) {
-    //   return;
-    // }
-
+  const onNavigationClick = (link, isActiveLink) => {
     closeModal('menu_modal');
 
     if (isActiveLink) {
@@ -27,25 +22,29 @@ const Navigation = ({ activeSection, closeModal }) => {
   };
 
   const renderNavigationLink = (link) => {
-    const isAnchorLink = link.to.pathname === location.pathname;
+    const isOuterLink = typeof link.to === 'string';
     const isActiveLink = activeSection === link.id;
 
     return (
-      <StyledItem key={link.value}>
+      <li className="navigation_list_item" key={link.value}>
         <Link
-          onClick={() => onNavigationClick(link, isAnchorLink, isActiveLink)}
+          onClick={isOuterLink ? undefined : () => onNavigationClick(link, isActiveLink)}
           to={link.to}
-          className={isActiveLink ? 'active' : 'link'}
+          className="navigation_link"
+          data-active={isActiveLink}
         >
-          {link.value} <Iconsvg iconName="hoverarrow" />
+          <span className="navigation_link_text" >{link.value}</span>
+          <Iconsvg styles="navigation_link_icon" iconName="hoverarrow" />
         </Link>
-      </StyledItem>
+      </li>
     );
   }
 
   return (
     <StyledNavList>
-      {links.map(renderNavigationLink)}
+      <ul className="navigation_list">
+        {links.map(renderNavigationLink)}
+      </ul>
     </StyledNavList>
   );
 };

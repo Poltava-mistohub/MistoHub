@@ -13,8 +13,8 @@ const EventBookingPage = lazy(() => import('./pages/EventBookingPage/EventBookin
 
 function App() {
   return (
-    <ScrollToTop>
-      <ModalProvider>
+    <ModalProvider>
+      <ScrollToTop>
         <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/event_booking" element={<EventBookingPage />} />
@@ -22,8 +22,8 @@ function App() {
             <Route path="*" element={<HomePage />} />
           </Routes>
         </Suspense>
-      </ModalProvider>
-    </ScrollToTop>
+      </ScrollToTop>
+    </ModalProvider>
   );
 }
 export default App;

@@ -1,11 +1,11 @@
 [
   {
     "value": "Головна",
+    "id": "main",
     "to": {
       "pathname": "/",
       "hash": ""
-    },
-    "id": "main"
+    }
   },
   {
     "value": "Меню",
