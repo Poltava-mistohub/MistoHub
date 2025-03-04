@@ -65,11 +65,6 @@ export const InvestorModalWrapperStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
-    @media (min-width: 768px) {
-      width: 40px;
-      height: 40px;
-    }
   }
 
   .investor_link_icon {
@@ -82,19 +77,10 @@ export const InvestorModalWrapperStyled = styled.div`
     width: 100px;
     height: 100px;
     object-fit: contain;
-
-    @media (min-width: 768px) {
-      width: 200px;
-      height: 200px;
-    }
   }
 
   .details_wrapper {
     width: calc(100 - 115px);
-
-    @media (min-width: 768px) {
-      width: calc(100 - 215px);
-    }
   }
 
   .details_name {
@@ -124,8 +110,6 @@ export const InvestorModalWrapperStyled = styled.div`
     line-height: 130%;
   }
 
-
-
   .question_answer {
     color: #0b0b0b;
     font-size: 16px;
@@ -134,6 +118,18 @@ export const InvestorModalWrapperStyled = styled.div`
   }
 
   @media only screen and (min-width: 768px) {
+    .investor_link {
+      width: 40px;
+      height: 40px;
+    }
 
+    .investor_picture {
+      width: 200px;
+      height: 200px;
+    }
+
+    .details_wrapper {
+      width: calc(100 - 215px);
+    }
   }
 `;
