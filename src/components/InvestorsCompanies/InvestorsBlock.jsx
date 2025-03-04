@@ -1,7 +1,5 @@
-import { useState } from 'react';
 import InvestorsPeople from './InvestorsPeople/InvestorsPeople';
 import InvestorsCompanies from './InvestorsCompanies/InvestorsCompanies';
-import ModalInvestors from './ModalInvestors/ModalInvestors';
 import { getWordForCount } from '../../helpers/semantic';
 
 import {
@@ -13,11 +11,6 @@ import {
 } from './InvestorsBlock.styled';
 
 const InvestorsBlock = ({ people, companies }) => {
-  const [selectedItem, setSelectedItem] = useState(null);
-
-  const closeModal = () => {
-    setSelectedItem(null);
-  };
   return (
     <section id="investors">
       <TextWrapper>
@@ -41,9 +34,6 @@ const InvestorsBlock = ({ people, companies }) => {
         </TextWrapper>
         {companies && <InvestorsCompanies companies={companies} />}
       </PeopleContainer>
-      {selectedItem && (
-        <ModalInvestors data={selectedItem} onClose={closeModal} />
-      )}
     </section>
   );
 };

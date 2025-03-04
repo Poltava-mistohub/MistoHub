@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import ModalCompanies from '../ModalCompanies/ModalCompanies';
+import InvestorModal from '../../../shared/Modals/InvestorModal/InvestorModal';
 import { CompaniesList, CompanyWrapper } from './InvestorsCompanies.styled';
 import defaultImage from 'src/assets/investors/default-img.png';
 import { makerAnimParams } from '../../../helpers/makerAnimParams';
@@ -53,10 +53,11 @@ const InvestorsCompanies = ({ companies: companiesData }) => {
             )
           )}
           {selectedCompanies && (
-            <ModalCompanies
+            <InvestorModal
               isOpen={selectedCompanies !== null}
               data={selectedCompanies}
               onClose={closeModal}
+              variant="company"
             />
           )}
         </CompaniesList>

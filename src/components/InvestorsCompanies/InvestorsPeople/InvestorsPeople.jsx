@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import ModalInvestors from '../ModalInvestors/ModalInvestors';
+import InvestorModal from '../../../shared/Modals/InvestorModal/InvestorModal';
 import {
   ListWrapper,
   GroupContainer,
@@ -164,10 +164,11 @@ const InvestorsPeople = ({ people }) => {
         ))}
       </Container>
       {selectedInvestor && (
-        <ModalInvestors
+        <InvestorModal
           data={selectedInvestor}
           onClose={closeModal}
           isOpen={isOpen}
+          variant="person"
         />
       )}
     </ListWrapper>

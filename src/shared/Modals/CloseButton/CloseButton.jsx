@@ -3,7 +3,7 @@ import { StyledButton } from './CloseButton.styled';
 
 const CloseButton = ({ onClose }) => {
   return (
-    <StyledButton type="button" title="Закрити вікно" onClick={onClose}>
+    <StyledButton type="button" title="Закрити" onClick={onClose}>
       <span>Закрити</span>
       <Iconsvg iconName="close-component-btn" width="28" height="28" />
     </StyledButton>
