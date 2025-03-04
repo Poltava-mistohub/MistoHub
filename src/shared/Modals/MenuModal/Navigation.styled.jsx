@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledNavList = styled.ul`
+export const StyledNavList = styled.nav`
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -65,14 +65,11 @@ export const StyledNavList = styled.ul`
 `;
 
 export const StyledItem = styled.li`
-  width: 261px;
-  height: 28px;
   margin-bottom: 10px;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
 
   &:active a {
     color: #f77d07;
@@ -82,12 +79,6 @@ export const StyledItem = styled.li`
     &:hover a {
       color: #f77d07;
     }
-  }
-
-  button {
-    border: none;
-    outline: none;
-    background-color: transparent;
   }
 
   @media screen and (min-width: 768px) {

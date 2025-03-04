@@ -1,23 +1,15 @@
-import { useEffect, useState, lazy, Suspense } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { fetchCompanies, fetchPeople, fetchGoal, fetchPartners } from '../../services/API';
+
 
 import Header from '/src/components/Header/Header';
 import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
 import HeroSection from '/src/components/HeroSection/HeroSection';
 import AboutProject from '../../components/About/AboutProject';
+import realLazy from '../../utils/realLazy';
+
 import { ListenScroll, ScrollOnLocationHash } from './utils';
 
-/**
- * Default lazy loading function does not give the thread a space to render.
- * This lazy wrapper request idle callback so we start to parse the module only when the main thread is idle.
- */
-function realLazy(callback) {
-  const delay = 'requestIdleCallback' in window ?
-    (cb) => window.requestIdleCallback(cb, { timeout: 100 }) :
-    (cb) => setTimeout(cb, 0);
-
-  return lazy(() => new Promise(res => delay(res)).then(callback));
-}
 
 const CoFounders = realLazy(
   () => import('../../components/CoFounders/CoFounders')
@@ -84,7 +76,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <main>
+      <main id="main">
         <HeroSection />
         <AboutProject />
         <Suspense fallback={null}>
