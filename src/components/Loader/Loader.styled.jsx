@@ -1,10 +1,5 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
-export const spinner = keyframes`
-  to {
-    transform: rotate(360deg);
-  }
-`;
 
 export const LoaderContainer = styled.div`
   display: flex;
@@ -15,24 +10,27 @@ export const LoaderContainer = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
 
-  .house-svg {
-    margin-right: 20px;
-    fill: #f77d07;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
   }
 
-  .wave-svg {
-    fill: #f77d07;
-    margin-left: 3px;
+  .animate-me {
+    width: 100px;
+    max-width: 15vw;
+    opacity: 0;
+    color: rgb(11, 11, 11);
+    transform: translateY(100%);
+    animation: fadeInUp 1s ease-out infinite;
   }
-`;
-
-export const Text = styled.div`
-  text-align: center;
-  color: #fff;
-  margin: 0;
-  margin-top: -60px;
-  margin-right: 40px;
-  -webkit-text-stroke: 0.5px #0b0b0b;
-  font-size: 25px;
-  animation: ${spinner} 2s linear infinite;
 `;

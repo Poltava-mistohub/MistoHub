@@ -1,11 +1,30 @@
 import styled from 'styled-components';
 
-export const StyledNavList = styled.ul`
-  display: flex;
-  flex-direction: column;
-  list-style: none;
+export const StyledNavList = styled.nav`
+  width: 100%;
+  
+  @media screen and (min-width: 768px) {
+    max-width: 470px;
+  }
 
-  a {
+  @media screen and (min-width: 1440px) {
+    min-width: 470px;
+    flex-grow: 1;
+  }
+
+  .navigation_list {
+    list-style: none;
+  }
+
+  .navigation_list_item {
+    margin-bottom: 10px;
+
+    &::last-child {
+      margin-bottom: 0px;
+    }
+  }
+  
+  .navigation_link {
     font-family: 'Oddval', 'Inter', sans-serif;
     font-weight: 600;
     font-size: 24px;
@@ -19,111 +38,44 @@ export const StyledNavList = styled.ul`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-  }
+    transition: color .3s;
 
-  .active {
-    color: #f77d07;
-
-    svg {
-      display: none;
-    }
-
-    &:active svg {
-      display: block;
-    }
-
-    @media screen and (min-width: 1440px) {
-      &:hover svg {
-        display: block;
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      font-size: 44px;
-    }
-  }
-
-  .link {
-    svg {
-      display: none;
-    }
-
-    &:active svg {
-      display: block;
-    }
-
-    @media screen and (min-width: 1440px) {
-      &:hover svg {
-        display: block;
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      font-size: 44px;
-    }
-  }
-`;
-
-export const StyledItem = styled.li`
-  width: 261px;
-  height: 28px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0;
-
-  &:active a {
-    color: #f77d07;
-  }
-
-  @media screen and (min-width: 1440px) {
-    &:hover a {
+    &:hover,
+    &:active,
+    &[data-active="true"] {
       color: #f77d07;
     }
-  }
-
-  button {
-    border: none;
-    outline: none;
-    background-color: transparent;
-  }
-
-  @media screen and (min-width: 768px) {
-    height: 50px;
-    width: 466px;
-  }
-
-  svg {
-    width: 40px;
-    height: 40px;
 
     @media screen and (min-width: 768px) {
-      width: 80px;
-      height: 80px;
+      font-size: 44px;
     }
   }
-`;
 
-export const HoverContainer = styled.div`
-  width: 265px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0;
-
-  @media screen and (min-width: 768px) {
-    width: 466px;
+  .navigation_link:hover .navigation_link_icon {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.6);
   }
 
-  svg {
-    width: 40px;
-    height: 40px;
+  .navigation_link_icon {
+    width: 25px;
+    height: 25px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity .2s, visibility .2s, transform .2s;
 
     @media screen and (min-width: 768px) {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .navigation_link_text {
+    max-width: calc(100% - 25px * 1.6);
+
+    @media screen and (min-width: 768px) {
+      max-width: calc(100% - 50px * 1.6);
     }
   }
 `;

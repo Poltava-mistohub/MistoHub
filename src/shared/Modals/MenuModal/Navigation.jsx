@@ -1,44 +1,51 @@
 import { Link } from 'react-router-dom';
 import Iconsvg from '../../../components/Icon/Icon';
-import { StyledNavList, StyledItem } from './Navigation.styled';
+import { StyledNavList } from './Navigation.styled';
 import links from '../../../constants/links_menu.json';
 
 const Navigation = ({ activeSection, closeModal }) => {
-  const scrollToSection = (sectionId) => {
+  const onNavigationClick = (link, isActiveLink) => {
     closeModal('menu_modal');
 
-    if (sectionId !== 'main') {
-      const sectionElement = document.getElementById(sectionId);
+    if (isActiveLink) {
+      return;
+    }
+
+    const sectionElement = document.getElementById(link.id);
+
+    if (sectionElement) {
       window.scrollTo({
         top: sectionElement.offsetTop - 100,
-        behavior: 'smooth',
-      });
-    } else {
-      window.scrollTo({
-        top: 0,
         behavior: 'smooth',
       });
     }
   };
 
+  const renderNavigationLink = (link) => {
+    const isOuterLink = typeof link.to === 'string';
+    const isActiveLink = activeSection === link.id;
+
+    return (
+      <li className="navigation_list_item" key={link.value}>
+        <Link
+          onClick={isOuterLink ? undefined : () => onNavigationClick(link, isActiveLink)}
+          to={link.to}
+          className="navigation_link"
+          data-active={isActiveLink}
+        >
+          <span className="navigation_link_text" >{link.value}</span>
+          <Iconsvg styles="navigation_link_icon" iconName="hoverarrow" />
+        </Link>
+      </li>
+    );
+  }
+
   return (
-    <>
-      <nav>
-        <StyledNavList>
-          {links.map((link) => (
-            <StyledItem key={link.id || link.url}>
-              <Link
-                onClick={link.id ? () => scrollToSection(link.id) : undefined}
-                to={link.url ? link.url : undefined}
-                className={activeSection === link.id ? 'active' : 'link'}
-              >
-                {link.value} <Iconsvg iconName="hoverarrow" />
-              </Link>
-            </StyledItem>
-          ))}
-        </StyledNavList>
-      </nav>
-    </>
+    <StyledNavList>
+      <ul className="navigation_list">
+        {links.map(renderNavigationLink)}
+      </ul>
+    </StyledNavList>
   );
 };
 
