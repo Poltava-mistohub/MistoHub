@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, lazy, Suspense } from 'react';
+import { useState, useEffect } from 'react';
 
 import { useMediaQuery } from 'react-responsive';
 import { nanoid } from 'nanoid';
@@ -11,17 +11,11 @@ import {
   Title,
   CardsContainer,
   Card,
-  CardTitle,
-  ButtonTour,
   Arrow,
   LeftArrow,
   RightArrow,
 } from './Visualization.styled';
 import Iconsvg from '../Icon/Icon';
-
-const TourModal = lazy(
-  () => import('/src/components/Visualization/TourModal.jsx')
-);
 
 const Visualization = () => {
   const isDesktop = useMediaQuery({ minWidth: 1440 });
@@ -29,9 +23,6 @@ const Visualization = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const [currentCard, setCurrentCard] = useState(0);
-  const [isTourOpen, setIsTourOpen] = useState([false, false]);
-
-  const photoSphereRef = useRef();
 
   const setImageSrc = (cardIndex) => {
     if (isDesktop) {
@@ -63,22 +54,15 @@ const Visualization = () => {
   }, [currentCard]);
 
   const nextCard = () => {
-    if (
-      !isTourOpen.some((open) => open) &&
-      currentCard < images.length - (isDesktop ? 2 : 1)
-    ) {
+    if (currentCard < images.length - (isDesktop ? 2 : 1)) {
       setCurrentCard(currentCard + 1);
     }
   };
 
   const prevCard = () => {
-    if (!isTourOpen.some((open) => open) && currentCard > 0) {
+    if (currentCard > 0) {
       setCurrentCard(currentCard - 1);
     }
-  };
-
-  const toggleTour = (index) => {
-    setIsTourOpen(isTourOpen.map((open, i) => (i === index ? !open : false)));
   };
 
   return (
@@ -103,22 +87,6 @@ const Visualization = () => {
                   alt={image.title}
                   style={{ display: 'none' }}
                 />
-                {!isTourOpen[index] ? (
-                  <div>
-                    <CardTitle>{image.title}</CardTitle>
-                    <ButtonTour onClick={() => toggleTour(index)} type="button">
-                      Віртуальний тур
-                    </ButtonTour>
-                  </div>
-                ) : (
-                  <Suspense>
-                    <TourModal
-                      ref={photoSphereRef}
-                      image={image.tourImage}
-                      onClose={() => toggleTour(index)}
-                    />
-                  </Suspense>
-                )}
               </Card>
             ))}
         </CardsContainer>
