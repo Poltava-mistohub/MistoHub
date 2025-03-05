@@ -17,12 +17,15 @@ import { H1Styled } from '../../shared/Text/H1.styled';
 import { H2Styled } from '../../shared/Text/H2.styled';
 
 import { SpaceHeroBlock, SpaceHeroContainer, SpaceDetailsBlock } from './EventBookingPage.styled';
+import { useModal } from '../../contexts/ModalHook';
 
 const ModalsManager = realLazy(
   () => import('/src/shared/Modals/ModalsManager.jsx')
 );
 
 const EventBookingPage = () => {
+  const { openModal } = useModal();
+
   return (
     <>
       <Header />
@@ -159,7 +162,7 @@ const EventBookingPage = () => {
                 </ul>
               </div>
 
-              <button className="book_event_button">
+              <button className="book_event_button" type="button" onClick={() => openModal('event_booking_modal')}>
                 Провести подію
               </button>
               <Icon

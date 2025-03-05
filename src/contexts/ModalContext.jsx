@@ -5,6 +5,7 @@ export const ModalContext = createContext();
 export const ModalProvider = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState({
     join_modal: false,
+    book_event_modal: false,
     menu_modal: false,
     team_modal: false,
   });
