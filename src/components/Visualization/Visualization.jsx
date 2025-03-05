@@ -1,9 +1,9 @@
-import { useState, useEffect, useRef, lazy, Suspense } from 'react';
+import { useState, useEffect } from 'react';
 
 import { useMediaQuery } from 'react-responsive';
-import { nanoid } from 'nanoid';
 
-import { images } from '../../constants/ImageImportsVisualization';
+import { heroData as images } from '../../constants/dataHeroSwiper';
+import { HeroPicture } from '../HeroSection/HeroPicture';
 import {
   VisualizationSection,
   VisualizationContainer,
@@ -11,47 +11,16 @@ import {
   Title,
   CardsContainer,
   Card,
-  CardTitle,
-  ButtonTour,
   Arrow,
   LeftArrow,
   RightArrow,
 } from './Visualization.styled';
 import Iconsvg from '../Icon/Icon';
 
-const TourModal = lazy(
-  () => import('/src/components/Visualization/TourModal.jsx')
-);
-
 const Visualization = () => {
   const isDesktop = useMediaQuery({ minWidth: 1440 });
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1439 });
-  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const [currentCard, setCurrentCard] = useState(0);
-  const [isTourOpen, setIsTourOpen] = useState([false, false]);
-
-  const photoSphereRef = useRef();
-
-  const setImageSrc = (cardIndex) => {
-    if (isDesktop) {
-      return images[cardIndex].src.desktop;
-    } else if (isTablet) {
-      return images[cardIndex].src.tablet;
-    } else if (isMobile) {
-      return images[cardIndex].src.mobile;
-    }
-  };
-
-  const setImageSrcSet = (cardIndex) => {
-    if (isDesktop) {
-      return images[cardIndex].srcSet.desktop;
-    } else if (isTablet) {
-      return images[cardIndex].srcSet.tablet;
-    } else if (isMobile) {
-      return images[cardIndex].srcSet.mobile;
-    }
-  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -63,62 +32,28 @@ const Visualization = () => {
   }, [currentCard]);
 
   const nextCard = () => {
-    if (
-      !isTourOpen.some((open) => open) &&
-      currentCard < images.length - (isDesktop ? 2 : 1)
-    ) {
+    if (currentCard < images.length - (isDesktop ? 2 : 1)) {
       setCurrentCard(currentCard + 1);
     }
   };
 
   const prevCard = () => {
-    if (!isTourOpen.some((open) => open) && currentCard > 0) {
+    if (currentCard > 0) {
       setCurrentCard(currentCard - 1);
     }
-  };
-
-  const toggleTour = (index) => {
-    setIsTourOpen(isTourOpen.map((open, i) => (i === index ? !open : false)));
   };
 
   return (
     <VisualizationSection id="design">
       <VisualizationContainer>
         <BlockName>Візуалізація</BlockName>
-        <Title>Як виглядатиме простір?</Title>
+        <Title>Як всередині?</Title>
         <CardsContainer>
           {images
             .slice(currentCard, currentCard + (isDesktop ? 2 : 1))
-            .map((image, index) => (
-              <Card
-                key={nanoid()}
-                style={{
-                  backgroundImage: `url('${setImageSrc((currentCard + index) % images.length)}')`,
-                  backgroundSize: 'cover',
-                }}
-              >
-                <img
-                  src={setImageSrc((currentCard + index) % images.length)}
-                  srcSet={setImageSrcSet((currentCard + index) % images.length)}
-                  alt={image.title}
-                  style={{ display: 'none' }}
-                />
-                {!isTourOpen[index] ? (
-                  <div>
-                    <CardTitle>{image.title}</CardTitle>
-                    <ButtonTour onClick={() => toggleTour(index)} type="button">
-                      Віртуальний тур
-                    </ButtonTour>
-                  </div>
-                ) : (
-                  <Suspense>
-                    <TourModal
-                      ref={photoSphereRef}
-                      image={image.tourImage}
-                      onClose={() => toggleTour(index)}
-                    />
-                  </Suspense>
-                )}
+            .map((image) => (
+              <Card key={image.alt}>
+                <HeroPicture item={image} priority={false} />
               </Card>
             ))}
         </CardsContainer>

@@ -15,7 +15,7 @@ const InvestorsBlock = ({ people, companies }) => {
     <section id="investors">
       <TextWrapper>
         <InfoText>Імпакт-інвестори МІСТОХАБ</InfoText>
-        <MainHeading>З нами вже</MainHeading>
+        <MainHeading>З нами</MainHeading>
         {people?.length > 0 && (
           <SecondHeading>
             {people.length} {getWordForCount(people.length, 'p')}

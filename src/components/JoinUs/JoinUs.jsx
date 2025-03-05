@@ -5,16 +5,12 @@ import {
   JoinUsSection,
   JoinUsContainer,
   Description,
-  StatsContainer,
-  StatsList,
-  StatsTitle,
   Title,
-  StatsListItem,
   JoinButton,
   AlreadyJoined,
 } from './JoinUs.styled';
 
-const JoinUs = ({ people = [], companies = [], goalData = null }) => {
+const JoinUs = ({ people = [], companies = [] }) => {
   const { openModal } = useModal();
 
   return (
@@ -25,18 +21,6 @@ const JoinUs = ({ people = [], companies = [], goalData = null }) => {
           Саме імпакт-інвестори будуть впливати на розподіл коштів серед
           проєктів містян
         </Description>
-        <StatsContainer>
-          <StatsTitle>До відкриття МІСТОХАБ залишилось:</StatsTitle>
-          <StatsList>
-            {
-              goalData ? (
-                <StatsListItem>
-                  $ {goalData.goal - goalData.raised}
-                </StatsListItem>
-              ) : null
-            }
-          </StatsList>
-        </StatsContainer>
         <JoinButton type="button" onClick={() => openModal('join_modal')}>
           Приєднатися
         </JoinButton>
