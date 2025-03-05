@@ -28,9 +28,6 @@ const JoinUs = realLazy(
 const Visualization = realLazy(
   () => import('/src/components/Visualization/Visualization.jsx')
 );
-const AccumulatedMoney = realLazy(
-  () => import('/src/components/AccumulatedMoney/AccumulatedMoney.jsx')
-);
 const InvestorsBlock = realLazy(
   () => import('/src/components/InvestorsCompanies/InvestorsBlock.jsx')
 );
@@ -89,7 +86,6 @@ const HomePage = () => {
         <AboutProject />
         <Suspense fallback={null}>
           <Visualization />
-          <AccumulatedMoney goalData={goalData} />
           <InvestorsBlock people={people} companies={companies} />
           <PartnersBlock companies={partners} />
           <JoinUs people={people} companies={companies} goalData={goalData} />
