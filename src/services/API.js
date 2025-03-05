@@ -32,22 +32,6 @@ function formImgFocalPoint(img) {
   return null;
 }
 
-export async function fetchGoal() {
-  try {
-    const {
-      data: { result },
-    } = await axios.get(
-      `https://${import.meta.env.VITE_ADMIN_PROJECT_ID}.apicdn.sanity.io/${
-        import.meta.env.VITE_ADMIN_API_VERSION
-      }/data/query/${
-        import.meta.env.VITE_ADMIN_DATASET
-      }?query=*[_type=="goal"]{ _id, goal, raised }`
-    );
-    return result[0];
-  } catch (error) {
-    return;
-  }
-}
 export async function fetchCompanies() {
   try {
     const {
