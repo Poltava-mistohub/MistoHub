@@ -218,12 +218,6 @@ export const HeroContainer = styled(Container)`
   .hero-title {
     padding-left: 16px;
     padding-right: 16px;
-    font-family: 'Oddval', sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    text-align: center;
     color: #fff;
     position: absolute;
 
@@ -234,13 +228,6 @@ export const HeroContainer = styled(Container)`
     @media only screen and (min-width: 768px) {
       padding-left: 32px;
       padding-right: 32px;
-      font-size: 68px;
-      line-height: 0.9;
-    }
-
-    @media only screen and (min-width: 1440px) {
-      font-size: 90px;
-      line-height: 1;
     }
   }
 `;

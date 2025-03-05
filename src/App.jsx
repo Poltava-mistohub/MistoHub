@@ -7,6 +7,9 @@ import Loader from './components/Loader/Loader';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
+const EventBookingPage = lazy(() => import('./pages/EventBookingPage/EventBookingPage'));
+
+
 
 function App() {
   return (
@@ -14,6 +17,7 @@ function App() {
       <ScrollToTop>
         <Suspense fallback={<Loader />}>
           <Routes>
+            <Route path="/event_booking" element={<EventBookingPage />} />
             <Route path="/" element={<HomePage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
