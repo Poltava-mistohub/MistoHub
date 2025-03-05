@@ -85,7 +85,7 @@ const Visualization = () => {
     <VisualizationSection id="design">
       <VisualizationContainer>
         <BlockName>Візуалізація</BlockName>
-        <Title>Як виглядатиме простір?</Title>
+        <Title>Як всередині?</Title>
         <CardsContainer>
           {images
             .slice(currentCard, currentCard + (isDesktop ? 2 : 1))
