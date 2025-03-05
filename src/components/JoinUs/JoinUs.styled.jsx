@@ -126,51 +126,6 @@ export const Description = styled.p`
   }
 `;
 
-export const StatsContainer = styled.div`
-  margin-top: 24px;
-  @media screen and (min-width: 1440px) {
-    margin-top: 28px;
-  }
-`;
-
-export const StatsTitle = styled.h3`
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
-  @media screen and (min-width: 768px) {
-    font-size: 24px;
-    line-height: 133%;
-  }
-  @media screen and (min-width: 1440px) {
-    font-size: 28px;
-    line-height: 121%;
-  }
-`;
-
-export const StatsList = styled.ul`
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 133%;
-  @media screen and (min-width: 768px) {
-    margin-top: 24px;
-    font-size: 16px;
-    line-height: 150%;
-  }
-`;
-
-export const StatsListItem = styled.li`
-  padding: 10px 12px;
-  border-radius: 30px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  @media screen and (min-width: 768px) {
-    padding: 15px 26px;
-  }
-`;
-
 export const JoinButton = styled.button`
   margin-top: 24px;
   padding: 15px 20px;
