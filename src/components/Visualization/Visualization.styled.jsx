@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import cursorImage from '../../assets/images/visualization/cursor-image.png';
 import Container from '../../shared/Container/Container';
 
 export const VisualizationSection = styled.section`
@@ -71,9 +70,6 @@ export const Card = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
 
   @media (min-width: 320px) and (max-width: 374px) {
@@ -94,6 +90,13 @@ export const Card = styled.div`
 
   @media (min-width: 1440px) {
     width: calc((100% - 30px) / 2);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
   }
 `;
 

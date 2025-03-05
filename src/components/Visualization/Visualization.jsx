@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
 import { useMediaQuery } from 'react-responsive';
-import { nanoid } from 'nanoid';
 
-import { images } from '../../constants/ImageImportsVisualization';
+import { heroData as images } from '../../constants/dataHeroSwiper';
+import { HeroPicture } from '../HeroSection/HeroPicture';
 import {
   VisualizationSection,
   VisualizationContainer,
@@ -19,30 +19,8 @@ import Iconsvg from '../Icon/Icon';
 
 const Visualization = () => {
   const isDesktop = useMediaQuery({ minWidth: 1440 });
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1439 });
-  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const [currentCard, setCurrentCard] = useState(0);
-
-  const setImageSrc = (cardIndex) => {
-    if (isDesktop) {
-      return images[cardIndex].src.desktop;
-    } else if (isTablet) {
-      return images[cardIndex].src.tablet;
-    } else if (isMobile) {
-      return images[cardIndex].src.mobile;
-    }
-  };
-
-  const setImageSrcSet = (cardIndex) => {
-    if (isDesktop) {
-      return images[cardIndex].srcSet.desktop;
-    } else if (isTablet) {
-      return images[cardIndex].srcSet.tablet;
-    } else if (isMobile) {
-      return images[cardIndex].srcSet.mobile;
-    }
-  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -73,20 +51,9 @@ const Visualization = () => {
         <CardsContainer>
           {images
             .slice(currentCard, currentCard + (isDesktop ? 2 : 1))
-            .map((image, index) => (
-              <Card
-                key={nanoid()}
-                style={{
-                  backgroundImage: `url('${setImageSrc((currentCard + index) % images.length)}')`,
-                  backgroundSize: 'cover',
-                }}
-              >
-                <img
-                  src={setImageSrc((currentCard + index) % images.length)}
-                  srcSet={setImageSrcSet((currentCard + index) % images.length)}
-                  alt={image.title}
-                  style={{ display: 'none' }}
-                />
+            .map((image) => (
+              <Card key={image.alt}>
+                <HeroPicture item={image} priority={false} />
               </Card>
             ))}
         </CardsContainer>
