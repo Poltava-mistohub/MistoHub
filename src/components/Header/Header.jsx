@@ -5,6 +5,7 @@ import { useModal } from '../../contexts/ModalHook';
 import { HeaderContainer, StyledHeader } from './Header.styled';
 import SocialBlock from '/src/shared/SocialBlock/SocialBlock';
 import Icon from '/src/components/Icon/Icon';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [darkStyle, setDarkStyle] = useState('');
@@ -43,12 +44,14 @@ function Header() {
     <StyledHeader>
       <div className={`hidden-wrap ${darkStyle}`}>
         <HeaderContainer>
-          <Icon
-            width={isMobile ? '99' : '118'}
-            height={isMobile ? '34' : '40'}
-            iconName="main-logo"
-            styles={`main-logo ${darkStyle} `}
-          />
+          <Link to="/">
+            <Icon
+              width={isMobile ? '99' : '118'}
+              height={isMobile ? '34' : '40'}
+              iconName="main-logo"
+              styles={`main-logo ${darkStyle} `}
+            />
+          </Link>
           {isMobile ? (
             <>
               <button type="button" onClick={() => openModal('menu_modal')}>
@@ -63,10 +66,9 @@ function Header() {
           ) : (
             <div className="menu-wrapper">
               <SocialBlock darkStyle={darkStyle} sectionName="header" />
-              <button
-                type="button"
+              <Link
+                to="/event_booking"
                 className="btn-clouds"
-                onClick={() => openModal('join_modal')}
               >
                 <Icon
                   width="180"
@@ -74,8 +76,8 @@ function Header() {
                   iconName="cloud"
                   styles={`${darkStyle} cloud-icon`}
                 />
-                <span>Підтримати проєкт</span>
-              </button>
+                <span>Забронювати івент</span>
+              </Link>
               <button type="button" onClick={() => openModal('menu_modal')}>
                 <Icon
                   width="54"
