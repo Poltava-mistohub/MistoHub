@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { ErrorStyledBlock } from '/src/shared/Modals/JoinModal/JoinModal.styled';
+import { ErrorStyledBlock } from './BookEvent.styled';
 import Icon from '/src/components/Icon/Icon';
 
 const ErrorBlock = ({ handleCloseModal }) => {
@@ -31,8 +31,8 @@ const ErrorBlock = ({ handleCloseModal }) => {
         <ul className="joinContacts">
           <li>
             <p>Телефон:</p>
-            <a className="joinItemContact" href="tel:+380981340622">
-              +38 (098) 134-06-22
+            <a className="joinItemContact" href="tel:+380958282172">
+              +38 (095) 828-21-72
             </a>
           </li>
           <li>

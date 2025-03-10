@@ -25,6 +25,7 @@ export const JoinModalStyled = styled(Modal)`
   font-weight: 500;
   color: rgba(11, 11, 11, 0.5);
   overflow-y: auto;
+  overflow-x: clip;
 
   @media only screen and (min-width: 768px) {
     font-size: 16px;
@@ -81,6 +82,7 @@ export const JoinModalStyled = styled(Modal)`
     display: flex;
     justify-content: center;
     gap: 90px;
+    width: 100%;
     margin: 0 auto;
 
     @media only screen and (min-width: 1440px) {
@@ -133,33 +135,89 @@ export const JoinModalStyled = styled(Modal)`
   }
 
   .joinFields {
-    height: 82px;
-
-    @media only screen and (min-width: 768px) {
-      height: 108px;
-    }
-
-    @media only screen and (min-width: 1440px) {
-      height: 108px;
-    }
-  }
-
-  .joinFields:last-child {
-    height: 148px;
-
-    @media only screen and (min-width: 768px) {
-      height: 230px;
-    }
-
-    @media only screen and (min-width: 1440px) {
-      height: 230px;
-    }
+    padding-bottom: calc(40px - 14px);
+    position: relative;
   }
 
   .joinLabel {
     display: flex;
     flex-direction: column;
     gap: 8px;
+  }
+
+  .agreementLabel {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    flex-direction: row;
+    line-height: 1.3;
+    
+    input[type="checkbox"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(11, 11, 11, 0.15);
+      border-radius: 2px;
+      flex-shrink: 0;
+      position: relative;
+      cursor: pointer;
+      
+      &:checked {
+        border: 1px solid #F77D07;
+        
+        &:after {
+          content: "";
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          background-color: #F77D07;
+          border-radius: 1px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      
+      &:focus {
+        outline: 2px solid rgba(247, 125, 7, 0.5);
+      }
+    }
+  }
+
+  .fieldSize {
+    width: 100%;
+    min-width: 302px;
+
+    @media only screen and (min-width: 375px) {
+      width: 343px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: calc(314px + 30px);
+      margin-right: -30px;
+    }
+  }
+
+  .rules {
+    font-size: 9px;
+    color: #fff;
+    background-color: #FB7329;
+    border-radius: 40px;
+    padding: 24px;
+
+    h3 {
+      display: inline-block;
+      background-color: #FD9B9F;
+      line-height: 16px;
+      border-radius: 8px;
+      padding: 0 5px;
+      margin: 7px 0 5px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
   }
 
   .joinInput {
@@ -182,6 +240,54 @@ export const JoinModalStyled = styled(Modal)`
       padding-bottom: 12px;
       font-size: 16px;
       width: 314px;
+    }
+  }
+
+  .joinInput.m_small {
+    height: 34px;
+    margin-top: 7px;
+  }
+
+  .joinCheckboxTitle {
+    margin-bottom: 7px;
+  }
+
+  .joinCheckboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    
+    input[type="radio"] {
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border: 1px solid rgba(11, 11, 11, 0.15);
+      border-radius: 2px;
+      position: relative;
+      cursor: pointer;
+      top: -2px;
+      
+      &:checked {
+        border: 1px solid #F77D07;
+        
+        &:after {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background-color: #F77D07;
+          border-radius: 1px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      
+      &:focus {
+        outline: 2px solid rgba(247, 125, 7, 0.5);
+      }
     }
   }
 
@@ -250,6 +356,9 @@ export const JoinModalStyled = styled(Modal)`
   }
 
   .error {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     color: red;
     font-size: 14px;
 
@@ -264,103 +373,16 @@ export const JoinModalStyled = styled(Modal)`
 `;
 
 export const MaskaStyled = styled.div`
-  margin-top: 56px;
-  width: 548px;
-  height: 600px;
+  height: 100%;
+  width: auto;
+  max-width: 35%;
+  display: flex;
+  align-items: center;
 
   .joinImg {
-    width: 548px;
-    height: 600px;
-  }
-`;
-
-export const InfoStyled = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
-
-  .joinProtectionBlock {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    @media only screen and (min-width: 768px) {
-      justify-content: space-between;
-    }
-  }
-
-  .joinProtectionBig {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .joinProtection {
-    position: relative;
-  }
-
-  .joinProtection::after {
-    content: '';
-    position: absolute;
-    top: 35%;
-    right: -8px;
-    transform: translateY(-50%);
-    display: block;
-    width: 1px;
-    height: 14px;
-    background-color: rgba(11, 11, 11, 0.5);
-
-    @media only screen and (min-width: 768px) {
-      right: -10px;
-    }
-  }
-
-  .developers {
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    line-height: 1;
-    background-color: transparent;
-    border: none;
-    color: rgba(11, 11, 11, 0.5);
-    padding: 0;
-
-    @media only screen and (min-width: 768px) {
-      font-size: 16px;
-      margin-left: 10px;
-    }
-
-    & svg {
-      margin-left: 8px;
-      width: 59px;
-      height: 18px;
-      fill: #f77d07;
-
-      @media only screen and (min-width: 768px) {
-        margin-left: 10px;
-        width: 100px;
-        height: 30px;
-      }
-    }
-  }
-
-  .developers:active {
-    color: #0b0b0b;
-  }
-
-  .developers:active svg {
-    fill: #0b0b0b;
-  }
-
-  @media only screen and (min-width: 1440px) {
-    .developers:hover {
-      color: #0b0b0b;
-    }
-
-    .developers:hover svg {
-      fill: #0b0b0b;
-    }
+    height: 100%;
+    max-height: 620px;
+    border-radius: 140px;
   }
 `;
 
@@ -471,6 +493,96 @@ export const PostedStyledBlock = styled.div`
       width: 180px;
       height: 54px;
       font-size: 16px;
+    }
+  }
+`;
+
+export const InfoStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+
+  .joinProtectionBlock {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media only screen and (min-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+
+  .joinProtectionBig {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .joinProtection {
+    position: relative;
+  }
+
+  .joinProtection::after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    right: -8px;
+    transform: translateY(-50%);
+    display: block;
+    width: 1px;
+    height: 14px;
+    background-color: rgba(11, 11, 11, 0.5);
+
+    @media only screen and (min-width: 768px) {
+      right: -10px;
+    }
+  }
+
+  .developers {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    color: rgba(11, 11, 11, 0.5);
+    padding: 0;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+
+    & svg {
+      margin-left: 8px;
+      width: 59px;
+      height: 18px;
+      fill: #f77d07;
+
+      @media only screen and (min-width: 768px) {
+        margin-left: 10px;
+        width: 100px;
+        height: 30px;
+      }
+    }
+  }
+
+  .developers:active {
+    color: #0b0b0b;
+  }
+
+  .developers:active svg {
+    fill: #0b0b0b;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .developers:hover {
+      color: #0b0b0b;
+    }
+
+    .developers:hover svg {
+      fill: #0b0b0b;
     }
   }
 `;

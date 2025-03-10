@@ -1,7 +1,7 @@
 import { useMediaQuery } from 'react-responsive';
 import { useModal } from '/src/contexts/ModalHook';
 
-import { InfoStyled } from '/src/shared/Modals/JoinModal/JoinModal.styled';
+import { InfoStyled } from './BookEvent.styled';
 import Icon from '/src/components/Icon/Icon';
 
 const Info = () => {

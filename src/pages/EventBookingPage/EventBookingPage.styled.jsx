@@ -155,7 +155,7 @@ export const SpaceDetailsBlock = styled.section`
     line-height: 1.3;
     letter-spacing: -0.02em;
     background-color: #f77d07;
-    border-radius: 30px;
+    border-radius: 35px;
     border: none;
     color: #ffffff;
     padding: 15px 20px;

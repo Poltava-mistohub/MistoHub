@@ -1,9 +1,9 @@
-import { MaskaStyled } from '/src/shared/Modals/JoinModal/JoinModal.styled';
+import { MaskaStyled } from './BookEvent.styled';
 
-import maska_png1 from '/src/assets/join/maska.png';
-import maska_png2 from '/src/assets/join/maska@2x.png';
-import maska_webp1 from '/src/assets/join/maska.webp';
-import maska_webp2 from '/src/assets/join/maska@2x.webp';
+import maska_png1 from '/src/assets/EventBooking/img/event_place.png';
+import maska_png2 from 'src/assets/EventBooking/img/event_place@2.png';
+import maska_webp1 from 'src/assets/EventBooking/img/event_place.webp';
+import maska_webp2 from 'src/assets/EventBooking/img/event_place@2.png';
 
 const Maska = () => {
   return (

@@ -1,7 +1,6 @@
-import { useMediaQuery } from 'react-responsive';
 import { useEffect, useRef } from 'react';
 
-import { PostedStyledBlock } from '/src/shared/Modals/JoinModal/JoinModal.styled';
+import { PostedStyledBlock } from './BookEvent.styled';
 
 const PostedBlock = ({ handleCloseModal }) => {
   const blockRef = useRef(null);
@@ -10,8 +9,6 @@ const PostedBlock = ({ handleCloseModal }) => {
     blockRef.current.focus();
   }, []);
 
-  const isDesctop = useMediaQuery({ minWidth: 1440 });
-  const isMobile = useMediaQuery({ maxWidth: 375 });
   return (
     <div
       ref={blockRef}
@@ -24,14 +21,12 @@ const PostedBlock = ({ handleCloseModal }) => {
     >
       <PostedStyledBlock>
         <h2 className="joinTitle">
-          <span className="joinTitleAccent">Дякуємо </span>за перший крок
-          {!isMobile && <br />} до змін Полтави! Ваші дані
-          {!isMobile && <br />} успішно
-          <span className="joinTitleAccent"> відправлені!</span>
+          <span className="joinTitleAccent">Дякуємо! </span><br />
+          Ваш запит успішно
+          <span className="joinTitleAccent"> відправлений!</span>
         </h2>
         <p className="joinText">
-          Протягом доби звʼяжемось з вами для {!isDesctop && <br />}
-          обговорення подальших етапів.
+          Незабаром звʼяжемось з вами для підтвердження.
         </p>
         <button
           className="joinSuccessBtn"
