@@ -1,20 +1,21 @@
 {
-  "_InvestorsBlock.styled-12d6d3bd.js": {
-    "file": "assets/InvestorsBlock.styled-12d6d3bd.js",
+  "_InvestorsBlock.styled-67dde353.js": {
+    "file": "assets/InvestorsBlock.styled-67dde353.js",
     "imports": [
       "index.html"
     ]
   },
-  "_event_place-77c31121.js": {
+  "_event_place@2-02997fd4.js": {
     "assets": [
       "assets/event_place-b9da7d77.png",
       "assets/event_place@2-b2111536.png",
-      "assets/event_place-63ce7a1e.webp"
+      "assets/event_place-63ce7a1e.webp",
+      "assets/event_place@2-5fc10cae.webp"
     ],
-    "file": "assets/event_place-77c31121.js"
+    "file": "assets/event_place@2-02997fd4.js"
   },
-  "_index-637f50cf.js": {
-    "file": "assets/index-637f50cf.js",
+  "_index-7f9cb09e.js": {
+    "file": "assets/index-7f9cb09e.js",
     "imports": [
       "index.html"
     ]
@@ -92,7 +93,7 @@
       "src/shared/Modals/ModalsManager.jsx",
       "src/pages/EventBookingPage/EventBookingPage.jsx"
     ],
-    "file": "assets/index-f2da1e2a.js",
+    "file": "assets/index-6f42a811.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -1050,7 +1051,7 @@
       "assets/vitaliyvolodchenko@2x-206d1729.webp",
       "assets/vitaliyvolodchenko-550e7fbc.jpg"
     ],
-    "file": "assets/CoFounders-12384f61.js",
+    "file": "assets/CoFounders-09e7d9be.js",
     "imports": [
       "index.html"
     ],
@@ -1058,7 +1059,7 @@
     "src": "src/components/CoFounders/CoFounders.jsx"
   },
   "src/components/Footer/Footer.jsx": {
-    "file": "assets/Footer-abddd660.js",
+    "file": "assets/Footer-c4014b7b.js",
     "imports": [
       "index.html"
     ],
@@ -1070,11 +1071,11 @@
       "assets/noname-a8edc818.jpg",
       "assets/illustration_modal-48542975.svg"
     ],
-    "file": "assets/InvestorsBlock-543f823f.js",
+    "file": "assets/InvestorsBlock-588cbf81.js",
     "imports": [
       "index.html",
-      "_InvestorsBlock.styled-12d6d3bd.js",
-      "_index-637f50cf.js"
+      "_InvestorsBlock.styled-67dde353.js",
+      "_index-7f9cb09e.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/InvestorsBlock.jsx"
@@ -1083,10 +1084,10 @@
     "assets": [
       "assets/partners_illustration-6168f924.svg"
     ],
-    "file": "assets/PartnersBlock-7549c819.js",
+    "file": "assets/PartnersBlock-f3f8da5c.js",
     "imports": [
       "index.html",
-      "_InvestorsBlock.styled-12d6d3bd.js"
+      "_InvestorsBlock.styled-67dde353.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/PartnersBlock.jsx"
@@ -1124,7 +1125,7 @@
       "assets/blob-image-dekstop@2x-9856da11.jpg",
       "assets/blob-image-dekstop@2x-7190f328.webp"
     ],
-    "file": "assets/JoinUs-18da1bcc.js",
+    "file": "assets/JoinUs-10178865.js",
     "imports": [
       "index.html"
     ],
@@ -1132,7 +1133,7 @@
     "src": "src/components/JoinUs/JoinUs.jsx"
   },
   "src/components/Visualization/Visualization.jsx": {
-    "file": "assets/Visualization-670e7795.js",
+    "file": "assets/Visualization-b6e6282d.js",
     "imports": [
       "index.html"
     ],
@@ -1141,7 +1142,6 @@
   },
   "src/pages/EventBookingPage/EventBookingPage.jsx": {
     "assets": [
-      "assets/event_place@2-5fc10cae.webp",
       "assets/checkmark-aa981d70.svg",
       "assets/prohibited-2ec73ea7.svg",
       "assets/red-dot-5075d595.svg",
@@ -1151,10 +1151,10 @@
     "dynamicImports": [
       "src/shared/Modals/ModalsManager.jsx"
     ],
-    "file": "assets/EventBookingPage-ad013edf.js",
+    "file": "assets/EventBookingPage-c5dfa7c4.js",
     "imports": [
       "index.html",
-      "_event_place-77c31121.js",
+      "_event_place@2-02997fd4.js",
       "src/components/Footer/Footer.jsx"
     ],
     "isDynamicEntry": true,
@@ -1251,11 +1251,11 @@
       "assets/bg-modal-tabl-35cc034e.png",
       "assets/bg-modal-desk-02f0110a.png"
     ],
-    "file": "assets/ModalsManager-d65a2fee.js",
+    "file": "assets/ModalsManager-a0bb2e8d.js",
     "imports": [
       "index.html",
-      "_index-637f50cf.js",
-      "_event_place-77c31121.js"
+      "_index-7f9cb09e.js",
+      "_event_place@2-02997fd4.js"
     ],
     "isDynamicEntry": true,
     "src": "src/shared/Modals/ModalsManager.jsx"
