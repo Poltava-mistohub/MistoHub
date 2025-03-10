@@ -70,14 +70,14 @@ export const About = () => {
           <div className="about-list-item-number">1</div>
           <h3 className="about-list-item-title">Кафе</h3>
           <p className="about-list-item-text">
-            Стане місцем якісного відпочинку, знайомств та генерування ідей.
+            Місце якісного відпочинку, знайомств та генерування ідей.
           </p>
         </SwiperSlide>
         <SwiperSlide tag="li" className="about-list-item">
           <div className="about-list-item-number">2</div>
           <h3 className="about-list-item-title">Івент-простір</h3>
           <p className="about-list-item-text">
-            Розвиватиме культурне життя Полтави та стане місцем для
+            Розвиває культурне життя Полтави та є місцем для
             самореалізації.
           </p>
         </SwiperSlide>
@@ -85,7 +85,7 @@ export const About = () => {
           <div className="about-list-item-number">3</div>
           <h3 className="about-list-item-title">Крамниця МІСТОШОП</h3>
           <p className="about-list-item-text">
-            Продаватиме унікальні сучасні сувеніри, що відображають дух міста та
+            Продаває унікальні сучасні сувеніри, що відображають дух міста та
             його культурну спадщину.
           </p>
         </SwiperSlide>
