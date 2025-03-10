@@ -1,11 +1,31 @@
 {
-  "HomePage.css": {
-    "file": "assets/HomePage-0ded8c46.css",
-    "src": "HomePage.css"
+  "_InvestorsBlock.styled-16536ea2.js": {
+    "file": "assets/InvestorsBlock.styled-16536ea2.js",
+    "imports": [
+      "index.html"
+    ]
   },
-  "_HomePage-602f3375.js": {
+  "_event_place-77c31121.js": {
     "assets": [
-      "assets/icons-44799614.svg",
+      "assets/event_place-b9da7d77.png",
+      "assets/event_place@2-b2111536.png",
+      "assets/event_place-63ce7a1e.webp"
+    ],
+    "file": "assets/event_place-77c31121.js"
+  },
+  "_index-20119065.js": {
+    "file": "assets/index-20119065.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "index.css": {
+    "file": "assets/index-fc121315.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "assets": [
+      "assets/icons-270df3e0.svg",
       "assets/hero1mob-d9beee43.png",
       "assets/hero1mob-61ed163b.webp",
       "assets/hero1mob@2x-8ad11692.png",
@@ -52,10 +72,15 @@
       "assets/building-tablet-6b49ad77.webp",
       "assets/building-tablet@2x-e385e999.webp",
       "assets/building-mobile-24746013.webp",
-      "assets/building-mobile@2x-ac0864e6.webp"
+      "assets/building-mobile@2x-ac0864e6.webp",
+      "assets/Oddval-SemiBold-64f7c442.woff2",
+      "assets/FixelDisplay-Medium-5bfd1e44.ttf",
+      "assets/FixelDisplay-Medium-7115cd73.woff2",
+      "assets/FixelDisplay-SemiBold-9182250e.ttf",
+      "assets/FixelDisplay-SemiBold-72f9a653.woff2"
     ],
     "css": [
-      "assets/HomePage-0ded8c46.css"
+      "assets/index-fc121315.css"
     ],
     "dynamicImports": [
       "src/components/CoFounders/CoFounders.jsx",
@@ -64,47 +89,10 @@
       "src/components/InvestorsCompanies/InvestorsBlock.jsx",
       "src/components/InvestorsCompanies/PartnersBlock.jsx",
       "src/components/Footer/Footer.jsx",
-      "src/shared/Modals/ModalsManager.jsx"
+      "src/shared/Modals/ModalsManager.jsx",
+      "src/pages/EventBookingPage/EventBookingPage.jsx"
     ],
-    "file": "assets/HomePage-602f3375.js",
-    "imports": [
-      "index.html"
-    ],
-    "isDynamicEntry": true
-  },
-  "_InvestorsBlock.styled-b33ed80d.js": {
-    "file": "assets/InvestorsBlock.styled-b33ed80d.js",
-    "imports": [
-      "index.html",
-      "_HomePage-602f3375.js"
-    ]
-  },
-  "_index-1274aa25.js": {
-    "file": "assets/index-1274aa25.js",
-    "imports": [
-      "index.html",
-      "_HomePage-602f3375.js"
-    ]
-  },
-  "index.css": {
-    "file": "assets/index-a6b3472e.css",
-    "src": "index.css"
-  },
-  "index.html": {
-    "assets": [
-      "assets/Oddval-SemiBold-64f7c442.woff2",
-      "assets/FixelDisplay-Medium-5bfd1e44.ttf",
-      "assets/FixelDisplay-Medium-7115cd73.woff2",
-      "assets/FixelDisplay-SemiBold-9182250e.ttf",
-      "assets/FixelDisplay-SemiBold-72f9a653.woff2"
-    ],
-    "css": [
-      "assets/index-a6b3472e.css"
-    ],
-    "dynamicImports": [
-      "_HomePage-602f3375.js"
-    ],
-    "file": "assets/index-23659ed8.js",
+    "file": "assets/index-eafb5543.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -287,6 +275,42 @@
   "src/assets/CoFoundersImages/webp/vitaliyvolodchenko@2x.webp": {
     "file": "assets/vitaliyvolodchenko@2x-206d1729.webp",
     "src": "src/assets/CoFoundersImages/webp/vitaliyvolodchenko@2x.webp"
+  },
+  "src/assets/EventBooking/img/event_place.png": {
+    "file": "assets/event_place-b9da7d77.png",
+    "src": "src/assets/EventBooking/img/event_place.png"
+  },
+  "src/assets/EventBooking/img/event_place.webp": {
+    "file": "assets/event_place-63ce7a1e.webp",
+    "src": "src/assets/EventBooking/img/event_place.webp"
+  },
+  "src/assets/EventBooking/img/event_place@2.png": {
+    "file": "assets/event_place@2-b2111536.png",
+    "src": "src/assets/EventBooking/img/event_place@2.png"
+  },
+  "src/assets/EventBooking/img/event_place@2.webp": {
+    "file": "assets/event_place@2-5fc10cae.webp",
+    "src": "src/assets/EventBooking/img/event_place@2.webp"
+  },
+  "src/assets/EventBooking/svg/checkmark.svg": {
+    "file": "assets/checkmark-aa981d70.svg",
+    "src": "src/assets/EventBooking/svg/checkmark.svg"
+  },
+  "src/assets/EventBooking/svg/prohibited.svg": {
+    "file": "assets/prohibited-2ec73ea7.svg",
+    "src": "src/assets/EventBooking/svg/prohibited.svg"
+  },
+  "src/assets/EventBooking/svg/red-dot.svg": {
+    "file": "assets/red-dot-5075d595.svg",
+    "src": "src/assets/EventBooking/svg/red-dot.svg"
+  },
+  "src/assets/EventBooking/svg/sparcle.svg": {
+    "file": "assets/sparcle-745fa7c8.svg",
+    "src": "src/assets/EventBooking/svg/sparcle.svg"
+  },
+  "src/assets/EventBooking/svg/tear.svg": {
+    "file": "assets/tear-8aaaef19.svg",
+    "src": "src/assets/EventBooking/svg/tear.svg"
   },
   "src/assets/JoinUs/images/jpg/blob-image-dekstop.jpg": {
     "file": "assets/blob-image-dekstop-ba4bd23c.jpg",
@@ -617,7 +641,7 @@
     "src": "src/assets/hero/tablet/hero1tablet@2x.webp"
   },
   "src/assets/icons.svg": {
-    "file": "assets/icons-44799614.svg",
+    "file": "assets/icons-270df3e0.svg",
     "src": "src/assets/icons.svg"
   },
   "src/assets/img/bg-modal/bg-modal-desk.png": {
@@ -1026,19 +1050,17 @@
       "assets/vitaliyvolodchenko@2x-206d1729.webp",
       "assets/vitaliyvolodchenko-550e7fbc.jpg"
     ],
-    "file": "assets/CoFounders-ba8e155b.js",
+    "file": "assets/CoFounders-085bc7a0.js",
     "imports": [
-      "index.html",
-      "_HomePage-602f3375.js"
+      "index.html"
     ],
     "isDynamicEntry": true,
     "src": "src/components/CoFounders/CoFounders.jsx"
   },
   "src/components/Footer/Footer.jsx": {
-    "file": "assets/Footer-638413b0.js",
+    "file": "assets/Footer-ce7c9f4a.js",
     "imports": [
-      "index.html",
-      "_HomePage-602f3375.js"
+      "index.html"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Footer/Footer.jsx"
@@ -1048,12 +1070,11 @@
       "assets/noname-a8edc818.jpg",
       "assets/illustration_modal-48542975.svg"
     ],
-    "file": "assets/InvestorsBlock-30ec75d9.js",
+    "file": "assets/InvestorsBlock-9185da18.js",
     "imports": [
       "index.html",
-      "_InvestorsBlock.styled-b33ed80d.js",
-      "_HomePage-602f3375.js",
-      "_index-1274aa25.js"
+      "_InvestorsBlock.styled-16536ea2.js",
+      "_index-20119065.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/InvestorsBlock.jsx"
@@ -1062,11 +1083,10 @@
     "assets": [
       "assets/partners_illustration-6168f924.svg"
     ],
-    "file": "assets/PartnersBlock-45997f5a.js",
+    "file": "assets/PartnersBlock-04f63bf1.js",
     "imports": [
       "index.html",
-      "_InvestorsBlock.styled-b33ed80d.js",
-      "_HomePage-602f3375.js"
+      "_InvestorsBlock.styled-16536ea2.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/PartnersBlock.jsx"
@@ -1104,22 +1124,41 @@
       "assets/blob-image-dekstop@2x-9856da11.jpg",
       "assets/blob-image-dekstop@2x-7190f328.webp"
     ],
-    "file": "assets/JoinUs-04a00718.js",
+    "file": "assets/JoinUs-29c6c01a.js",
     "imports": [
-      "index.html",
-      "_HomePage-602f3375.js"
+      "index.html"
     ],
     "isDynamicEntry": true,
     "src": "src/components/JoinUs/JoinUs.jsx"
   },
   "src/components/Visualization/Visualization.jsx": {
-    "file": "assets/Visualization-900a0d7b.js",
+    "file": "assets/Visualization-831ecf9b.js",
     "imports": [
-      "index.html",
-      "_HomePage-602f3375.js"
+      "index.html"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Visualization/Visualization.jsx"
+  },
+  "src/pages/EventBookingPage/EventBookingPage.jsx": {
+    "assets": [
+      "assets/event_place@2-5fc10cae.webp",
+      "assets/checkmark-aa981d70.svg",
+      "assets/prohibited-2ec73ea7.svg",
+      "assets/red-dot-5075d595.svg",
+      "assets/sparcle-745fa7c8.svg",
+      "assets/tear-8aaaef19.svg"
+    ],
+    "dynamicImports": [
+      "src/shared/Modals/ModalsManager.jsx"
+    ],
+    "file": "assets/EventBookingPage-5d86f761.js",
+    "imports": [
+      "index.html",
+      "_event_place-77c31121.js",
+      "src/components/Footer/Footer.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/pages/EventBookingPage/EventBookingPage.jsx"
   },
   "src/shared/Modals/ModalsManager.jsx": {
     "assets": [
@@ -1212,11 +1251,11 @@
       "assets/bg-modal-tabl-35cc034e.png",
       "assets/bg-modal-desk-02f0110a.png"
     ],
-    "file": "assets/ModalsManager-6ff0d3e4.js",
+    "file": "assets/ModalsManager-1fd9c51d.js",
     "imports": [
       "index.html",
-      "_index-1274aa25.js",
-      "_HomePage-602f3375.js"
+      "_index-20119065.js",
+      "_event_place-77c31121.js"
     ],
     "isDynamicEntry": true,
     "src": "src/shared/Modals/ModalsManager.jsx"
