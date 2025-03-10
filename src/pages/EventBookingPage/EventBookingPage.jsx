@@ -52,7 +52,7 @@ const EventBookingPage = () => {
                   webp: eventPlaceWebp,
                   webp_2x: eventPlaceWebp2x,
                 },
-                alt: 'Kitchen 1',
+                alt: 'Місце проведення',
               }}
               priority={true}
               hidden={false}

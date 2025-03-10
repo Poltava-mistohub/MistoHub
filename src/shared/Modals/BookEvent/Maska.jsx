@@ -3,24 +3,38 @@ import { MaskaStyled } from './BookEvent.styled';
 import maska_png1 from '/src/assets/EventBooking/img/event_place.png';
 import maska_png2 from 'src/assets/EventBooking/img/event_place@2.png';
 import maska_webp1 from 'src/assets/EventBooking/img/event_place.webp';
-import maska_webp2 from 'src/assets/EventBooking/img/event_place@2.png';
+import maska_webp2 from 'src/assets/EventBooking/img/event_place@2.webp';
+import { HeroPicture } from '../../HeroPicture/HeroPicture';
 
 const Maska = () => {
   return (
     <MaskaStyled>
-      <picture>
-        <source
-          className="joinImg"
-          srcSet={`${maska_webp1} 1x, ${maska_webp2} 2x`}
-          type="image/png"
-        />
-        <source
-          className="joinImg"
-          srcSet={`${maska_png1} 1x, ${maska_png2} 2x`}
-          type="image/webp"
-        />
-        <img className="joinImg" src={maska_png1} alt="Maska" />
-      </picture>
+      <HeroPicture
+        item={{
+          mobile: {
+            png: maska_png1,
+            png_2x: maska_png2,
+            webp: maska_webp1,
+            webp_2x: maska_webp2,
+          },
+          tablet: {
+            png: maska_png1,
+            png_2x: maska_png2,
+            webp: maska_webp1,
+            webp_2x: maska_webp2,
+          },
+          desktop: {
+            png: maska_png1,
+            png_2x: maska_png2,
+            webp: maska_webp1,
+            webp_2x: maska_webp2,
+          },
+          alt: 'Місце проведення',
+        }}
+        priority={true}
+        hidden={false}
+        imgClassName="joinImg"
+      />
     </MaskaStyled>
   );
 };
