@@ -107,6 +107,7 @@ export const HeaderContainer = styled(Container)`
     position: relative;
     width: 100%;
     max-width: 180px;
+    text-align: center;
 
     span {
       position: absolute;

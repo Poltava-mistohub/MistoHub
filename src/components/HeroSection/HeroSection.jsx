@@ -7,7 +7,9 @@ import { heroData } from '/src/constants/dataHeroSwiper.js';
 import { HeroSectionStyled } from '/src/components/HeroSection/HeroSection.styled';
 import { HeroContainer } from '/src/components/HeroSection/HeroSection.styled';
 import Icon from '/src/components/Icon/Icon';
-import { HeroPicture } from './HeroPicture';
+import { HeroPicture } from '../../shared/HeroPicture/HeroPicture';
+
+import { H1Styled } from '../../shared/Text/H1.styled';
 
 const HeroSection = () => {
   const swiperRef = useRef(null);
@@ -66,13 +68,13 @@ const HeroSection = () => {
             <Icon iconName="arrow-right2" />
           </button>
         </div>
-        <h1 className="hero-title">
+        <H1Styled className="hero-title">
           <span>МІСТОХАБ -</span>
           <br />
           створюємо простір
           <br />
           розвитку міста
-        </h1>
+        </H1Styled>
       </HeroContainer>
     </HeroSectionStyled>
   );

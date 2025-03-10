@@ -58,5 +58,12 @@
       "pathname": "/",
       "hash": "founders"
     }
+  },
+  {
+    "value": "Забронювати івент",
+    "id": "event_booking",
+    "to": {
+      "pathname": "/event_booking"
+    }
   }
 ]

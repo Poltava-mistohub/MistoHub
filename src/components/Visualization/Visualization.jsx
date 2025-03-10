@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 import { heroData as images } from '../../constants/dataHeroSwiper';
-import { HeroPicture } from '../HeroSection/HeroPicture';
+import { HeroPicture } from '../../shared/HeroPicture/HeroPicture';
 import {
   VisualizationSection,
   VisualizationContainer,

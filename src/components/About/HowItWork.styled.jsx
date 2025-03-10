@@ -2,7 +2,8 @@ import styled from '@emotion/styled';
 import bgImage from '../../assets/about/howItWorkBg.svg';
 import bgImageTablet from '../../assets/about/howItWorkBg-tablet.svg';
 import bgImageDesktop from '../../assets/about/howItWorkBg-desktop.svg';
-import { AboutProjectContainer } from './AboutProject.styled';
+
+import { ContentBlockStyled } from '../../shared/ContentBlock/ContentBlock.styled';
 
 export const HowItWorkBackground = styled.div`
   width: 100%;
@@ -23,7 +24,7 @@ export const HowItWorkBackground = styled.div`
   }
 `;
 
-export const HowItWorkContainer = styled(AboutProjectContainer)`
+export const HowItWorkContainer = styled(ContentBlockStyled)`
   margin-bottom: 60px;
 
   .container-inner {
