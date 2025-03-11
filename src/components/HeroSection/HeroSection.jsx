@@ -71,9 +71,7 @@ const HeroSection = () => {
         <H1Styled className="hero-title">
           <span>МІСТОХАБ -</span>
           <br />
-          створюємо простір
-          <br />
-          розвитку міста
+          простір розвитку міста
         </H1Styled>
       </HeroContainer>
     </HeroSectionStyled>
