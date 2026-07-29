@@ -1,6 +1,6 @@
 {
-  "_InvestorsBlock.styled-18c5c530.js": {
-    "file": "assets/InvestorsBlock.styled-18c5c530.js",
+  "_InvestorsBlock.styled-3f23e512.js": {
+    "file": "assets/InvestorsBlock.styled-3f23e512.js",
     "imports": [
       "index.html"
     ]
@@ -14,8 +14,8 @@
     ],
     "file": "assets/event_place@2-02997fd4.js"
   },
-  "_index-9c21b0ab.js": {
-    "file": "assets/index-9c21b0ab.js",
+  "_index-4beb9f32.js": {
+    "file": "assets/index-4beb9f32.js",
     "imports": [
       "index.html"
     ]
@@ -27,6 +27,7 @@
   "index.html": {
     "assets": [
       "assets/icons-270df3e0.svg",
+      "assets/glovo-green-584c21e4.svg",
       "assets/hero1mob-6574c58a.png",
       "assets/hero1mob-9bb3b42c.webp",
       "assets/hero1mob@2x-a9b38b4c.png",
@@ -92,7 +93,7 @@
       "src/shared/Modals/ModalsManager.jsx",
       "src/pages/EventBookingPage/EventBookingPage.jsx"
     ],
-    "file": "assets/index-9dc707a4.js",
+    "file": "assets/index-3d1a5cfb.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -407,6 +408,10 @@
   "src/assets/fonts/Oddval-SemiBold.woff2": {
     "file": "assets/Oddval-SemiBold-64f7c442.woff2",
     "src": "src/assets/fonts/Oddval-SemiBold.woff2"
+  },
+  "src/assets/glovo-green.svg": {
+    "file": "assets/glovo-green-584c21e4.svg",
+    "src": "src/assets/glovo-green.svg"
   },
   "src/assets/hero/desktop/hero1desktop.png": {
     "file": "assets/hero1desktop-ac05b0b3.png",
@@ -914,7 +919,7 @@
       "assets/vitaliyvolodchenko@2x-206d1729.webp",
       "assets/vitaliyvolodchenko-550e7fbc.jpg"
     ],
-    "file": "assets/CoFounders-7c435047.js",
+    "file": "assets/CoFounders-51c5804f.js",
     "imports": [
       "index.html"
     ],
@@ -922,7 +927,7 @@
     "src": "src/components/CoFounders/CoFounders.jsx"
   },
   "src/components/Footer/Footer.jsx": {
-    "file": "assets/Footer-ef63aede.js",
+    "file": "assets/Footer-3ae4ef8d.js",
     "imports": [
       "index.html"
     ],
@@ -934,11 +939,11 @@
       "assets/noname-a8edc818.jpg",
       "assets/illustration_modal-48542975.svg"
     ],
-    "file": "assets/InvestorsBlock-91030371.js",
+    "file": "assets/InvestorsBlock-a2666181.js",
     "imports": [
       "index.html",
-      "_InvestorsBlock.styled-18c5c530.js",
-      "_index-9c21b0ab.js"
+      "_InvestorsBlock.styled-3f23e512.js",
+      "_index-4beb9f32.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/InvestorsBlock.jsx"
@@ -947,16 +952,16 @@
     "assets": [
       "assets/partners_illustration-6168f924.svg"
     ],
-    "file": "assets/PartnersBlock-452a5aae.js",
+    "file": "assets/PartnersBlock-4727d024.js",
     "imports": [
       "index.html",
-      "_InvestorsBlock.styled-18c5c530.js"
+      "_InvestorsBlock.styled-3f23e512.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/PartnersBlock.jsx"
   },
   "src/components/Visualization/Visualization.jsx": {
-    "file": "assets/Visualization-323b772f.js",
+    "file": "assets/Visualization-7ccff5be.js",
     "imports": [
       "index.html"
     ],
@@ -974,7 +979,7 @@
     "dynamicImports": [
       "src/shared/Modals/ModalsManager.jsx"
     ],
-    "file": "assets/EventBookingPage-07b8f55f.js",
+    "file": "assets/EventBookingPage-f8235add.js",
     "imports": [
       "index.html",
       "_event_place@2-02997fd4.js",
@@ -1070,10 +1075,10 @@
       "assets/bg-modal-tabl-35cc034e.png",
       "assets/bg-modal-desk-02f0110a.png"
     ],
-    "file": "assets/ModalsManager-825b4c7b.js",
+    "file": "assets/ModalsManager-02eaeed7.js",
     "imports": [
       "index.html",
-      "_index-9c21b0ab.js",
+      "_index-4beb9f32.js",
       "_event_place@2-02997fd4.js"
     ],
     "isDynamicEntry": true,
