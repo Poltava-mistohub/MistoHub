@@ -92,121 +92,40 @@ export const GroupContainer = styled.div`
     const animToRightDesktop = generateKeyframes(rightDesktop);
 
     return css`
-      &.group-0 {
+      &.odd-group {
         overflow: visible;
         animation: ${css`
           ${animToLeft} 50s linear infinite
         `};
       }
-      &.group-1 {
+      &.even-group {
         overflow: visible;
         animation: ${css`
           ${animToRight} 50s linear infinite
         `};
       }
-      &.group-2 {
-        overflow: visible;
-        animation: ${css`
-          ${animToLeft} 50s linear infinite
-        `};
-      }
-      &.group-3 {
-        overflow: visible;
-        animation: ${css`
-          ${animToRight} 50s linear infinite
-        `};
-      }
-      &.group-4 {
-        overflow: visible;
-        animation: ${css`
-          ${animToLeft} 50s linear infinite
-        `};
-      }
-      &.group-5 {
-        overflow: visible;
-        animation: ${css`
-          ${animToRight} 50s linear infinite
-        `};
-      }
-      &.group-0:hover,
-      &.group-1:hover,
-      &.group-2:hover,
-      &.group-3:hover,
-      &.group-4:hover,
-      &.group-5:hover {
+      &:hover {
         animation-play-state: paused;
       }
       @media screen and (min-width: 768px) {
-        &.group-0 {
-          overflow: visible;
+        &.odd-group {
           animation: ${css`
             ${animToLeftTablet} 50s linear infinite
           `};
         }
-        &.group-1 {
-          overflow: visible;
-          animation: ${css`
-            ${animToRightTablet} 50s linear infinite
-          `};
-        }
-        &.group-2 {
-          overflow: visible;
-          animation: ${css`
-            ${animToLeftTablet} 50s linear infinite
-          `};
-        }
-        &.group-3 {
-          overflow: visible;
-          animation: ${css`
-            ${animToRightTablet} 50s linear infinite
-          `};
-        }
-        &.group-4 {
-          overflow: visible;
-          animation: ${css`
-            ${animToLeftTablet} 50s linear infinite
-          `};
-        }
-        &.group-5 {
-          overflow: visible;
+        &.even-group {
           animation: ${css`
             ${animToRightTablet} 50s linear infinite
           `};
         }
       }
       @media screen and (min-width: 1440px) {
-        &.group-0 {
-          overflow: visible;
+        &.odd-group {
           animation: ${css`
             ${animToLeftDesktop} 80s linear infinite
           `};
         }
-        &.group-1 {
-          overflow: visible;
-          animation: ${css`
-            ${animToRightDesktop} 80s linear infinite
-          `};
-        }
-        &.group-2 {
-          overflow: visible;
-          animation: ${css`
-            ${animToLeftDesktop} 80s linear infinite
-          `};
-        }
-        &.group-3 {
-          overflow: visible;
-          animation: ${css`
-            ${animToRightDesktop} 80s linear infinite
-          `};
-        }
-        &.group-4 {
-          overflow: visible;
-          animation: ${css`
-            ${animToLeftDesktop} 80s linear infinite
-          `};
-        }
-        &.group-5 {
-          overflow: visible;
+        &.even-group {
           animation: ${css`
             ${animToRightDesktop} 80s linear infinite
           `};
