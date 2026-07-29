@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Force HTTPS.
+    # nginx terminates TLS and proxies to Apache, so %{HTTPS} is always "off" on
+    # the nginx->Apache leg -> reading it would cause a redirect loop. We read the
+    # ORIGINAL scheme from X-Forwarded-Proto instead.
+    RewriteCond %{HTTP:X-Forwarded-Proto} ^http$ [NC]
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # SPA fallback: send non-file, non-dir requests to index.html.
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+</IfModule>
