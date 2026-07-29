@@ -1,6 +1,6 @@
 {
-  "_InvestorsBlock.styled-d855993b.js": {
-    "file": "assets/InvestorsBlock.styled-d855993b.js",
+  "_InvestorsBlock.styled-18c5c530.js": {
+    "file": "assets/InvestorsBlock.styled-18c5c530.js",
     "imports": [
       "index.html"
     ]
@@ -14,8 +14,8 @@
     ],
     "file": "assets/event_place@2-02997fd4.js"
   },
-  "_index-43c3c017.js": {
-    "file": "assets/index-43c3c017.js",
+  "_index-9c21b0ab.js": {
+    "file": "assets/index-9c21b0ab.js",
     "imports": [
       "index.html"
     ]
@@ -92,7 +92,7 @@
       "src/shared/Modals/ModalsManager.jsx",
       "src/pages/EventBookingPage/EventBookingPage.jsx"
     ],
-    "file": "assets/index-3d48c9cc.js",
+    "file": "assets/index-9dc707a4.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -914,7 +914,7 @@
       "assets/vitaliyvolodchenko@2x-206d1729.webp",
       "assets/vitaliyvolodchenko-550e7fbc.jpg"
     ],
-    "file": "assets/CoFounders-3dc10302.js",
+    "file": "assets/CoFounders-7c435047.js",
     "imports": [
       "index.html"
     ],
@@ -922,7 +922,7 @@
     "src": "src/components/CoFounders/CoFounders.jsx"
   },
   "src/components/Footer/Footer.jsx": {
-    "file": "assets/Footer-7b3333b5.js",
+    "file": "assets/Footer-ef63aede.js",
     "imports": [
       "index.html"
     ],
@@ -934,11 +934,11 @@
       "assets/noname-a8edc818.jpg",
       "assets/illustration_modal-48542975.svg"
     ],
-    "file": "assets/InvestorsBlock-bd18c851.js",
+    "file": "assets/InvestorsBlock-91030371.js",
     "imports": [
       "index.html",
-      "_InvestorsBlock.styled-d855993b.js",
-      "_index-43c3c017.js"
+      "_InvestorsBlock.styled-18c5c530.js",
+      "_index-9c21b0ab.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/InvestorsBlock.jsx"
@@ -947,16 +947,16 @@
     "assets": [
       "assets/partners_illustration-6168f924.svg"
     ],
-    "file": "assets/PartnersBlock-db77bc2c.js",
+    "file": "assets/PartnersBlock-452a5aae.js",
     "imports": [
       "index.html",
-      "_InvestorsBlock.styled-d855993b.js"
+      "_InvestorsBlock.styled-18c5c530.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/PartnersBlock.jsx"
   },
   "src/components/Visualization/Visualization.jsx": {
-    "file": "assets/Visualization-1d3e192f.js",
+    "file": "assets/Visualization-323b772f.js",
     "imports": [
       "index.html"
     ],
@@ -974,7 +974,7 @@
     "dynamicImports": [
       "src/shared/Modals/ModalsManager.jsx"
     ],
-    "file": "assets/EventBookingPage-366ba220.js",
+    "file": "assets/EventBookingPage-07b8f55f.js",
     "imports": [
       "index.html",
       "_event_place@2-02997fd4.js",
@@ -1070,10 +1070,10 @@
       "assets/bg-modal-tabl-35cc034e.png",
       "assets/bg-modal-desk-02f0110a.png"
     ],
-    "file": "assets/ModalsManager-35ac8375.js",
+    "file": "assets/ModalsManager-825b4c7b.js",
     "imports": [
       "index.html",
-      "_index-43c3c017.js",
+      "_index-9c21b0ab.js",
       "_event_place@2-02997fd4.js"
     ],
     "isDynamicEntry": true,
