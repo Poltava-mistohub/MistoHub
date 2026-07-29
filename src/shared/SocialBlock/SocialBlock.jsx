@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import Icon from '../../components/Icon/Icon';
+import glovoLogo from '../../assets/glovo-green.svg';
 import { SocialWrapper, Separator } from './SocialBlock.styled';
 
 function SocialBlock({ darkStyle, sectionName }) {
@@ -25,6 +26,15 @@ function SocialBlock({ darkStyle, sectionName }) {
         aria-label="go to the menu"
       >
         <Icon width="18" height="18" iconName="icon-menu" styles={darkStyle} />
+      </Link>
+      <Link
+        className={`link-glovo ${sections.header ? darkStyle : ''}`}
+        to="https://glovoapp.com/uk/ua/poltava/stores/mistohab-pol"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Order on Glovo"
+      >
+        <img src={glovoLogo} width="28" height="28" alt="" draggable="false" />
       </Link>
       <Separator $sections={sections} className={sections.header ? darkStyle : ''} />
       <Link
