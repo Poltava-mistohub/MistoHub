@@ -20,19 +20,11 @@
     }
   },
   {
-    "value": "Дизайн-проєкт",
+    "value": "Як всередині",
     "id": "design",
     "to": {
       "pathname": "/",
       "hash": "design"
-    }
-  },
-  {
-    "value": "Зібрані кошти",
-    "id": "funds",
-    "to": {
-      "pathname": "/",
-      "hash": "funds"
     }
   },
   {
