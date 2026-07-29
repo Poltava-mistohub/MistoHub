@@ -131,7 +131,7 @@ const EventBookingPage = () => {
                 </H2Styled>
                 <ul className="unordered_list custom_list_markers">
                   <li className="list_item_checkmark">
-                    Оплата – 100% передплата на рахунок ГО "МІСТО ХАБ"
+                    Оплата – 100% передплата на рахунок ГО &quot;МІСТО ХАБ&quot;
                   </li>
                   <li className="list_item_checkmark">
                     Якщо плани зміняться – можемо перенести дату за погодженням з адміністратором

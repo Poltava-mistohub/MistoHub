@@ -14,9 +14,16 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     'react/prop-types': 'off',
+    'react/no-unknown-property': ['error', { ignore: ['fetchpriority'] }],
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
     ],
   },
+  overrides: [
+    {
+      files: ['scripts/**/*.js'],
+      env: { node: true },
+    },
+  ],
 };
