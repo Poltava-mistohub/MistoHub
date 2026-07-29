@@ -6,7 +6,6 @@ import {
   BottomContainer,
   BtnContainer,
   BtnGoIt,
-  BtnSupport,
   FlexContainer,
   ImgContainer,
   StyledMenu,
@@ -36,9 +35,6 @@ const BurgerMenu = ({ controlsMenuModal }) => {
       <TopContainer>
         <StyledText>Меню</StyledText>
         <BtnContainer>
-          <BtnSupport type="button" onClick={() => openModal('join_modal')}>
-            Підтримати проєкт
-          </BtnSupport>
           <CloseButton onClose={() => closeModal('menu_modal')} />
         </BtnContainer>
       </TopContainer>

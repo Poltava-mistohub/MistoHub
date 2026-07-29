@@ -26,13 +26,6 @@ export default function Footer() {
             />
             <p className="address-mistohub">м.Полтава, вул. Спаська, 10</p>
             <Contacts />
-            <button
-              className="btn-supp"
-              type="button"
-              onClick={() => openModal('join_modal')}
-            >
-              <span>Підтримати проєкт</span>
-            </button>
           </div>
         </div>
         <FooterDown>

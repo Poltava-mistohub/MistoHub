@@ -12,9 +12,6 @@ import { ListenScroll, ScrollOnLocationHash } from './utils';
 const CoFounders = realLazy(
   () => import('../../components/CoFounders/CoFounders')
 );
-const JoinUs = realLazy(
-  () => import('../../components/JoinUs/JoinUs')
-);
 const Visualization = realLazy(
   () => import('/src/components/Visualization/Visualization.jsx')
 );
@@ -65,7 +62,6 @@ const HomePage = () => {
           <Visualization />
           <InvestorsBlock people={people} companies={companies} />
           <PartnersBlock companies={partners} />
-          <JoinUs people={people} companies={companies} />
           <CoFounders />
           <ScrollToTopButton />
           <ScrollOnLocationHash />
