@@ -1,4 +1,4 @@
-import{u as b,j as i,I as R,i as a,k as S,e as u,g as y}from"./index-173e0c66.js";import{d as I,C as U,a as z,m as W,g as G,T as k,I as B,M as O,S as _,P}from"./InvestorsBlock.styled-7617b280.js";import{M as q,C as A}from"./index-74a51f42.js";const L="/MistoHub/assets/noname-a8edc818.jpg",D="/MistoHub/assets/illustration_modal-48542975.svg",F=b(q)`
+import{u as b,j as i,I as R,i as a,k as S,e as u,g as y}from"./index-a2a8b265.js";import{d as I,C as U,a as z,m as W,g as G,T as k,I as B,M as O,S as _,P}from"./InvestorsBlock.styled-2cbbd4aa.js";import{M as q,C as A}from"./index-b240af1d.js";const L="/MistoHub/assets/noname-a8edc818.jpg",D="/MistoHub/assets/illustration_modal-48542975.svg",F=b(q)`
   &.ReactModal__Content {
     height: fit-content;
     margin: auto;

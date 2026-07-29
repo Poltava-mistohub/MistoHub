@@ -1,6 +1,6 @@
 {
-  "_InvestorsBlock.styled-7617b280.js": {
-    "file": "assets/InvestorsBlock.styled-7617b280.js",
+  "_InvestorsBlock.styled-2cbbd4aa.js": {
+    "file": "assets/InvestorsBlock.styled-2cbbd4aa.js",
     "imports": [
       "index.html"
     ]
@@ -14,8 +14,8 @@
     ],
     "file": "assets/event_place@2-02997fd4.js"
   },
-  "_index-74a51f42.js": {
-    "file": "assets/index-74a51f42.js",
+  "_index-b240af1d.js": {
+    "file": "assets/index-b240af1d.js",
     "imports": [
       "index.html"
     ]
@@ -85,7 +85,6 @@
     ],
     "dynamicImports": [
       "src/components/CoFounders/CoFounders.jsx",
-      "src/components/JoinUs/JoinUs.jsx",
       "src/components/Visualization/Visualization.jsx",
       "src/components/InvestorsCompanies/InvestorsBlock.jsx",
       "src/components/InvestorsCompanies/PartnersBlock.jsx",
@@ -93,7 +92,7 @@
       "src/shared/Modals/ModalsManager.jsx",
       "src/pages/EventBookingPage/EventBookingPage.jsx"
     ],
-    "file": "assets/index-173e0c66.js",
+    "file": "assets/index-a2a8b265.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -312,126 +311,6 @@
   "src/assets/EventBooking/svg/tear.svg": {
     "file": "assets/tear-8aaaef19.svg",
     "src": "src/assets/EventBooking/svg/tear.svg"
-  },
-  "src/assets/JoinUs/images/jpg/blob-image-dekstop.jpg": {
-    "file": "assets/blob-image-dekstop-ba4bd23c.jpg",
-    "src": "src/assets/JoinUs/images/jpg/blob-image-dekstop.jpg"
-  },
-  "src/assets/JoinUs/images/jpg/blob-image-dekstop@2x.jpg": {
-    "file": "assets/blob-image-dekstop@2x-9856da11.jpg",
-    "src": "src/assets/JoinUs/images/jpg/blob-image-dekstop@2x.jpg"
-  },
-  "src/assets/JoinUs/images/jpg/blob-image-mobile.jpg": {
-    "file": "assets/blob-image-mobile-cdfc9f3b.jpg",
-    "src": "src/assets/JoinUs/images/jpg/blob-image-mobile.jpg"
-  },
-  "src/assets/JoinUs/images/jpg/blob-image-mobile@2x.jpg": {
-    "file": "assets/blob-image-mobile@2x-572c42d4.jpg",
-    "src": "src/assets/JoinUs/images/jpg/blob-image-mobile@2x.jpg"
-  },
-  "src/assets/JoinUs/images/jpg/blob-image-tablet.jpg": {
-    "file": "assets/blob-image-tablet-4c686988.jpg",
-    "src": "src/assets/JoinUs/images/jpg/blob-image-tablet.jpg"
-  },
-  "src/assets/JoinUs/images/jpg/blob-image-tablet@2x.jpg": {
-    "file": "assets/blob-image-tablet@2x-85151834.jpg",
-    "src": "src/assets/JoinUs/images/jpg/blob-image-tablet@2x.jpg"
-  },
-  "src/assets/JoinUs/images/jpg/cafe-oval.png": {
-    "file": "assets/cafe-oval-bc41cfec.png",
-    "src": "src/assets/JoinUs/images/jpg/cafe-oval.png"
-  },
-  "src/assets/JoinUs/images/jpg/cafe-oval@2x.png": {
-    "file": "assets/cafe-oval@2x-b0db3682.png",
-    "src": "src/assets/JoinUs/images/jpg/cafe-oval@2x.png"
-  },
-  "src/assets/JoinUs/images/jpg/cafe-square.png": {
-    "file": "assets/cafe-square-248a88c9.png",
-    "src": "src/assets/JoinUs/images/jpg/cafe-square.png"
-  },
-  "src/assets/JoinUs/images/jpg/cafe-square@2x.png": {
-    "file": "assets/cafe-square@2x-6d972327.png",
-    "src": "src/assets/JoinUs/images/jpg/cafe-square@2x.png"
-  },
-  "src/assets/JoinUs/images/jpg/cafe.jpg": {
-    "file": "assets/cafe-e5b4566c.jpg",
-    "src": "src/assets/JoinUs/images/jpg/cafe.jpg"
-  },
-  "src/assets/JoinUs/images/jpg/cafe@2x.jpg": {
-    "file": "assets/cafe@2x-bbecd071.jpg",
-    "src": "src/assets/JoinUs/images/jpg/cafe@2x.jpg"
-  },
-  "src/assets/JoinUs/images/jpg/person-circle.jpg": {
-    "file": "assets/person-circle-87e5b01c.jpg",
-    "src": "src/assets/JoinUs/images/jpg/person-circle.jpg"
-  },
-  "src/assets/JoinUs/images/jpg/person-circle@2x.jpg": {
-    "file": "assets/person-circle@2x-2fa23513.jpg",
-    "src": "src/assets/JoinUs/images/jpg/person-circle@2x.jpg"
-  },
-  "src/assets/JoinUs/images/jpg/person-star.png": {
-    "file": "assets/person-star-b698f3b4.png",
-    "src": "src/assets/JoinUs/images/jpg/person-star.png"
-  },
-  "src/assets/JoinUs/images/jpg/person-star@2x.png": {
-    "file": "assets/person-star@2x-52484050.png",
-    "src": "src/assets/JoinUs/images/jpg/person-star@2x.png"
-  },
-  "src/assets/JoinUs/images/jpg/person-triangle.png": {
-    "file": "assets/person-triangle-27865367.png",
-    "src": "src/assets/JoinUs/images/jpg/person-triangle.png"
-  },
-  "src/assets/JoinUs/images/jpg/person-triangle@2x.png": {
-    "file": "assets/person-triangle@2x-1e5e780b.png",
-    "src": "src/assets/JoinUs/images/jpg/person-triangle@2x.png"
-  },
-  "src/assets/JoinUs/images/webp/blob-image-dekstop.webp": {
-    "file": "assets/blob-image-dekstop-1ed3290e.webp",
-    "src": "src/assets/JoinUs/images/webp/blob-image-dekstop.webp"
-  },
-  "src/assets/JoinUs/images/webp/blob-image-dekstop@2x.webp": {
-    "file": "assets/blob-image-dekstop@2x-7190f328.webp",
-    "src": "src/assets/JoinUs/images/webp/blob-image-dekstop@2x.webp"
-  },
-  "src/assets/JoinUs/images/webp/blob-image-mobile.webp": {
-    "file": "assets/blob-image-mobile-ab9dda47.webp",
-    "src": "src/assets/JoinUs/images/webp/blob-image-mobile.webp"
-  },
-  "src/assets/JoinUs/images/webp/blob-image-mobile@2x.webp": {
-    "file": "assets/blob-image-mobile@2x-40627629.webp",
-    "src": "src/assets/JoinUs/images/webp/blob-image-mobile@2x.webp"
-  },
-  "src/assets/JoinUs/images/webp/blob-image-tablet.webp": {
-    "file": "assets/blob-image-tablet-25516b7b.webp",
-    "src": "src/assets/JoinUs/images/webp/blob-image-tablet.webp"
-  },
-  "src/assets/JoinUs/images/webp/blob-image-tablet@2x.webp": {
-    "file": "assets/blob-image-tablet@2x-0e060af8.webp",
-    "src": "src/assets/JoinUs/images/webp/blob-image-tablet@2x.webp"
-  },
-  "src/assets/JoinUs/images/webp/cafe-oval@2x.webp": {
-    "file": "assets/cafe-oval@2x-70ea213e.webp",
-    "src": "src/assets/JoinUs/images/webp/cafe-oval@2x.webp"
-  },
-  "src/assets/JoinUs/images/webp/cafe-square@2x.webp": {
-    "file": "assets/cafe-square@2x-d62fad17.webp",
-    "src": "src/assets/JoinUs/images/webp/cafe-square@2x.webp"
-  },
-  "src/assets/JoinUs/images/webp/cafe.webp": {
-    "file": "assets/cafe-01e488b8.webp",
-    "src": "src/assets/JoinUs/images/webp/cafe.webp"
-  },
-  "src/assets/JoinUs/images/webp/cafe@2x.webp": {
-    "file": "assets/cafe@2x-4b15c4b7.webp",
-    "src": "src/assets/JoinUs/images/webp/cafe@2x.webp"
-  },
-  "src/assets/JoinUs/images/webp/person-circle@2x.webp": {
-    "file": "assets/person-circle@2x-7214c58c.webp",
-    "src": "src/assets/JoinUs/images/webp/person-circle@2x.webp"
-  },
-  "src/assets/JoinUs/images/webp/person-star@2x.webp": {
-    "file": "assets/person-star@2x-758485d8.webp",
-    "src": "src/assets/JoinUs/images/webp/person-star@2x.webp"
   },
   "src/assets/about/building-mobile.jpg": {
     "file": "assets/building-mobile-f96d3050.jpg",
@@ -973,22 +852,6 @@
     "file": "assets/partners_illustration-6168f924.svg",
     "src": "src/assets/investors/partners_illustration.svg"
   },
-  "src/assets/join/maska.png": {
-    "file": "assets/maska-4bddf763.png",
-    "src": "src/assets/join/maska.png"
-  },
-  "src/assets/join/maska.webp": {
-    "file": "assets/maska-910d1107.webp",
-    "src": "src/assets/join/maska.webp"
-  },
-  "src/assets/join/maska@2x.png": {
-    "file": "assets/maska@2x-52e2d73a.png",
-    "src": "src/assets/join/maska@2x.png"
-  },
-  "src/assets/join/maska@2x.webp": {
-    "file": "assets/maska@2x-ba53fd99.webp",
-    "src": "src/assets/join/maska@2x.webp"
-  },
   "src/assets/menu-img/menu-cloud-x1.png": {
     "file": "assets/menu-cloud-x1-c51ff675.png",
     "src": "src/assets/menu-img/menu-cloud-x1.png"
@@ -1051,7 +914,7 @@
       "assets/vitaliyvolodchenko@2x-206d1729.webp",
       "assets/vitaliyvolodchenko-550e7fbc.jpg"
     ],
-    "file": "assets/CoFounders-851b25ef.js",
+    "file": "assets/CoFounders-12a2f45e.js",
     "imports": [
       "index.html"
     ],
@@ -1059,7 +922,7 @@
     "src": "src/components/CoFounders/CoFounders.jsx"
   },
   "src/components/Footer/Footer.jsx": {
-    "file": "assets/Footer-df73f46b.js",
+    "file": "assets/Footer-b93d3078.js",
     "imports": [
       "index.html"
     ],
@@ -1071,11 +934,11 @@
       "assets/noname-a8edc818.jpg",
       "assets/illustration_modal-48542975.svg"
     ],
-    "file": "assets/InvestorsBlock-7936d4f5.js",
+    "file": "assets/InvestorsBlock-ffb96eb0.js",
     "imports": [
       "index.html",
-      "_InvestorsBlock.styled-7617b280.js",
-      "_index-74a51f42.js"
+      "_InvestorsBlock.styled-2cbbd4aa.js",
+      "_index-b240af1d.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/InvestorsBlock.jsx"
@@ -1084,56 +947,16 @@
     "assets": [
       "assets/partners_illustration-6168f924.svg"
     ],
-    "file": "assets/PartnersBlock-54fffb96.js",
+    "file": "assets/PartnersBlock-ec808677.js",
     "imports": [
       "index.html",
-      "_InvestorsBlock.styled-7617b280.js"
+      "_InvestorsBlock.styled-2cbbd4aa.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/InvestorsCompanies/PartnersBlock.jsx"
   },
-  "src/components/JoinUs/JoinUs.jsx": {
-    "assets": [
-      "assets/person-circle-87e5b01c.jpg",
-      "assets/person-circle@2x-2fa23513.jpg",
-      "assets/person-triangle-27865367.png",
-      "assets/person-triangle@2x-1e5e780b.png",
-      "assets/person-star-b698f3b4.png",
-      "assets/person-star@2x-52484050.png",
-      "assets/cafe-e5b4566c.jpg",
-      "assets/cafe@2x-bbecd071.jpg",
-      "assets/cafe-oval-bc41cfec.png",
-      "assets/cafe-oval@2x-b0db3682.png",
-      "assets/cafe-square-248a88c9.png",
-      "assets/cafe-square@2x-6d972327.png",
-      "assets/person-circle@2x-7214c58c.webp",
-      "assets/person-star@2x-758485d8.webp",
-      "assets/cafe-01e488b8.webp",
-      "assets/cafe@2x-4b15c4b7.webp",
-      "assets/cafe-oval@2x-70ea213e.webp",
-      "assets/cafe-square@2x-d62fad17.webp",
-      "assets/blob-image-mobile-cdfc9f3b.jpg",
-      "assets/blob-image-mobile-ab9dda47.webp",
-      "assets/blob-image-mobile@2x-572c42d4.jpg",
-      "assets/blob-image-mobile@2x-40627629.webp",
-      "assets/blob-image-tablet-4c686988.jpg",
-      "assets/blob-image-tablet-25516b7b.webp",
-      "assets/blob-image-tablet@2x-85151834.jpg",
-      "assets/blob-image-tablet@2x-0e060af8.webp",
-      "assets/blob-image-dekstop-ba4bd23c.jpg",
-      "assets/blob-image-dekstop-1ed3290e.webp",
-      "assets/blob-image-dekstop@2x-9856da11.jpg",
-      "assets/blob-image-dekstop@2x-7190f328.webp"
-    ],
-    "file": "assets/JoinUs-477a4162.js",
-    "imports": [
-      "index.html"
-    ],
-    "isDynamicEntry": true,
-    "src": "src/components/JoinUs/JoinUs.jsx"
-  },
   "src/components/Visualization/Visualization.jsx": {
-    "file": "assets/Visualization-1a3289f5.js",
+    "file": "assets/Visualization-1238f80b.js",
     "imports": [
       "index.html"
     ],
@@ -1151,7 +974,7 @@
     "dynamicImports": [
       "src/shared/Modals/ModalsManager.jsx"
     ],
-    "file": "assets/EventBookingPage-11c91a33.js",
+    "file": "assets/EventBookingPage-d467f027.js",
     "imports": [
       "index.html",
       "_event_place@2-02997fd4.js",
@@ -1162,10 +985,6 @@
   },
   "src/shared/Modals/ModalsManager.jsx": {
     "assets": [
-      "assets/maska-4bddf763.png",
-      "assets/maska@2x-52e2d73a.png",
-      "assets/maska-910d1107.webp",
-      "assets/maska@2x-ba53fd99.webp",
       "assets/menu-cloud-x1-c51ff675.png",
       "assets/menu-cloud-x2-d293537b.png",
       "assets/menu-cloud-x1-f27528c5.webp",
@@ -1251,10 +1070,10 @@
       "assets/bg-modal-tabl-35cc034e.png",
       "assets/bg-modal-desk-02f0110a.png"
     ],
-    "file": "assets/ModalsManager-41deb28d.js",
+    "file": "assets/ModalsManager-e2dc971d.js",
     "imports": [
       "index.html",
-      "_index-74a51f42.js",
+      "_index-b240af1d.js",
       "_event_place@2-02997fd4.js"
     ],
     "isDynamicEntry": true,
